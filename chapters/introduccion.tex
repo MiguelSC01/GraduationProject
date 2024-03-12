@@ -1,5 +1,5 @@
 \chapter{Introducción}\label{chap:intro}
-Los glóbulos rojos (RBC's) constituyen alrededor del 50\% de la sangre en el cuerpo humano. Entre sus funciones se encuentra el transporte de oxígeno a los diferentes órganos y tejidos del cuerpo para su correcto funcionamiento, es por esto que son fundamentales para la vida humana, pues todos los órganos fallarían de no ser por la existencia de los glóbulos rojos. De esta manera, poder controlar la cantidad de RBC's en el cuerpo es una tarea muy importante para la labor médica, pues en ciertas enfermedades o complicaciones puede ocurrir una disminución de la cantidad de estas células en el torrente sanguíneo y, por lo tanto, ciertas funciones vitales pueden fallar. (\cite{cosgrove2021hematopoiesis}\cite{hall2021guyton}\cite{schippel2023dynamics}\cite{winter2014molecular}\cite{higgins2015red})
+Los glóbulos rojos (RBC's) constituyen alrededor del 50\% de la sangre en el cuerpo humano. Entre sus funciones se encuentra el transporte de oxígeno a los diferentes órganos y tejidos del cuerpo para su correcto funcionamiento, es por esto que son fundamentales para la vida humana, pues todos los órganos fallarían de no ser por su existencia. De esta manera, poder controlar y medir la cantidad de RBC's en el cuerpo es una tarea muy importante para la labor médica, pues en ciertas enfermedades o complicaciones puede ocurrir una disminución de la cantidad de estas células en el torrente sanguíneo y, por lo tanto, ciertas funciones vitales pueden fallar. (\cite{cosgrove2021hematopoiesis}\cite{hall2021guyton}\cite{schippel2023dynamics}\cite{winter2014molecular}\cite{higgins2015red})
 
 Los modelos matemáticos con ecuaciones en diferencias (discretos) o ecuaciones diferenciales (continuos) se han transformado en los últimos años en componentes fundamentales para varios campos de la vida humana como la economía, la biología o medicina. Utilizando el modelo desarrollado del problema propuesto se pueden realizar simulaciones computacionales de este par poder así generar una predicción matemáticamente acertada de lo que se busque. (\cite{edelstein1988mathematical}\cite{liu2023research}\cite{murray2007mathematical})
 
@@ -7,7 +7,7 @@ La investigación buscará modelar y simular matemáticamente las dinámicas de 
 
 El modelo base escogido está basado en el propuesto por Edelstein \cite{edelstein1988mathematical} en el segundo problema de la página 27 y el decimosexto de la página 33.
 
-Sea $R=R(n)$ el número de glóbulos rojos circulando en el torrente sanguíneo en el día $n$, $M=M(n)$ el número de glóbulos rojos producidos por la médula ósea en el día $n$, $f>0$ la fracción de RBC's eliminada por el hígado y $\gamma>0$ la constante de producción, es decir la cantidad de glóbulos producida por cada glóbulo perdido. El modelo resultante es:
+Sea $R=R(n)$ el número de glóbulos rojos circulando en el torrente sanguíneo en el día $n$, $M=M(n)$ el número de glóbulos rojos producidos por la médula ósea en el día $n$, $f>0$ la fracción de RBC's eliminada por el bazo y $\gamma>0$ la constante de producción, es decir la cantidad de glóbulos producida por cada glóbulo perdido. El modelo resultante es:
 $$R(n+1)=(1-f)R(n)+M(n)$$
 $$M(n+1)=\gamma \cdot f\cdot R(n)$$
 
@@ -17,7 +17,7 @@ Las conclusiones y los análisis presentados se espera que sean útiles para el 
 
 La estructura del proyecto de grado es la siguiente:
 \begin{itemize}
-    \item El capítulo dos presenta
+    \item El capítulo dos presenta la introducción médica de los glóbulos rojos, es decir su composición, sus funciones y su ciclo de vida.
     \item El capítulo tres presenta el análsis matemático del modelo base, así como las simulaciones computacionales de este y su respectivo análisis.
     \item El capítulo cuatro presenta variaciones del modelo nacidas de enfermedades, así como las simulaciones computacionales y su análisis.
     \item El capítulo cinco presenta las conclusiones del proyecto y el trabajo a futuro que se puede hacer a partir de la investigación.
