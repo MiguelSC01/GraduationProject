@@ -19,7 +19,7 @@ en donde $R=R(n)$ representa la cantidad de glóbulos rojos por mililitro de san
 De esta manera, el modelo se puede interpretar de la siguiente manera: la cantidad de RBC's en el día $n+1$ ($R(n+1)$) es el porcentaje restante del día $n$ más lo que haya producido la médula ósea en el día $n$; mientras que la cantidad de eritrocitos producidos por la médula ósea en el día $n+1$ ($M(n+1)$) es un múltiplo de la cantidad de glóbulos rojos eliminada en el día $n$. Este modelo es una simplificación bastante acertada de lo visto en \ref{sec:RBC:fig:CicloSangre} en cuanto a la relación entre producción y eliminación de RBC's; es claro que para ser aún más acertados se podrían agregar muchas otras variables como el funcionamiento de los riñones para la producción de eritropyetina, el proceso de absorción del hierro o la edad y estado de salud del sujeto analizado, pero estos complican innecesariamente el modelo y su análisis.
 
 \section{Análisis del Modelo}\label{sec:modelo:analisis}
-Ahora se procederá a analizar los equilibrios y soluciones del modelo a través de los métodos de ecuaciones en diferencias y de la matriz resultante del modelo.
+Ahora se procederá a analizar las soluciones del modelo a través de los métodos de ecuaciones en diferencias y de la matriz resultante del modelo.
 \subsection{Método mediante Ecuaciones en Diferencias}
 
 Nótese que las ecuaciones del modelo se pueden reducir a una única ecuación en términos de $R(n)$ de la siguiente manera:
@@ -39,7 +39,7 @@ en donde $c_{1,2}$ dependerán de las condiciones iniciales que se utilicen.
 \subsection{Método mediante Matrices}
 
 La matriz resultante del modelo es:
-$$\begin{pmatrix}
+$$X_{n+1}=\begin{pmatrix}
     R(n+1) \\
     M(n+1) 
     \end{pmatrix}=
@@ -50,9 +50,13 @@ $$\begin{pmatrix}
     \begin{pmatrix}
     R(n) \\
     M(n) \\
-    \end{pmatrix},$$
+    \end{pmatrix}=
+    \begin{pmatrix}
+        1-f & 1\\
+        \gamma f & 0 
+        \end{pmatrix} X_n,$$
 
-por lo que para el ánalisis de equilibrios se debe estudiar la matriz
+por lo que para el ánalisis de soluciones se debe estudiar la matriz
 $$A=\begin{pmatrix}
     1-f & 1\\
     \gamma f & 0 
@@ -70,8 +74,30 @@ utilizando la fórmula cuadrática, se obtiene
 $$\lambda_{1,2}=\dfrac{(1-f)\pm\sqrt{(1-f)^2+4\gamma f}}{2}.$$
 
 Los vectores propios correspondientes a estos valores propios son los vectores $\mathbf{v_{1,2}}$ que solucionan la ecuación
-$$(A-\lambda_i I)\mathbf{v_i}=0, \:\:\: i=1,2.$$
+$$(A-\lambda_i I)\mathbf{v_i}=0, \:\:\: i=1,2,$$
+
+y de esta manera la solución general del problema estará dada por
+
+$$\begin{pmatrix}
+    R(n) \\
+    M(n) 
+    \end{pmatrix}= (\lambda_1)^n \mathbf{v_1}+(\lambda_2)^n \mathbf{v_2}.$$
+
 
 Nótese que ambos métodos, al arrojar el mismo polinomio característico, obtienen la misma solución general del sistema, esto implica que el modelo propuesto está bien fundamentado matemáticamente.
 
+\section{Derivación de Parámetros y Análisis}\label{sec:modelo:parametros}
+Para poder pasar a valores específicos de las soluciones encontradas, es necesario dar valores numéricos a los parámetros $\lambda$ y $f$, pues el modelo depende de estos y, junto a las condiciones iniciales, determinan las soluciones del problema. Para hallar estos parámetros, se utilizará la información brindada en \ref{sec:RBC:vida} sobre la producción de glóbulos rojos a través de la médula ósea y de su eliminación por medio del bazo.
 
+Inicialmente, es necesario declarar las condiciones iniciales del problema. Dado que las solcuines encontradas dependen, en el caso de ecuaciones en diferencia, de dos constantes o, en el caso de matrices, de dos vectores, es necesario que hayan dos condiciones iniciales del problema: $R(0)$ y $R(1)$ o $X_0$. $R(0)$ representa la cantidad de glóbulos rojos al momento inicial de la medida, que se tomará como 125 trillones ($25\times 10^{12}$). Para el caso de la matriz, se puede tomar que $R(0)$ se mantiene como en el caso anterior y tomar $M(0)=0$, pues el instante que se inicia la medición, el cuerpo no ha generado nuevos glóbulos rojos. $M(0)$, como se verá más adelante en las simulaciones, es un valor muy interesante a tener en cuenta y que modifica relativamente los resultados obtenidos, pues al considerar o no que la médula ósea ha producido RBC's al momento de la primera medición, $R(1)$ cambiará.
+
+Ahora, determinar $f$ es relativamente sencillo, pues es el porcentaje diario de RBC's que elimina el cuerpo. Contando con que la cantidad promedio es de eritrocitos es de $25\times 10^{12}$ y que diariamente mueren $208\times 10^{9}$, entonces el porcentaje de glóbulos rojos elminados diariamente por el bazo es del $0.8\%$, es decir que se puede tomar $f=0.0008$. 
+
+Determinar el valor biológico de $\gamma$ es mucho más complicado, pues no ha sido posible determinar la cantidad de glóbulos rojos que produce una célula madre durante la eritropoyesis. Para hallar un valor adecuado de $\gamma$, se hará el análisis matemático y de las simulaciones con los valores ya establecidos. En todo caso, se puede hace el análisis para los diferentes casos:
+\begin{enumerate}
+    \item  $\gamma<1$: Este caso implica que el cuerpo produce una menor cantidad de eritrocitos respecto a la que elimina, por lo que los resultados deberían mostrar una caída en la cantidad de glóbulos rojos.
+    \item $\gamma=1$: Este caso implica que el cuerpo produce la misma cantidad de eritrocitos respecto a la que elimina, por lo que los resultados deberían mostrar una estabilidad en la cantidad de glóbulos rojos.
+    \item  $\gamma<1$: Este caso implica que el cuerpo produce una mayor cantidad de eritrocitos respecto a la que elimina, por lo que los resultados deberían mostrar un crecimiento en la cantidad de glóbulos rojos.
+\end{enumerate}
+
+En el caso esperado, es decir en el que el cuerpo alcanza la homeostasis, el valor deseado de $\gamma$ es $1$, pues de esta manera el cuerpo no pierde células ya que todas aquellas que mueren son producidas. En todo caso, las simulaciones que se hagan utilizarn variaciones en este parámetro.
