@@ -91,7 +91,7 @@ Para poder pasar a valores específicos de las soluciones encontradas, es necesa
 
 Inicialmente, es necesario declarar las condiciones iniciales del problema. Dado que las solcuines encontradas dependen, en el caso de ecuaciones en diferencia, de dos constantes o, en el caso de matrices, de dos vectores, es necesario que hayan dos condiciones iniciales del problema: $R(0)$ y $R(1)$ o $X_0$. $R(0)$ representa la cantidad de glóbulos rojos al momento inicial de la medida, que se tomará como 125 trillones ($25\times 10^{12}$). Para el caso de la matriz, se puede tomar que $R(0)$ se mantiene como en el caso anterior y tomar $M(0)=0$, pues el instante que se inicia la medición, el cuerpo no ha generado nuevos glóbulos rojos. $M(0)$, como se verá más adelante en las simulaciones, es un valor muy interesante a tener en cuenta y que modifica relativamente los resultados obtenidos, pues al considerar o no que la médula ósea ha producido RBC's al momento de la primera medición, $R(1)$ cambiará.
 
-Ahora, determinar $f$ es relativamente sencillo, pues es el porcentaje diario de RBC's que elimina el cuerpo. Contando con que la cantidad promedio es de eritrocitos es de $25\times 10^{12}$ y que diariamente mueren $208\times 10^{9}$, entonces el porcentaje de glóbulos rojos elminados diariamente por el bazo es del $0.8\%$, es decir que se puede tomar $f=0.0008$. 
+Ahora, determinar $f$ es relativamente sencillo, pues es el porcentaje diario de RBC's que elimina el cuerpo. Contando con que la cantidad promedio es de eritrocitos es de $25\times 10^{12}$ y que diariamente mueren $208\times 10^{9}$, entonces el porcentaje de glóbulos rojos elminados diariamente por el bazo es del $0.832\%$, es decir que se puede tomar $f=0.00832$. 
 
 Determinar el valor biológico de $\gamma$ es mucho más complicado, pues no ha sido posible determinar la cantidad de glóbulos rojos que produce una célula madre durante la eritropoyesis. Para hallar un valor adecuado de $\gamma$, se hará el análisis matemático y de las simulaciones con los valores ya establecidos. En todo caso, se puede hace el análisis para los diferentes casos:
 \begin{enumerate}
@@ -100,4 +100,28 @@ Determinar el valor biológico de $\gamma$ es mucho más complicado, pues no ha 
     \item  $\gamma>1$: Este caso implica que el cuerpo produce una mayor cantidad de eritrocitos respecto a la que elimina, por lo que los resultados deberían mostrar un crecimiento en la cantidad de glóbulos rojos.
 \end{enumerate}
 
-En el caso esperado, es decir en el que el cuerpo alcanza la homeostasis, el valor deseado de $\gamma$ es $1$, pues de esta manera el cuerpo no pierde células ya que todas aquellas que mueren son producidas. En todo caso, las simulaciones que se hagan utilizarn variaciones en este parámetro.
+En el caso esperado, es decir en el que el cuerpo alcanza la homeostasis, el valor deseado de $\gamma$ es $1$, pues de esta manera el cuerpo no pierde células, ya que todas aquellas que mueren son producidas. En todo caso, las simulaciones que se hagan utilizarán variaciones en este parámetro.
+
+Como ya se ha visto en \ref{sec:modelo:analisis}, las soluciones del problema dependen de las constantes y de los valores iniciales, a continuación se calcularán las soluciones bajo los valores derivados para cada parámetro: $\gamma = 1$, $f = 0.00832$, $R(0)=25\times 10^{12}$, $M(0)=208\times 10^{9}$ 
+
+\begin{itemize}
+    \item Para el caso de ecuaciones en diferencias, se obtiene que las soluciones del polinomio carácterístico de la ecuación son:
+        $$\lambda_{1,2}=\dfrac{(1-f)\pm\sqrt{(1-f)^2+4\gamma f}}{2}$$
+        $$=\dfrac{(1-0.00832)\pm \sqrt{(1-0.00832)^2+4(0.00832)}}{2}$$
+        $$\implies \lambda_1 = 1,\;\;\; \lambda_2 = -0.00832=-f.$$
+        Y así, la solución general está dada por 
+        $$R(n)=c_1+c_2(-0.00832)^n$$
+        $$R(0)=25\times 10^{12}=c_1+c_2$$
+        $$R(1)=(1-f)R(0)+M(0)=(1-0.00832)25 \times 10^{12}+208\times 10^9$$
+        $$=c_1-0.00832\cdot c_2,$$
+        resolviendo el sistema $2\times 2$ conformado por $c_{1,2}$ se obtienen los resultados $c_1=25\times 10^{12}$, $c_2 = 0$. Lo que quiere decir que la solución del problema, dadas las condiciones iniciales es:
+        $$R(n)=25\times 10^{2},$$
+        como es esperado, pues obtener una solución constante implica que el cuerpo logra mantener la homeostasis, es decir que en ningún momento hay pérdias o ganancias de RBC's en el cuerpo.
+    \item En el caso de utilizar la matriz que representa el modelo, los valores propios hallados son
+        $$\lambda_1 = 1, \;\;\; \lambda_2 = -0.00832=-f$$
+
+
+\end{itemize}
+
+\section{Simulaciones}\label{sec:modelo:simulaciones}
+A continuación se presentarán las simulaciones computacionales del modelo y su respectivo análisis 
