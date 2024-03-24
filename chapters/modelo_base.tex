@@ -118,10 +118,93 @@ Como ya se ha visto en \ref{sec:modelo:analisis}, las soluciones del problema de
         $$R(n)=25\times 10^{2},$$
         como es esperado, pues obtener una solución constante implica que el cuerpo logra mantener la homeostasis, es decir que en ningún momento hay pérdias o ganancias de RBC's en el cuerpo.
     \item En el caso de utilizar la matriz que representa el modelo, los valores propios hallados son
-        $$\lambda_1 = 1, \;\;\; \lambda_2 = -0.00832=-f$$
+        $$\lambda_1 = 1, \;\;\; \lambda_2 = -0.00832=-f,$$
+        mientras que los vectores propios asociados a cada valor propio son (aproximando a 4 cifras significativas):
+        $$\mathbf{v_1}=\begin{pmatrix}
+            0.9999  \\
+            -0.7071
+            \end{pmatrix},\;\;\;  \mathbf{v_2}=\begin{pmatrix}
+            0.0083 \\
+            0.7071
+            \end{pmatrix}.$$
 
+\end{itemize}
+
+Considerando el caso $\gamma = 0.7$, las soluciones son las siguientes:
+\begin{itemize}
+    \item Para el caso de ecuaciones en diferencias, se obtiene que las soluciones del polinomio carácterístico de la ecuación son (aproximando a 4 cifras significativas):
+        $$\lambda_1 = 0.9975,\;\;\; \lambda_2 = -0.0058.$$
+        Y así, la solución general está dada por 
+        $$R(n)=c_1(0.9975)^n+c_2(-0.0058)^n$$
+        resolviendo el sistema $2\times 2$ conformado por $c_{1,2}$ se obtienen los resultados $c_1=25\times 10^{12}$, $c_2 = 0$. Lo que quiere decir que la solución del problema, dadas las condiciones iniciales es:
+        $$R(n)=25\times 10^{2},$$
+    \item En el caso de utilizar la matriz que representa el modelo, los valores propios hallados son
+        $$\lambda_1 = 0.9975, \;\;\; \lambda_2 = --0.0058,$$
+        mientras que los vectores propios asociados a cada valor propio son:
+        $$\mathbf{v_1}=\begin{pmatrix}
+            0.9999  \\ 
+            -0.7079
+            \end{pmatrix},\;\;\;  \mathbf{v_2}=\begin{pmatrix}
+            0.0058  \\
+            0.7062
+            \end{pmatrix}.$$
 
 \end{itemize}
 
 \section{Simulaciones}\label{sec:modelo:simulaciones}
-A continuación se presentarán las simulaciones computacionales del modelo y su respectivo análisis 
+A continuación se presentarán las simulaciones computacionales del modelo y su respectivo análisis según los valores escogidos de $\gamma$. Es importante apuntar que cada una de las simulaciones considera el tiempo de 10 días.
+
+Para cada una de las simulaciones, estos valores son fijos:
+\begin{itemize}
+    \item $f=0.00832$;
+    \item $R(0) = 25\times 10^{12};$
+    \item $M(0) = 208 \times 10^{9}.$
+\end{itemize}
+
+
+\subsection{Caso $\gamma=1$}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.55]{figures/BaseG1RBC.png}
+    \caption{Caption?}
+    \label{sec:modelo:fig:G1RBC}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.55]{figures/BaseG1SC.png}
+    \caption{Caption?}
+    \label{sec:modelo:fig:G1SC}
+\end{figure}
+
+
+\subsection{Caso $\gamma=0.7$}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.55]{figures/BaseG07RBC.png}
+    \caption{Caption?}
+    \label{sec:modelo:fig:G07RBC}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.55]{figures/BaseG07SC.png}
+    \caption{Caption?}
+    \label{sec:modelo:fig:G07SC}
+\end{figure}
+
+
+\subsection{Caso $\gamma=1.3$}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.55]{figures/BaseG13RBC.png}
+    \caption{Caption?}
+    \label{sec:modelo:fig:G07RBC}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.55]{figures/BaseG13SC.png}
+    \caption{Caption?}
+    \label{sec:modelo:fig:G07SC}
+\end{figure}
