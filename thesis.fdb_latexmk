@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber thesis"] 1711291614 "thesis.bcf" "thesis.bbl" "thesis" 1711293585 0
+["biber thesis"] 1711291614 "thesis.bcf" "thesis.bbl" "thesis" 1711384686 0
   "./library.bib" 1709599906 6472 043628fc3090a82eb90a608db518ce19 ""
-  "thesis.bcf" 1711293583 108627 c2a35bc3b43fbd851c08c402ad39f4cb "pdflatex"
+  "thesis.bcf" 1711384685 108627 c2a35bc3b43fbd851c08c402ad39f4cb "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1711293577 "/Users/miguelsandoval/Desktop/Andes/GraduationProject/thesis.tex" "thesis.pdf" "thesis" 1711293585 0
-  "/Users/miguelsandoval/Desktop/Andes/GraduationProject/thesis.tex" 1710381370 3298 6a9f100bb453d85beb5da2eacc6f595b ""
+["pdflatex"] 1711384673 "/Users/miguelsandoval/Desktop/Andes/GraduationProject/thesis.tex" "thesis.pdf" "thesis" 1711384686 0
+  "/Users/miguelsandoval/Desktop/Andes/GraduationProject/thesis.tex" 1711384575 3320 7f2dea00d921c3b5c75592640248f2e4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0700.tfm" 1136768653 1536 73da8e8f1d2a4c957d51ca133585586b ""
@@ -225,6 +225,7 @@
   "/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgffor.sty" 1601326656 348 ee405e64380c11319f0e249fed57e6c5 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty" 1601326656 274 5ae372b7df79135d240456a1c6f2cf9a ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty" 1601326656 325 f9f16d12354225b7dd52a3321f085955 ""
+  "/usr/local/texlive/2023/texmf-dist/tex/latex/placeins/placeins.sty" 1137110565 4087 636308456f60d2b31cbf97867db5708d ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/refcount/refcount.sty" 1576624809 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657483315 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty" 1158586182 21369 9ef165ca6df8815c92e693146a376c92 ""
@@ -241,7 +242,7 @@
   "chapters/experiments.tex" 1709523269 870 dd04f97c23984edd6d97785ddcfa0752 ""
   "chapters/globulos_rojos.tex" 1710380222 5964 eeb25bd7a115c82b795e2e5dfda31ecc ""
   "chapters/introduccion.tex" 1709603553 4509 21ddad1f6fed138c14ed89f43ba50fc8 ""
-  "chapters/modelo_base.tex" 1711293572 15707 d3b243e5df6ff40d3f953675636cc58b ""
+  "chapters/modelo_base.tex" 1711384672 17342 c17ca76feb69e09fa78a8b586d2d17c8 ""
   "chapters/variaciones_modelo.tex" 1709523577 53 4b89f91004ba321d358a6c2ff5a26644 ""
   "figures/BaseG07RBC.png" 1711291150 36552 3d4a20a3ca5371e68b5f1e3403a97709 ""
   "figures/BaseG07SC.png" 1711291167 31225 42dadc923d09b5b11533524377976b50 ""
@@ -256,12 +257,12 @@
   "frontmatter/resumen.tex" 1709523886 20 b2c234f1f116ec0ae0d65c121b201f66 ""
   "frontmatter/titlepage.tex" 1709524087 483 32d70001b9e820540c9eb935b54ae050 ""
   "quiver.sty" 1709523035 1605 786c4fbcefc5d2898f3d784c12d72ae1 ""
-  "thesis.aux" 1711293583 10474 1e2cfa4dec9c9209398154530e01ede8 "pdflatex"
+  "thesis.aux" 1711384685 10474 827b1a21b75cdde5aebc9163cc956430 "pdflatex"
   "thesis.bbl" 1711291661 35420 598eaad1f5b69a0d5462f30d23442054 "biber thesis"
-  "thesis.out" 1711293583 3447 f4500785232acf8e894ff9b7b3525086 "pdflatex"
-  "thesis.run.xml" 1711293583 2413 86904c7288adb44cc7e0726c2475a3ad "pdflatex"
-  "thesis.tex" 1710381370 3298 6a9f100bb453d85beb5da2eacc6f595b ""
-  "thesis.toc" 1711293583 1802 a69c00dae13e54de1667da6572ef9bee "pdflatex"
+  "thesis.out" 1711384685 3447 f4500785232acf8e894ff9b7b3525086 "pdflatex"
+  "thesis.run.xml" 1711384685 2413 86904c7288adb44cc7e0726c2475a3ad "pdflatex"
+  "thesis.tex" 1711384575 3320 7f2dea00d921c3b5c75592640248f2e4 ""
+  "thesis.toc" 1711384685 1802 3268198e80b2fba142c369d9688c786d "pdflatex"
   (generated)
   "thesis.aux"
   "thesis.bcf"

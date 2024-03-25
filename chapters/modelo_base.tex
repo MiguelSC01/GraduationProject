@@ -174,7 +174,6 @@ Considerando el caso $\gamma = 1.3$, las soluciones son las siguientes:
 
 \end{itemize}
 
-
 \section{Simulaciones}\label{sec:modelo:simulaciones}
 A continuación se presentarán las simulaciones computacionales del modelo y su respectivo análisis según los valores escogidos de $\gamma$. Es importante apuntar que cada una de las simulaciones considera el tiempo de 10 días.
 
@@ -184,7 +183,6 @@ Para cada una de las simulaciones, estos valores son fijos:
     \item $R(0) = 25\times 10^{12};$
     \item $M(0) = 208 \times 10^{9}.$
 \end{itemize}
-
 
 \subsection{Caso $\gamma=1$}
 \begin{figure}[H]
@@ -200,33 +198,37 @@ Para cada una de las simulaciones, estos valores son fijos:
     \caption{Caption?}
     \label{sec:modelo:fig:G1SC}
 \end{figure}
-
+Como era esperado, según los análisis hechos en \ref{sec:modelo:analisis}, para el caso $\gamma = 1$ se obtiene una simulación totalmente estable, manteniendo el nivel de glóbulos rojos diarios en $25\times 10^{12}$ y la cantidad de glóbulos rojos producidos diariamiente en $208\times 10^{9}$. Esta simulación representa el caso ideal en el que un paciente no tenga ninguna enfermedad o complicación médica y sea completamente saludable. Para este caso, todo glóbulo rojo que es eliminado por el bazo es producido por la médula ósea, por lo que no hay variaciones en las cantidades.
 
 \subsection{Caso $\gamma=0.7$}
-\begin{figure}[H]
+\begin{figure}[h]
     \centering
     \includegraphics[scale=0.55]{figures/BaseG07RBC.png}
     \caption{Caption?}
     \label{sec:modelo:fig:G07RBC}
 \end{figure}
 
-\begin{figure}[H]
+En este caso, el paciente padece de una enfermedad que afecta la producción de glóbulos rojos producidos por la médula ósea, pues $\gamma=0.7$ implica que por cada glóbulo rojo eliminado por el bazo se producen únicamente $0.7$ glóbulos rojos. Como se puede observar en las simulaciones, los efectos de una baja producción de RBC's es una caída tanto en la cantidad de eritrocitos en el cuerpo como en su producción por parte de las células madre. Extendiendo los días simulados se encuentra que en el día 280 la cantidad de glóbulos rojos se ha reducido a la mitad respecto a la inicial. Un aspecto interesante es la caída que se puede obervar en la figura \ref{sec:modelo:fig:G07SC} y la estabilidad en la figura \ref{sec:modelo:fig:G07RBC} del día 0 al día 1, pero esta ocurre dado que las condiciones iniciales asumen que en el día 0 la producción es normal y a partir del día 1 es que ocurre el cambio en la producción de RBC's, por lo que ahí ocurre la primera caída en producción y en cantidad. 
+
+\begin{figure}[h]
     \centering
     \includegraphics[scale=0.55]{figures/BaseG07SC.png}
     \caption{Caption?}
     \label{sec:modelo:fig:G07SC}
 \end{figure}
 
+\FloatBarrier
 
 \subsection{Caso $\gamma=1.3$}
-\begin{figure}[H]
+
+\begin{figure}[h]
     \centering
     \includegraphics[scale=0.55]{figures/BaseG13RBC.png}
     \caption{Caption?}
     \label{sec:modelo:fig:G07RBC}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[h]
     \centering
     \includegraphics[scale=0.55]{figures/BaseG13SC.png}
     \caption{Caption?}
