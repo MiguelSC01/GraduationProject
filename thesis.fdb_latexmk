@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber thesis"] 1711291614 "thesis.bcf" "thesis.bbl" "thesis" 1711480268 0
-  "./library.bib" 1709599906 6472 043628fc3090a82eb90a608db518ce19 ""
-  "thesis.bcf" 1711480267 108627 c2a35bc3b43fbd851c08c402ad39f4cb "pdflatex"
+["biber thesis"] 1711820110 "thesis.bcf" "thesis.bbl" "thesis" 1711820144 0
+  "./library.bib" 1711820057 6753 43ebb8ff1ce77dad65ccfab63ce9ea3a ""
+  "thesis.bcf" 1711820142 108850 0da1daa36e5b5c03e88e2ff488c402a7 "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1711480262 "/Users/miguelsandoval/Desktop/Andes/GraduationProject/thesis.tex" "thesis.pdf" "thesis" 1711480268 0
+["pdflatex"] 1711820135 "/Users/miguelsandoval/Desktop/Andes/GraduationProject/thesis.tex" "thesis.pdf" "thesis" 1711820144 0
   "/Users/miguelsandoval/Desktop/Andes/GraduationProject/thesis.tex" 1711384575 3320 7f2dea00d921c3b5c75592640248f2e4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -240,7 +240,7 @@
   "chapters/appendix_example.tex" 1709869033 68 330261e993c3b18c5c79fe6d807881ef ""
   "chapters/conclusiones.tex" 1709523684 61 f0edb6f1f75f149cbdca27f51ce7119d ""
   "chapters/experiments.tex" 1709523269 870 dd04f97c23984edd6d97785ddcfa0752 ""
-  "chapters/globulos_rojos.tex" 1711480260 6211 f4a3028d368ead26d00b8ac5606a153d ""
+  "chapters/globulos_rojos.tex" 1711820102 9697 d75bb837f57e8e4b5a5676535a388daa ""
   "chapters/introduccion.tex" 1709603553 4509 21ddad1f6fed138c14ed89f43ba50fc8 ""
   "chapters/modelo_base.tex" 1711480140 18313 84f0f03f2c00e8f6bffae2aeb83f27b5 ""
   "chapters/variaciones_modelo.tex" 1709523577 53 4b89f91004ba321d358a6c2ff5a26644 ""
@@ -257,12 +257,12 @@
   "frontmatter/resumen.tex" 1709523886 20 b2c234f1f116ec0ae0d65c121b201f66 ""
   "frontmatter/titlepage.tex" 1709524087 483 32d70001b9e820540c9eb935b54ae050 ""
   "quiver.sty" 1709523035 1605 786c4fbcefc5d2898f3d784c12d72ae1 ""
-  "thesis.aux" 1711480267 10692 6c1e90bdae603e74e3cb799c065c6473 "pdflatex"
-  "thesis.bbl" 1711291661 35420 598eaad1f5b69a0d5462f30d23442054 "biber thesis"
-  "thesis.out" 1711480267 3653 700d4cf04c3fc41d40175829691c5447 "pdflatex"
-  "thesis.run.xml" 1711480267 2413 86904c7288adb44cc7e0726c2475a3ad "pdflatex"
+  "thesis.aux" 1711820142 11250 56bf7f86b1af10c8c8c2333aa5545814 "pdflatex"
+  "thesis.bbl" 1711820119 37016 7120c231f633d46334ca59320f07b1d0 "biber thesis"
+  "thesis.out" 1711820142 3862 6e5f654027c922513c38bc2cf373b521 "pdflatex"
+  "thesis.run.xml" 1711820142 2413 86904c7288adb44cc7e0726c2475a3ad "pdflatex"
   "thesis.tex" 1711384575 3320 7f2dea00d921c3b5c75592640248f2e4 ""
-  "thesis.toc" 1711480267 1891 7d0e5a0eaf6e788865aab9ea3ea79c34 "pdflatex"
+  "thesis.toc" 1711820142 2051 12b57b24b1901783d9b68d6fb6c3b7ee "pdflatex"
   (generated)
   "thesis.aux"
   "thesis.bcf"
