@@ -187,14 +187,14 @@ Para cada una de las simulaciones, estos valores son fijos:
 \subsection{Caso $\gamma=1$}
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.55]{figures/BaseG1RBC.png}
+    \includegraphics[scale=0.57]{figures/BaseG1RBC.png}
     \caption{Caption?}
     \label{sec:modelo:fig:G1RBC}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.55]{figures/BaseG1SC.png}
+    \includegraphics[scale=0.57]{figures/BaseG1SC.png}
     \caption{Caption?}
     \label{sec:modelo:fig:G1SC}
 \end{figure}
@@ -203,7 +203,7 @@ Como era esperado, según los análisis hechos en \ref{sec:modelo:analisis}, par
 \subsection{Caso $\gamma=0.7$}
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.55]{figures/BaseG07RBC.png}
+    \includegraphics[scale=0.6]{figures/BaseG07RBC.png}
     \caption{Caption?}
     \label{sec:modelo:fig:G07RBC}
 \end{figure}
@@ -212,7 +212,7 @@ En este caso, el paciente padece de una enfermedad que afecta la producción de 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.55]{figures/BaseG07SC.png}
+    \includegraphics[scale=0.6]{figures/BaseG07SC.png}
     \caption{Caption?}
     \label{sec:modelo:fig:G07SC}
 \end{figure}
@@ -220,17 +220,21 @@ En este caso, el paciente padece de una enfermedad que afecta la producción de 
 \FloatBarrier
 
 \subsection{Caso $\gamma=1.3$}
-Como bien se puede observar en las figuras \ref{sec:modelo:fig:G13RBC} y \ref{sec:modelo:fig:G13SC}, para valores de $\gamma$ mayores a 1 se obtiene un crecimiento en la cantidad de glóbulos rojos en el cuerpo y en la cantidad diaria producida por la médula ósea, esto se debe a que el cuerpo está produciendo una media de 1.3 RBC's por cada uno perdido, por lo que es normal que la cantidad de estos aumente. Así como en la simulación para $\gamma = 0.7$, la anomalía presentada del día 0 al día 1 se debe a las condiciones iniciales del problema. Al extender los días de la simulación, se encuentra que en el día 183 la cantidad de eritrocitos en el cuerpo se ha duplicado respecto al valor inicial. Como se analizó en \ref{sec:modelo:analisis}, si se quisiera extender la simulación al inifinito los glóbulos rojos también tenderían hacia el inifinito. 
+
+En este caso, el paciente produce más glóbulos rojos de los que elimina. Esto puede tener diferentes causas, como bajos valores de hierro y, por lo tanto, de hemoglobina o dificultades pulmonares del paciente que produzcan bajos niveles de oxígeno en la sangre. Como bien se puede observar en las figuras \ref{sec:modelo:fig:G13RBC} y \ref{sec:modelo:fig:G13SC}, para valores de $\gamma$ mayores a 1 se obtiene un crecimiento en la cantidad de glóbulos rojos en el cuerpo y en la cantidad diaria producida por la médula ósea, esto se debe a que el cuerpo está produciendo una media de 1.3 RBC's por cada uno perdido, por lo que es normal que la cantidad de estos aumente. Así como en la simulación para $\gamma = 0.7$, la anomalía presentada del día 0 al día 1 se debe a las condiciones iniciales del problema. Al extender los días de la simulación, se encuentra que en el día 183 la cantidad de eritrocitos en el cuerpo se ha duplicado respecto al valor inicial. Como se analizó en \ref{sec:modelo:analisis}, si se quisiera extender la simulación al inifinito los glóbulos rojos también tenderían hacia el inifinito. 
+
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.55]{figures/BaseG13RBC.png}
+    \includegraphics[scale=0.57]{figures/BaseG13RBC.png}
     \caption{Caption?}
     \label{sec:modelo:fig:G13RBC}
 \end{figure}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.55]{figures/BaseG13SC.png}
+    \includegraphics[scale=0.57]{figures/BaseG13SC.png}
     \caption{Caption?}
     \label{sec:modelo:fig:G13SC}
 \end{figure}
+
+Habiendo ya analizado y entendido el modelo base para los diferentes casos, el siguiente capítulo buscará acoplar a este modelo dos variaciones posibles: cuando el paciente padece anemia renal o cuando el paciente ha sufrido una hemorragia.
