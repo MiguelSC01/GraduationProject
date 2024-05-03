@@ -45,13 +45,13 @@ $$R(n+1)= \left\{ \begin{array}{lcc} (1-f)\cdot R(n)+M(n) & si & n \neq 3 \\ \\ 
 En donde:
 \begin{itemize}
     \item $\gamma_1=1$;
-    \item $\gamma_2=1.31$
+    \item $\gamma_2=1.348$
     \item $f=0.00832$;
     \item $R(0) = 25\times 10^{12};$
     \item $M(0) = 208 \times 10^{9}.$
 \end{itemize}
 
-Para aproximar el valor de $\gamma_2$ se utilizó la información brindada por el hospital general de Massachusetts en \cite{Massachusetts}, dado que al cuerpo le toma recuperar los glóbulos rojos perdidos en 450 ml de sangre en unas 5 semanas (35 días), entonces 100 ml deben recuperarse en unos 8 días. Las simulaciones hechas muestran que $\gamma=1.31$ permite lograr esta recuperación en ese tiempo.
+Para aproximar el valor de $\gamma_2$ se utilizó la información brindada por el hospital general de Massachusetts en \cite{Massachusetts}, dado que al cuerpo le toma recuperar los glóbulos rojos perdidos en 450 ml de sangre en unas 5 semanas (35 días), entonces 100 ml deben recuperarse en unos 8 días. Las simulaciones hechas muestran que $\gamma=1.348$ permite lograr esta recuperación en ese tiempo.
 Para estas simulaciones, se utilizó un tiempo de 15 días para poder observar lo que sucede después de recuperar los eritrocitos perdidos:
 
 \begin{figure}[H]
@@ -67,3 +67,5 @@ Para estas simulaciones, se utilizó un tiempo de 15 días para poder observar l
     \caption{Caption?}
     \label{sec:variaciones:fig:HemoLeveG13SC}
 \end{figure}
+
+Lo que se puede ver en estas gráficas es como, a partir del cuarto día (dado el retraso que presenta el modelo) se hace efectivo el cambio de $\gamma_1$ a $\gamma_2$, que se evidencia por el aumento en \ref{sec:variaciones:fig:HemoLeveG13RBC} del cuarto al duodécimo día y en \ref{sec:variaciones:fig:HemoLeveG13SC} del tercer al undécimo día. En el día 11 es en el que por fin se ha superado (o igualado) la cantidad inicial de glóbulos rojos en el cuerpo, el aumento desde la pérdida muestra lo ilustrado en \ref{subsec:modelo:simulaciones:G13}, donde hay un aumento constante de eritrocitos. Del día 11 al 12 hay un último aumento de RBC's dado, nuevamente, el retraso que presentan las ecuaciones. Después de recuperar la cantidad de sangre perdida, el cuerpo vuelve a estabilizar su sistema, pues ha llegado a la homeostasis. La diferencia en \ref{sec:variaciones:fig:HemoLeveG13SC} de los días 0 a 3 y de los días 13 a 15 se debe a que ha aumentado la cantidad estable de sangre, y para compensar la pérdida el cuerpo debe producir más células.
