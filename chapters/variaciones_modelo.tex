@@ -36,3 +36,34 @@ Así, la simulación se ve así: en la figura \ref{sec:variaciones:fig:HemoLeveG
     \caption{Caption?}
     \label{sec:variaciones:fig:HemoLeveG1SC}
 \end{figure}
+
+Está claro que esta simulación está totalmente alejada de lo que ocurre en el caso real, pues lo esperado es que el cuerpo recupere con el paso del tiempo la cantidad de glóbulos rojos perdidos, esto quiere decir que para $n>3$ se debe aumentar el valor de $\gamma$ hasta que la cantidad de eritrocitos sea mayor o igual a la inicial, es decir:
+
+$$R(n+1)= \left\{ \begin{array}{lcc} (1-f)\cdot R(n)+M(n) & si & n \neq 3 \\ \\ (1-f)\cdot R(n)+M(n)-0.02\cdot R(n) & si & n = 3\end{array} \right.$$
+%%$$M(n+1)=\left\{ \begin{array}{lcc} f\cdot \gamma_1 \cdot R(n) & si & R(n) \geq R(0) \\ \\ f\cdot \gamma_2\cdot R(n) & si & R(n)<R(0)\end{array} \right.$$
+
+En donde:
+\begin{itemize}
+    \item $\gamma_1=1$;
+    \item $\gamma_2=1.31$
+    \item $f=0.00832$;
+    \item $R(0) = 25\times 10^{12};$
+    \item $M(0) = 208 \times 10^{9}.$
+\end{itemize}
+
+Para aproximar el valor de $\gamma_2$ se utilizó la información brindada por el hospital general de Massachusetts en \cite{Massachusetts}, dado que al cuerpo le toma recuperar los glóbulos rojos perdidos en 450 ml de sangre en unas 5 semanas (35 días), entonces 100 ml deben recuperarse en unos 8 días. Las simulaciones hechas muestran que $\gamma=1.31$ permite lograr esta recuperación en ese tiempo.
+Para estas simulaciones, se utilizó un tiempo de 15 días para poder observar lo que sucede después de recuperar los eritrocitos perdidos:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.57]{figures/HemoLeveG13RBC.png}
+    \caption{Caption?}
+    \label{sec:variaciones:fig:HemoLeveG13RBC}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.57]{figures/HemoLeveG13SC.png}
+    \caption{Caption?}
+    \label{sec:variaciones:fig:HemoLeveG13SC}
+\end{figure}
