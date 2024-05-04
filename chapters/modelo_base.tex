@@ -5,7 +5,7 @@
 
 \chapter{Modelo Base}\label{chap:modelo}
 \section{Introducción}\label{sec:modelo:intro}
-Ya tieniendo en cuenta las dinámicas de los glóbulos rojos en el cuerpo humano, se procederá a analizar y simular el modelo matemático de estas propuesto por Eldestein \cite{edelstein2005} utlizando las técnicas presentadas en \ref{chap:Apendice}. 
+Ya tieniendo en cuenta las dinámicas de los glóbulos rojos en el cuerpo humano, se procederá a analizar y simular el modelo matemático de estas propuesto por Eldestein en \cite{edelstein2005} y las técnicas de solución correspondientes. 
 
 Es importante tener en cuenta que el modelo que sea que se analice debe tener concordancia con la vida real en cuanto a las variables y a las constantes utilizadas. La homeostasis es fundamental en todo proceso biológio y es por eso que el modelo y las simulaciones deben reflejar correctamente el equilibrio del sistema. Adicionalmente, es clave considerar que es imposible lograr una formulación matemática que este totalmente en concordancia con todos los procesos biológicos que suceden dentro del cuerpo humano, pues se debería tener en consideración una enorme cantidad de variables, de actores y de estado que se salen del propósito básico de simplificar el problema. De esta manera, los modelos propuestos son un acercamiento aproximado a la realidad del problema.
 
@@ -32,9 +32,14 @@ Esta ecuación se puede tomar como una ecuación en diferencia homogenea lineal 
 $$p(\lambda)=\lambda^2-(1-f)\lambda-\gamma f$$
 $$\implies \lambda_{1,2}=\dfrac{(1-f)\pm\sqrt{(1-f)^2+4\gamma f}}{2}.$$
 
-Dado que $0\leq f \leq 1$ y $\gamma > 0$, entonces el radicando será positivo, por lo que los valores $\lambda_{1,2}$ son números reales, y de esta manera la solución general de la ecuación en diferencias es de la forma:
+Dado que $0\leq f \leq 1$ y $\gamma > 0$, entonces el radicando será positivo, por lo que los valores $\lambda_{i}$ son números reales, y de esta manera la solución general de la ecuación en diferencias es de la forma:
 $$R(n)=c_1 \lambda_1^n+ c_2 \lambda_2^n,$$
-en donde $c_{1,2}$ dependerán de las condiciones iniciales que se utilicen.
+$$M(n)=\gamma \cdot f R(n-1)= \gamma \cdot f(c_1 \lambda_1^{n-1}+ c_2 \lambda_2^{n-1})$$
+$$\implies M(n)=c_3 \lambda_1^{n-1}+ c_4 \lambda_2^{n-1},$$
+$$c3 = c_1\cdot \gamma \cdot f$$
+$$c4 = c_2\cdot \gamma \cdot f$$
+
+en donde $c_{i}$ ($i=1,2,3,4$) dependerán de las condiciones iniciales que se utilicen.
 
 \subsection{Método mediante Matrices}
 
@@ -86,7 +91,18 @@ $$\begin{pmatrix}
 
 Nótese que ambos métodos, al arrojar el mismo polinomio característico, obtienen la misma solución general del sistema, esto implica que el modelo propuesto está bien fundamentado matemáticamente.
 
+
 \section{Derivación de Parámetros y Análisis}\label{sec:modelo:parametros}
+
+Los \textbf{equilibrios} de una ecuación en diferencias $x_n=f(x_{n-1},...,x_0)$ son los valores $x_n=x^*$ tales que $x^*=f(x^*,...,x^*)$. Considerando la ecuación en diferencias de una sola variable 
+$$R(n+2)-(1-f)R(n+1)-\gamma f R(n)=0,$$
+entonces si $x^*$ es un equilibrio, se debe cumplir que:
+$$x^*-(1-f)x^*-\gamma f x^*=0$$
+$$\implies x^*(1-(1-f)-\gamma\cdot f)=0,$$
+$$\implies x^*(f-\gamma\cdot f)=0.$$
+
+De esta manera, $x^*=0$ es un equilibrio del sistema, pero, adicionalmente, dado que $f$ es un valor fijo (como se verá más adelante) entonces también hay equilibrios en el sistema cuando $\gamma = 1$. Es decir que, para este valor del parámetro, cualquier valor de $R,M$ presenta un equilibrio. 
+
 Para poder pasar a valores específicos de las soluciones encontradas, es necesario dar valores numéricos a los parámetros $\lambda$ y $f$, pues el modelo depende de estos y, junto a las condiciones iniciales, determinan las soluciones del problema. Para hallar estos parámetros, se utilizará la información brindada en \ref{sec:RBC:vida} sobre la producción de glóbulos rojos a través de la médula ósea y de su eliminación por medio del bazo.
 
 Inicialmente, es necesario declarar las condiciones iniciales del problema. Dado que las solcuines encontradas dependen, en el caso de ecuaciones en diferencia, de dos constantes o, en el caso de matrices, de dos vectores, es necesario que hayan dos condiciones iniciales del problema: $R(0)$ y $R(1)$ o $X_0$. $R(0)$ representa la cantidad de glóbulos rojos al momento inicial de la medida, que se tomará como 125 trillones ($25\times 10^{12}$). Para el caso de la matriz, se puede tomar que $R(0)$ se mantiene como en el caso anterior y tomar $M(0)=0$, pues el instante que se inicia la medición, el cuerpo no ha generado nuevos glóbulos rojos. $M(0)$, como se verá más adelante en las simulaciones, es un valor muy interesante a tener en cuenta y que modifica relativamente los resultados obtenidos, pues al considerar o no que la médula ósea ha producido RBC's al momento de la primera medición, $R(1)$ cambiará.
@@ -187,54 +203,32 @@ Para cada una de las simulaciones, estos valores son fijos:
 \subsection{Caso $\gamma=1$}\label{subsec:modelo:simulaciones:G1}
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.57]{figures/BaseG1RBC.png}
+    \includegraphics[scale=0.534]{BaseG1.png}
     \caption{Caption?}
-    \label{sec:modelo:fig:G1RBC}
+    \label{sec:modelo:fig:G1}
 \end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.57]{figures/BaseG1SC.png}
-    \caption{Caption?}
-    \label{sec:modelo:fig:G1SC}
-\end{figure}
-Como era esperado, según los análisis hechos en \ref{sec:modelo:analisis}, para el caso $\gamma = 1$ se obtiene una simulación totalmente estable, manteniendo el nivel de glóbulos rojos diarios en $25\times 10^{12}$ y la cantidad de glóbulos rojos producidos diariamiente en $208\times 10^{9}$ como bien se puede obsrevar en las figuras \ref{sec:modelo:fig:G1RBC} y \ref{sec:modelo:fig:G1SC}. Esta simulación representa el caso ideal en el que un paciente no tenga ninguna enfermedad o complicación médica y sea completamente saludable. Para este caso, todo glóbulo rojo que es eliminado por el bazo es producido por la médula ósea, por lo que no hay variaciones en las cantidades.
+Como era esperado, según los análisis hechos en \ref{sec:modelo:analisis}, para el caso $\gamma = 1$ se obtiene una simulación totalmente estable, manteniendo el nivel de glóbulos rojos diarios en $25\times 10^{12}$ y la cantidad de glóbulos rojos producidos diariamiente en $208\times 10^{9}$ como bien se puede obsrevar en las gráficas de la figura \ref{sec:modelo:fig:G1}. Esta simulación representa el caso ideal en el que un paciente no tenga ninguna enfermedad o complicación médica y sea completamente saludable. Para este caso, todo glóbulo rojo que es eliminado por el bazo es producido por la médula ósea, por lo que no hay variaciones en las cantidades.
 
 \subsection{Caso $\gamma=0.7$}
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
-    \includegraphics[scale=0.6]{figures/BaseG07RBC.png}
+    \includegraphics[scale=0.534]{BaseG07.png}
     \caption{Caption?}
-    \label{sec:modelo:fig:G07RBC}
+    \label{sec:modelo:fig:G07}
 \end{figure}
 
-En este caso, el paciente padece de una enfermedad que afecta la producción de glóbulos rojos producidos por la médula ósea, pues $\gamma=0.7$ implica que por cada glóbulo rojo eliminado por el bazo se producen únicamente $0.7$ glóbulos rojos. Como se puede observar en las simulaciones, los efectos de una baja producción de RBC's es una caída tanto en la cantidad de eritrocitos en el cuerpo como en su producción por parte de las células madre. Extendiendo los días simulados se encuentra que en el día 280 la cantidad de glóbulos rojos se ha reducido a la mitad respecto a la inicial. Un aspecto interesante es la caída que se puede obervar en la figura \ref{sec:modelo:fig:G07SC} y la estabilidad en la figura \ref{sec:modelo:fig:G07RBC} del día 0 al día 1, pero esta ocurre dado que las condiciones iniciales asumen que en el día 0 la producción es normal y a partir del día 1 es que ocurre el cambio en la producción de RBC's, por lo que ahí ocurre la primera caída en producción y en cantidad. 
+En este caso, el paciente padece de una enfermedad que afecta la producción de glóbulos rojos producidos por la médula ósea, pues $\gamma=0.7$ implica que por cada glóbulo rojo eliminado por el bazo se producen únicamente $0.7$ glóbulos rojos. Como se puede observar en las gráficas de la figura \ref{sec:modelo:fig:G07}, los efectos de una baja producción de RBC's es una caída tanto en la cantidad de eritrocitos en el cuerpo como en su producción por parte de las células madre. Extendiendo los días simulados se encuentra que en el día 280 la cantidad de glóbulos rojos se ha reducido a la mitad respecto a la inicial. Un aspecto interesante es la caída que se puede obervar en la segunda gráfica y la estabilidad en la primera del día 0 al día 1. Esta ocurre dado que las condiciones iniciales asumen que en el día 0 la producción es normal y a partir del día 1 es que ocurre el cambio en la producción de RBC's, por lo que ahí ocurre la primera caída en producción y en cantidad. 
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.6]{figures/BaseG07SC.png}
-    \caption{Caption?}
-    \label{sec:modelo:fig:G07SC}
-\end{figure}
-
-\FloatBarrier
 
 \subsection{Caso $\gamma=1.3$}\label{subsec:modelo:simulaciones:G13}
 
-En este caso, el paciente produce más glóbulos rojos de los que elimina. Esto puede tener diferentes causas, como bajos valores de hierro y, por lo tanto, de hemoglobina o dificultades pulmonares del paciente que produzcan bajos niveles de oxígeno en la sangre. Como bien se puede observar en las figuras \ref{sec:modelo:fig:G13RBC} y \ref{sec:modelo:fig:G13SC}, para valores de $\gamma$ mayores a 1 se obtiene un crecimiento en la cantidad de glóbulos rojos en el cuerpo y en la cantidad diaria producida por la médula ósea, esto se debe a que el cuerpo está produciendo una media de 1.3 RBC's por cada uno perdido, por lo que es normal que la cantidad de estos aumente. Así como en la simulación para $\gamma = 0.7$, la anomalía presentada del día 0 al día 1 se debe a las condiciones iniciales del problema. Al extender los días de la simulación, se encuentra que en el día 183 la cantidad de eritrocitos en el cuerpo se ha duplicado respecto al valor inicial. Como se analizó en \ref{sec:modelo:analisis}, si se quisiera extender la simulación al inifinito los glóbulos rojos también tenderían hacia el inifinito. 
+En este caso, el paciente produce más glóbulos rojos de los que elimina. Esto puede tener diferentes causas, como bajos valores de hierro y, por lo tanto, de hemoglobina o dificultades pulmonares del paciente que produzcan bajos niveles de oxígeno en la sangre. Como bien se puede observar en las gráficas de la figura \ref{sec:modelo:fig:G13}, para valores de $\gamma$ mayores a 1 se obtiene un crecimiento en la cantidad de glóbulos rojos en el cuerpo y en la cantidad diaria producida por la médula ósea, esto se debe a que el cuerpo está produciendo una media de 1.3 RBC's por cada uno perdido, por lo que es normal que la cantidad de estos aumente. Así como en la simulación para $\gamma = 0.7$, la anomalía presentada del día 0 al día 1 se debe a las condiciones iniciales del problema. Al extender los días de la simulación, se encuentra que en el día 183 la cantidad de eritrocitos en el cuerpo se ha duplicado respecto al valor inicial. Como se analizó en \ref{sec:modelo:analisis}, si se quisiera extender la simulación al inifinito los glóbulos rojos también tenderían hacia el inifinito. 
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
-    \includegraphics[scale=0.57]{figures/BaseG13RBC.png}
+    \includegraphics[scale=0.534]{BaseG13.png}
     \caption{Caption?}
-    \label{sec:modelo:fig:G13RBC}
+    \label{sec:modelo:fig:G13}
 \end{figure}
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.57]{figures/BaseG13SC.png}
-    \caption{Caption?}
-    \label{sec:modelo:fig:G13SC}
-\end{figure}
-
 Habiendo ya analizado y entendido el modelo base para los diferentes casos, el siguiente capítulo buscará acoplar a este modelo dos variaciones posibles: cuando el paciente padece anemia renal o cuando el paciente ha sufrido una hemorragia.
