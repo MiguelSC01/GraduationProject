@@ -10,7 +10,7 @@ Para los sangrados, se tendrán en cuenta diferentes casos. Inicialmente se tend
 
 Para esta variación del modelo, considere que en el tercer día de medición el paciente, ya sea por un corte o un accidente, pierde el $2\%$ de su cantidad de sangre en el cuerpo que, considerando el caso de que tenga 5 litros de sangre, esto equivale a 100 mililitros de fluido o a $5\times 10^{11}$ glóbulos rojos. Así, el modelo se puede ver de la siguiente manera:
 
-$$R(n+1)= \left\{ \begin{array}{lcc} (1-f)\cdot R(n)+M(n) & si & n \neq 3 \\ \\ (1-f)\cdot R(n)+M(n)-0.02\cdot R(n) & \textrm{si} & n = 3\end{array} \right.$$
+$$R(n+1)= \left\{ \begin{array}{lcc} (1-f)\cdot R(n)+M(n) & \textrm{si} & n \neq 3 \\ \\ (1-f)\cdot R(n)+M(n)-0.02\cdot R(n) & \textrm{si} & n = 3\end{array} \right.$$
 $$M(n+1)=\gamma \cdot f \cdot R(n)$$
 
 En donde:
@@ -33,8 +33,8 @@ Así, la simulación se ve así: en la primera gráfica de la figura \ref{sec:va
 
 Está claro que esta simulación está totalmente alejada de lo que ocurre en el caso real, pues lo esperado es que el cuerpo recupere con el paso del tiempo la cantidad de glóbulos rojos perdidos, esto quiere decir que para $n>3$ se debe aumentar el valor de $\gamma$ hasta que la cantidad de eritrocitos sea mayor o igual a la inicial, es decir:
 
-$$R(n+1)= \left\{ \begin{array}{lcc} (1-f)\cdot R(n)+M(n) & si & n \neq 3 \\ \\ (1-f)\cdot R(n)+M(n)-0.02\cdot R(n) & \textrm{si} & n = 3\end{array} \right.$$
-$$M(n+1)=\left\{ \begin{array}{lcc} f\cdot \gamma_1 \cdot R(n) & si & R(n+1) \geq R(0) \\ \\ f\cdot \gamma_2\cdot R(n) & \textrm{si} & R(n+1)<R(0)\end{array} \right.$$
+$$R(n+1)= \left\{ \begin{array}{lcc} (1-f)\cdot R(n)+M(n) & \textrm{si} & n \neq 3 \\ \\ (1-f)\cdot R(n)+M(n)-0.02\cdot R(n) & \textrm{si} & n = 3\end{array} \right.$$
+$$M(n+1)=\left\{ \begin{array}{lcc} f\cdot \gamma_1 \cdot R(n) & \textrm{si} & R(n+1) \geq R(0) \\ \\ f\cdot \gamma_2\cdot R(n) & \textrm{si} & R(n+1)<R(0)\end{array} \right.$$
 
 En donde:
 \begin{itemize}
