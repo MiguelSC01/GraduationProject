@@ -1,0 +1,692 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{assi2020numerical}{book}{}
+      \name{author}{3}{}{%
+        {{hash=2218801101fe7f166ab482dbc01cb008}{%
+           family={Assi},
+           familyi={A\bibinitperiod},
+           given={Abdallah},
+           giveni={A\bibinitperiod}}}%
+        {{hash=43d2f107c8f7c951829c720da344a3cb}{%
+           family={D'Anna},
+           familyi={D\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7cafbe47365f3ee7e3ca0fab4cb47c80}{%
+           family={García-Sánchez},
+           familyi={G\bibinithyphendelim S\bibinitperiod},
+           given={Pedro\bibnamedelima A},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature}%
+      }
+      \strng{namehash}{5a96a79f59356ad2e8100be01faf3a14}
+      \strng{fullhash}{5a96a79f59356ad2e8100be01faf3a14}
+      \strng{bibnamehash}{5a96a79f59356ad2e8100be01faf3a14}
+      \strng{authorbibnamehash}{5a96a79f59356ad2e8100be01faf3a14}
+      \strng{authornamehash}{5a96a79f59356ad2e8100be01faf3a14}
+      \strng{authorfullhash}{5a96a79f59356ad2e8100be01faf3a14}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Numerical semigroups and applications}
+      \field{volume}{3}
+      \field{year}{2020}
+    \endentry
+    \entry{de2018random}{article}{}
+      \name{author}{3}{}{%
+        {{hash=54112fa073778d07bc28f9e8e68d242d}{%
+           family={De\bibnamedelima Loera},
+           familyi={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Jesus},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8c91068f9ffe24d6a43140c4e636d278}{%
+           family={O'Neill},
+           familyi={O\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=35d51edffbb502672875038381f2e83a}{%
+           family={Wilburne},
+           familyi={W\bibinitperiod},
+           given={Dane},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{5370c67ff4a501ed3abb068f16584a5e}
+      \strng{fullhash}{5370c67ff4a501ed3abb068f16584a5e}
+      \strng{bibnamehash}{5370c67ff4a501ed3abb068f16584a5e}
+      \strng{authorbibnamehash}{5370c67ff4a501ed3abb068f16584a5e}
+      \strng{authornamehash}{5370c67ff4a501ed3abb068f16584a5e}
+      \strng{authorfullhash}{5370c67ff4a501ed3abb068f16584a5e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Electronic Journal of Combinatorics}
+      \field{title}{Random Numerical Semigroups and a Simplicial Complex of Irreducible Semigroups}
+      \field{year}{2018}
+      \field{pages}{P4\bibrangedash 37}
+      \range{pages}{-1}
+    \endentry
+    \entry{oneill2018}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8c91068f9ffe24d6a43140c4e636d278}{%
+           family={O'Neill},
+           familyi={O\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{8c91068f9ffe24d6a43140c4e636d278}
+      \strng{fullhash}{8c91068f9ffe24d6a43140c4e636d278}
+      \strng{bibnamehash}{8c91068f9ffe24d6a43140c4e636d278}
+      \strng{authorbibnamehash}{8c91068f9ffe24d6a43140c4e636d278}
+      \strng{authornamehash}{8c91068f9ffe24d6a43140c4e636d278}
+      \strng{authorfullhash}{8c91068f9ffe24d6a43140c4e636d278}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/coneill-math/numsgps-sage}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{numsgps-sage}
+      \field{year}{2013}
+    \endentry
+    \entry{delgado2015numericalsgps}{article}{}
+      \name{author}{3}{}{%
+        {{hash=1329d20b3c13520763ca9602de62d78c}{%
+           family={Delgado},
+           familyi={D\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=739f70fae86d50260f4ffb05e0288230}{%
+           family={Garc{ı}a-Sánchez},
+           familyi={G\bibinithyphendelim S\bibinitperiod},
+           given={PA},
+           giveni={P\bibinitperiod}}}%
+        {{hash=dd74b99f6962ff89db1293dd69670375}{%
+           family={Morais},
+           familyi={M\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{67d2374cc69c5ba9f65c6c13775cbd6f}
+      \strng{fullhash}{67d2374cc69c5ba9f65c6c13775cbd6f}
+      \strng{bibnamehash}{67d2374cc69c5ba9f65c6c13775cbd6f}
+      \strng{authorbibnamehash}{67d2374cc69c5ba9f65c6c13775cbd6f}
+      \strng{authornamehash}{67d2374cc69c5ba9f65c6c13775cbd6f}
+      \strng{authorfullhash}{67d2374cc69c5ba9f65c6c13775cbd6f}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{A GAP package for numerical semigroups. Available via http://www. gap-system. org}
+      \field{title}{NumericalSgps}
+      \field{year}{2015}
+    \endentry
+    \entry{delgado2013intpic}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1329d20b3c13520763ca9602de62d78c}{%
+           family={Delgado},
+           familyi={D\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1329d20b3c13520763ca9602de62d78c}
+      \strng{fullhash}{1329d20b3c13520763ca9602de62d78c}
+      \strng{bibnamehash}{1329d20b3c13520763ca9602de62d78c}
+      \strng{authorbibnamehash}{1329d20b3c13520763ca9602de62d78c}
+      \strng{authornamehash}{1329d20b3c13520763ca9602de62d78c}
+      \strng{authorfullhash}{1329d20b3c13520763ca9602de62d78c}
+      \field{extraname}{1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{a GAP package for drawing integers, Available via http://www. fc. up. pt/cmup/mdelgado/software}
+      \field{title}{IntPic}
+      \field{year}{2013}
+    \endentry
+    \entry{morales2023}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=748de9002afc5aac3f9617962c9db0bf}{%
+           family={Morales},
+           familyi={M\bibinitperiod},
+           given={Santiago},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{748de9002afc5aac3f9617962c9db0bf}
+      \strng{fullhash}{748de9002afc5aac3f9617962c9db0bf}
+      \strng{bibnamehash}{748de9002afc5aac3f9617962c9db0bf}
+      \strng{authorbibnamehash}{748de9002afc5aac3f9617962c9db0bf}
+      \strng{authornamehash}{748de9002afc5aac3f9617962c9db0bf}
+      \strng{authorfullhash}{748de9002afc5aac3f9617962c9db0bf}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/smoralesduarte/randnumsgps}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{randnumsgps}
+      \field{year}{2023}
+    \endentry
+    \entry{alon2016probabilistic}{book}{}
+      \name{author}{2}{}{%
+        {{hash=f7a4a7818d41bcfdc8addc9e20cdcbd8}{%
+           family={Alon},
+           familyi={A\bibinitperiod},
+           given={Noga},
+           giveni={N\bibinitperiod}}}%
+        {{hash=a457f44aeb2ba9f036038cea801bc534}{%
+           family={Spencer},
+           familyi={S\bibinitperiod},
+           given={Joel\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{ac7d8dbaf8c4f9005b765502fbc46e11}
+      \strng{fullhash}{ac7d8dbaf8c4f9005b765502fbc46e11}
+      \strng{bibnamehash}{ac7d8dbaf8c4f9005b765502fbc46e11}
+      \strng{authorbibnamehash}{ac7d8dbaf8c4f9005b765502fbc46e11}
+      \strng{authornamehash}{ac7d8dbaf8c4f9005b765502fbc46e11}
+      \strng{authorfullhash}{ac7d8dbaf8c4f9005b765502fbc46e11}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The {P}robabilistic {M}ethod}
+      \field{year}{2016}
+    \endentry
+    \entry{park2023proof}{article}{}
+      \name{author}{2}{}{%
+        {{hash=63811a7020891206896ce3a0afacb75c}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Jinyoung},
+           giveni={J\bibinitperiod}}}%
+        {{hash=cba1ff9284f1f8c7c7da6eeb1fdde56d}{%
+           family={Pham},
+           familyi={P\bibinitperiod},
+           given={Huy},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{de51a28a8ea4d99b93531b8b58fc51f6}
+      \strng{fullhash}{de51a28a8ea4d99b93531b8b58fc51f6}
+      \strng{bibnamehash}{de51a28a8ea4d99b93531b8b58fc51f6}
+      \strng{authorbibnamehash}{de51a28a8ea4d99b93531b8b58fc51f6}
+      \strng{authornamehash}{de51a28a8ea4d99b93531b8b58fc51f6}
+      \strng{authorfullhash}{de51a28a8ea4d99b93531b8b58fc51f6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Mathematical Society}
+      \field{title}{A proof of the {K}ahn--{K}alai conjecture}
+      \field{year}{2023}
+    \endentry
+    \entry{rosales2009numerical}{book}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=bf6837d39e726be71f7908e5ef0a41a0}{%
+           family={Rosales},
+           familyi={R\bibinitperiod},
+           given={José\bibnamedelima Carlos},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=7cafbe47365f3ee7e3ca0fab4cb47c80}{%
+           family={García-Sánchez},
+           familyi={G\bibinithyphendelim S\bibinitperiod},
+           given={Pedro\bibnamedelima A},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{d3f455a893d21c193865ebea6607c738}
+      \strng{fullhash}{d3f455a893d21c193865ebea6607c738}
+      \strng{bibnamehash}{d3f455a893d21c193865ebea6607c738}
+      \strng{authorbibnamehash}{d3f455a893d21c193865ebea6607c738}
+      \strng{authornamehash}{d3f455a893d21c193865ebea6607c738}
+      \strng{authorfullhash}{d3f455a893d21c193865ebea6607c738}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Numerical semigroups}
+      \field{year}{2009}
+    \endentry
+    \entry{youtube}{online}{}
+      \name{author}{1}{}{%
+        {{hash=630e5240a309c99b3ce929cee29c973f}{%
+           family={Grime},
+           familyi={G\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Youtube}%
+      }
+      \strng{namehash}{630e5240a309c99b3ce929cee29c973f}
+      \strng{fullhash}{630e5240a309c99b3ce929cee29c973f}
+      \strng{bibnamehash}{630e5240a309c99b3ce929cee29c973f}
+      \strng{authorbibnamehash}{630e5240a309c99b3ce929cee29c973f}
+      \strng{authornamehash}{630e5240a309c99b3ce929cee29c973f}
+      \strng{authorfullhash}{630e5240a309c99b3ce929cee29c973f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{How to order 43 McNuggets - Numberphile}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.youtube.com/watch?v=vNTSugyS038&ab_channel=Numberphile
+      \endverb
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=vNTSugyS038&ab_channel=Numberphile
+      \endverb
+    \endentry
+    \entry{ramirez1996complexity}{article}{}
+      \name{author}{1}{}{%
+        {{hash=34af85afc9ae313e282c960349f90f5f}{%
+           family={Ramírez-Alfonsín},
+           familyi={R\bibinithyphendelim A\bibinitperiod},
+           given={Jorge\bibnamedelima Luis},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{34af85afc9ae313e282c960349f90f5f}
+      \strng{fullhash}{34af85afc9ae313e282c960349f90f5f}
+      \strng{bibnamehash}{34af85afc9ae313e282c960349f90f5f}
+      \strng{authorbibnamehash}{34af85afc9ae313e282c960349f90f5f}
+      \strng{authornamehash}{34af85afc9ae313e282c960349f90f5f}
+      \strng{authorfullhash}{34af85afc9ae313e282c960349f90f5f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Combinatorica}
+      \field{title}{Complexity of the {F}robenius problem}
+      \field{volume}{16}
+      \field{year}{1996}
+      \field{pages}{143\bibrangedash 147}
+      \range{pages}{5}
+    \endentry
+    \entry{aliev2011expected}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b25b513954a9ffcf750423040e33b7dc}{%
+           family={Aliev},
+           familyi={A\bibinitperiod},
+           given={Iskander},
+           giveni={I\bibinitperiod}}}%
+        {{hash=8ee962be8b88516991b3cbffe6789f01}{%
+           family={Henk},
+           familyi={H\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=97e7c7564c78a93af1900c3cc769e404}{%
+           family={Hinrichs},
+           familyi={H\bibinitperiod},
+           given={Aicke},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{3a3b0d34255da4342ab7ffba63567a33}
+      \strng{fullhash}{3a3b0d34255da4342ab7ffba63567a33}
+      \strng{bibnamehash}{3a3b0d34255da4342ab7ffba63567a33}
+      \strng{authorbibnamehash}{3a3b0d34255da4342ab7ffba63567a33}
+      \strng{authornamehash}{3a3b0d34255da4342ab7ffba63567a33}
+      \strng{authorfullhash}{3a3b0d34255da4342ab7ffba63567a33}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Combinatorial Theory, Series A}
+      \field{number}{2}
+      \field{title}{Expected {F}robenius numbers}
+      \field{volume}{118}
+      \field{year}{2011}
+      \field{pages}{525\bibrangedash 531}
+      \range{pages}{7}
+    \endentry
+    \entry{apery1946branches}{article}{}
+      \name{author}{1}{}{%
+        {{hash=bbea8657d33e975b47da378d3d179fbc}{%
+           family={Apéry},
+           familyi={A\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{bbea8657d33e975b47da378d3d179fbc}
+      \strng{fullhash}{bbea8657d33e975b47da378d3d179fbc}
+      \strng{bibnamehash}{bbea8657d33e975b47da378d3d179fbc}
+      \strng{authorbibnamehash}{bbea8657d33e975b47da378d3d179fbc}
+      \strng{authornamehash}{bbea8657d33e975b47da378d3d179fbc}
+      \strng{authorfullhash}{bbea8657d33e975b47da378d3d179fbc}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{CR Acad. Sci. Paris}
+      \field{number}{1198}
+      \field{title}{Sur les branches superlinéaires des courbes algébriques}
+      \field{volume}{222}
+      \field{year}{1946}
+      \field{pages}{2000}
+      \range{pages}{1}
+    \endentry
+    \entry{selmer1977linear}{article}{}
+      \name{author}{1}{}{%
+        {{hash=805629bc69dee97df6127e1f3eed6221}{%
+           family={Selmer},
+           familyi={S\bibinitperiod},
+           given={Ernst\bibnamedelima S},
+           giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Walter de Gruyter, Berlin/New York Berlin, New York}%
+      }
+      \strng{namehash}{805629bc69dee97df6127e1f3eed6221}
+      \strng{fullhash}{805629bc69dee97df6127e1f3eed6221}
+      \strng{bibnamehash}{805629bc69dee97df6127e1f3eed6221}
+      \strng{authorbibnamehash}{805629bc69dee97df6127e1f3eed6221}
+      \strng{authornamehash}{805629bc69dee97df6127e1f3eed6221}
+      \strng{authorfullhash}{805629bc69dee97df6127e1f3eed6221}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{On the linear {D}iophantine problem of {F}robenius}
+      \field{year}{1977}
+    \endentry
+    \entry{wilf1978circle}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9cba74c03d2a5efde985e575dab99466}{%
+           family={Wilf},
+           familyi={W\bibinitperiod},
+           given={Herbert\bibnamedelima S},
+           giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{9cba74c03d2a5efde985e575dab99466}
+      \strng{fullhash}{9cba74c03d2a5efde985e575dab99466}
+      \strng{bibnamehash}{9cba74c03d2a5efde985e575dab99466}
+      \strng{authorbibnamehash}{9cba74c03d2a5efde985e575dab99466}
+      \strng{authornamehash}{9cba74c03d2a5efde985e575dab99466}
+      \strng{authorfullhash}{9cba74c03d2a5efde985e575dab99466}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The American Mathematical Monthly}
+      \field{number}{7}
+      \field{title}{A circle-of-lights algorithm for the “money-changing problem”}
+      \field{volume}{85}
+      \field{year}{1978}
+      \field{pages}{562\bibrangedash 565}
+      \range{pages}{4}
+    \endentry
+    \entry{2020conjecture}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1329d20b3c13520763ca9602de62d78c}{%
+           family={Delgado},
+           familyi={D\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{1329d20b3c13520763ca9602de62d78c}
+      \strng{fullhash}{1329d20b3c13520763ca9602de62d78c}
+      \strng{bibnamehash}{1329d20b3c13520763ca9602de62d78c}
+      \strng{authorbibnamehash}{1329d20b3c13520763ca9602de62d78c}
+      \strng{authornamehash}{1329d20b3c13520763ca9602de62d78c}
+      \strng{authorfullhash}{1329d20b3c13520763ca9602de62d78c}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Numerical Semigroups: IMNS 2018}
+      \field{title}{Conjecture of {W}ilf: a survey}
+      \field{year}{2020}
+      \field{pages}{39\bibrangedash 62}
+      \range{pages}{24}
+    \endentry
+    \entry{arnold1999weak}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d078140f1c09ae9467d2d203e41258cb}{%
+           family={Arnold},
+           familyi={A\bibinitperiod},
+           given={Vladimir\bibnamedelima Igorevich},
+           giveni={V\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{d078140f1c09ae9467d2d203e41258cb}
+      \strng{fullhash}{d078140f1c09ae9467d2d203e41258cb}
+      \strng{bibnamehash}{d078140f1c09ae9467d2d203e41258cb}
+      \strng{authorbibnamehash}{d078140f1c09ae9467d2d203e41258cb}
+      \strng{authornamehash}{d078140f1c09ae9467d2d203e41258cb}
+      \strng{authorfullhash}{d078140f1c09ae9467d2d203e41258cb}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Functional Analysis and Its Applications}
+      \field{number}{4}
+      \field{title}{Weak asymptotics for the numbers of solutions of {D}iophantine problems}
+      \field{volume}{33}
+      \field{year}{1999}
+      \field{pages}{292\bibrangedash 293}
+      \range{pages}{2}
+    \endentry
+    \entry{erdos1972linear}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f99c9ed4dd140ef67742ccb5e0df42df}{%
+           family={Erdös},
+           familyi={E\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=64759ae18ce4891a547b035d2ebc9fd5}{%
+           family={Graham},
+           familyi={G\bibinitperiod},
+           given={Ronald},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{578db632abd3c1f7fc854b9f3a2f3c00}
+      \strng{fullhash}{578db632abd3c1f7fc854b9f3a2f3c00}
+      \strng{bibnamehash}{578db632abd3c1f7fc854b9f3a2f3c00}
+      \strng{authorbibnamehash}{578db632abd3c1f7fc854b9f3a2f3c00}
+      \strng{authornamehash}{578db632abd3c1f7fc854b9f3a2f3c00}
+      \strng{authorfullhash}{578db632abd3c1f7fc854b9f3a2f3c00}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Acta Arithmetica}
+      \field{number}{21}
+      \field{title}{On a linear {D}iophantine problem of {F}robenius}
+      \field{volume}{1}
+      \field{year}{1972}
+      \field{pages}{399\bibrangedash 408}
+      \range{pages}{10}
+    \endentry
+    \entry{aliev2007optimal}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6ec1963a93dff052abf89480a10fcbf6}{%
+           family={Aliev},
+           familyi={A\bibinitperiod},
+           given={Iskander\bibnamedelima M},
+           giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a10b2a743d6e41f82b08410b7b562aad}{%
+           family={Gruber},
+           familyi={G\bibinitperiod},
+           given={Peter\bibnamedelima M},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{4f145fdcf178efccaebf729723dd56ce}
+      \strng{fullhash}{4f145fdcf178efccaebf729723dd56ce}
+      \strng{bibnamehash}{4f145fdcf178efccaebf729723dd56ce}
+      \strng{authorbibnamehash}{4f145fdcf178efccaebf729723dd56ce}
+      \strng{authornamehash}{4f145fdcf178efccaebf729723dd56ce}
+      \strng{authorfullhash}{4f145fdcf178efccaebf729723dd56ce}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Number Theory}
+      \field{number}{1}
+      \field{title}{An optimal lower bound for the {F}robenius problem}
+      \field{volume}{123}
+      \field{year}{2007}
+      \field{pages}{71\bibrangedash 79}
+      \range{pages}{9}
+    \endentry
+    \entry{arnold2004arnold}{book}{}
+      \name{author}{1}{}{%
+        {{hash=92d7efabd161dd52a00501a33ccb997d}{%
+           family={Arnold},
+           familyi={A\bibinitperiod},
+           given={Vladimir\bibnamedelima I},
+           giveni={V\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{92d7efabd161dd52a00501a33ccb997d}
+      \strng{fullhash}{92d7efabd161dd52a00501a33ccb997d}
+      \strng{bibnamehash}{92d7efabd161dd52a00501a33ccb997d}
+      \strng{authorbibnamehash}{92d7efabd161dd52a00501a33ccb997d}
+      \strng{authornamehash}{92d7efabd161dd52a00501a33ccb997d}
+      \strng{authorfullhash}{92d7efabd161dd52a00501a33ccb997d}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{A}rnold's problems}
+      \field{year}{2004}
+    \endentry
+    \entry{stanley2007combinatorics}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a61a7c4d8f4b467437038b8bc2aee208}{%
+           family={Stanley},
+           familyi={S\bibinitperiod},
+           given={Richard\bibnamedelima P},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science \& Business Media}%
+      }
+      \strng{namehash}{a61a7c4d8f4b467437038b8bc2aee208}
+      \strng{fullhash}{a61a7c4d8f4b467437038b8bc2aee208}
+      \strng{bibnamehash}{a61a7c4d8f4b467437038b8bc2aee208}
+      \strng{authorbibnamehash}{a61a7c4d8f4b467437038b8bc2aee208}
+      \strng{authornamehash}{a61a7c4d8f4b467437038b8bc2aee208}
+      \strng{authorfullhash}{a61a7c4d8f4b467437038b8bc2aee208}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Combinatorics and commutative algebra}
+      \field{volume}{41}
+      \field{year}{2007}
+    \endentry
+    \entry{hardy1979introduction}{book}{}
+      \name{author}{2}{}{%
+        {{hash=2deeecde529db36a341e1636ab5c3c7b}{%
+           family={Hardy},
+           familyi={H\bibinitperiod},
+           given={Godfrey\bibnamedelima Harold},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=7300d1accd7c5cfa1c802808ba9c8804}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={Edward\bibnamedelima Maitland},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford university press}%
+      }
+      \strng{namehash}{ccc0be46ff9fb1b695befd840fd53bc2}
+      \strng{fullhash}{ccc0be46ff9fb1b695befd840fd53bc2}
+      \strng{bibnamehash}{ccc0be46ff9fb1b695befd840fd53bc2}
+      \strng{authorbibnamehash}{ccc0be46ff9fb1b695befd840fd53bc2}
+      \strng{authornamehash}{ccc0be46ff9fb1b695befd840fd53bc2}
+      \strng{authorfullhash}{ccc0be46ff9fb1b695befd840fd53bc2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An introduction to the theory of numbers}
+      \field{year}{1979}
+    \endentry
+    \entry{feller}{book}{}
+      \name{author}{1}{}{%
+        {{hash=0dc1084389f176f601af7787031a22f1}{%
+           family={Feller},
+           familyi={F\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{0dc1084389f176f601af7787031a22f1}
+      \strng{fullhash}{0dc1084389f176f601af7787031a22f1}
+      \strng{bibnamehash}{0dc1084389f176f601af7787031a22f1}
+      \strng{authorbibnamehash}{0dc1084389f176f601af7787031a22f1}
+      \strng{authornamehash}{0dc1084389f176f601af7787031a22f1}
+      \strng{authorfullhash}{0dc1084389f176f601af7787031a22f1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An introduction to probability theory and its applications}
+      \field{volume}{1}
+      \field{year}{1971}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

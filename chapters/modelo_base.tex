@@ -7,16 +7,16 @@
 \section{Introducción}\label{sec:modelo:intro}
 Ya tieniendo en cuenta las dinámicas de los glóbulos rojos en el cuerpo humano, se procederá a analizar y simular el modelo matemático de estas propuesto por Eldestein en \cite{edelstein2005} y las técnicas de solución correspondientes. 
 
-Es importante tener en cuenta que el modelo que sea que se analice debe tener concordancia con la vida real en cuanto a las variables y a las constantes utilizadas. La homeostasis es fundamental en todo proceso biológio y es por eso que el modelo y las simulaciones deben reflejar correctamente el equilibrio del sistema. Adicionalmente, es clave considerar que es imposible lograr una formulación matemática que este totalmente en concordancia con todos los procesos biológicos que suceden dentro del cuerpo humano, pues se debería tener en consideración una enorme cantidad de variables, de actores y de estado que se salen del propósito básico de simplificar el problema. De esta manera, los modelos propuestos son un acercamiento aproximado a la realidad del problema.
+Es importante tener en cuenta que el modelo que sea que se analice debe tener concordancia con la vida real en cuanto a las variables y a las constantes utilizadas. La homeostasis es fundamental en todo proceso biológio y es por eso que el modelo y las simulaciones deben reflejar correctamente el equilibrio del sistema. Adicionalmente, es clave considerar que es imposible lograr una formulación matemática que este totalmente en concordancia con todos los procesos biológicos que suceden dentro del cuerpo humano, pues se debería tener en consideración una enorme cantidad de variables, de actores y de estados que se salen del propósito básico de simplificar el problema. De esta manera, los modelos propuestos son un acercamiento aproximado a la realidad del problema.
 
 \section{Presentación del Modelo}\label{sec:modelo:presentacion}
-Considerando la elemincación de glóbulos rojos del bazo y su producción por la medula ósea para mantener la homeostasis y el diagrama de cajas de la figura \ref{sec:RBC:fig:VidaRBC}, el modelo propuesto por Eldestein es el siguiente:
+Considerando la eleminación de glóbulos rojos por parte del bazo y su producción por la medula ósea para mantener la homeostasis y el diagrama compartimental \ref{sec:RBC:fig:VidaRBC}, el modelo propuesto por Eldestein es el siguiente:
 $$R(n+1)=(1-f)R(n)+M(n),$$
 $$M(n+1)=\gamma \cdot f\cdot R(n),$$
 
-en donde $R=R(n)$ representa la cantidad de glóbulos rojos por mililitro de sangre y $M=M(n)$ la cantidad de glóbulos rojos por mililitro de sangre que prodeuce la médula ósea. $\gamma>0$ representa la cantidad de glóbulos rojos producida por cada uno perdido y $0\leq f \leq 1$ el porcentaje de glóbulos rojos por mililitro de sangre que elimina el bazo. Ni $\gamma$ ni $f$ tienen unidades dadas estas definiciones.
+en donde $R=R(n)$ representa la cantidad de glóbulos rojos en el torrente sanguíneo en el $n$-ésimo día y $M=M(n)$ la cantidad de glóbulos rojos producidos por la médula ósea en el $n$-ésimo día. El parámetro $\gamma>0$ representa la cantidad de glóbulos rojos producida por cada uno eliminado y $0\leq f \leq 1$ es la fracción de glóbulos rojos que elimina el bazo cada día. Ni $\gamma$ ni $f$ tienen unidades dadas estas definiciones.
 
-De esta manera, el modelo se puede interpretar de la siguiente manera: la cantidad de RBC's en el día $n+1$ ($R(n+1)$) es el porcentaje restante del día $n$ más lo que haya producido la médula ósea en el día $n$; mientras que la cantidad de eritrocitos producidos por la médula ósea en el día $n+1$ ($M(n+1)$) es un múltiplo de la cantidad de glóbulos rojos eliminada en el día $n$. Este modelo es una simplificación bastante acertada de lo visto en \ref{sec:RBC:fig:CicloSangre} en cuanto a la relación entre producción y eliminación de RBC's; es claro que para ser aún más acertados se podrían agregar muchas otras variables como el funcionamiento de los riñones para la producción de eritropyetina, el proceso de absorción del hierro o la edad y estado de salud del sujeto analizado, pero estos complican innecesariamente el modelo y su análisis.
+De esta manera, el modelo se puede interpretar de la siguiente manera: la cantidad de RBC's en el día $n+1$-ésimo, $R(n+1)$, es la fracción restante del día $n$-ésimo más lo que haya producido la médula ósea en el día $n$-ésimo; mientras que la cantidad de eritrocitos producidos por la médula ósea en el día $n+1$-ésimo, $M(n+1)$, es un múltiplo de la cantidad de glóbulos rojos eliminada en el día $n$-ésimo. Este modelo es una simplificación bastante acertada de lo visto en la figura \ref{sec:RBC:fig:VidaRBC} en cuanto a la relación entre producción y eliminación de RBC's. Es claro que, para ser aún más acertados, se podrían agregar muchas otras variables como el funcionamiento de los riñones para la producción de eritropyetina, el proceso de absorción del hierro o la edad y estado de salud del sujeto analizado, pero estos complican innecesariamente el modelo y su análisis.
 
 \section{Análisis del Modelo}\label{sec:modelo:analisis}
 Ahora se procederá a analizar las soluciones del modelo a través de los métodos de ecuaciones en diferencias y de la matriz resultante del modelo.
@@ -28,18 +28,18 @@ $$\implies R(n+1)=(1-f)R(n)+\gamma f R(n-1)$$
 $$\implies R(n+2)=(1-f)R(n+1)+\gamma f R(n)$$
 $$\implies R(n+2)-(1-f)R(n+1)-\gamma f R(n)=0.$$
 
-Esta ecuación se puede tomar como una ecuación en diferencia homogenea lineal de grado 2, por lo que se pueden hallar sus soluciones al encontrar las raíces del polinomio característico de la ecuación:
+Esta ecuación se puede tomar como una ecuación en diferencias homogenea lineal de grado 2, por lo que se pueden hallar sus soluciones al encontrar las raíces del polinomio característico de la ecuación:
 $$p(\lambda)=\lambda^2-(1-f)\lambda-\gamma f$$
 $$\implies \lambda_{1,2}=\dfrac{(1-f)\pm\sqrt{(1-f)^2+4\gamma f}}{2}.$$
 
-Dado que $0\leq f \leq 1$ y $\gamma > 0$, entonces el radicando será positivo, por lo que los valores $\lambda_{i}$ son números reales, y de esta manera la solución general de la ecuación en diferencias es de la forma:
+Dado que $0\leq f \leq 1$ y $\gamma > 0$, entonces el radicando siempre será positivo, por lo que los valores $\lambda_{i}$ son números reales. De esta manera la solución general de la ecuación en diferencias es de la forma:
 $$R(n)=c_1 \lambda_1^n+ c_2 \lambda_2^n,$$
 $$M(n)=\gamma \cdot f R(n-1)= \gamma \cdot f(c_1 \lambda_1^{n-1}+ c_2 \lambda_2^{n-1})$$
 $$\implies M(n)=c_3 \lambda_1^{n-1}+ c_4 \lambda_2^{n-1},$$
-$$c3 = c_1\cdot \gamma \cdot f$$
-$$c4 = c_2\cdot \gamma \cdot f$$
+$$c3 = c_1\cdot \gamma \cdot f,$$
+$$c4 = c_2\cdot \gamma \cdot f,$$
 
-en donde $c_{i}$ ($i=1,2,3,4$) dependerán de las condiciones iniciales que se utilicen.
+en donde $c_{i}$ ($i=1,2,3,4$) dependerán de las condiciones iniciales que se utilicen y los valores de cada parámetro.
 
 \subsection{Método mediante Matrices}
 
@@ -89,7 +89,7 @@ $$\begin{pmatrix}
     \end{pmatrix}= (\lambda_1)^n \mathbf{v_1}+(\lambda_2)^n \mathbf{v_2}.$$
 
 
-Nótese que ambos métodos, al arrojar el mismo polinomio característico, obtienen la misma solución general del sistema, esto implica que el modelo propuesto está bien fundamentado matemáticamente.
+Nótese que ambos métodos, al tener el mismo polinomio característico, obtienen la misma solución general del sistema, esto implica que el modelo propuesto está bien fundamentado matemáticamente.
 
 
 \section{Derivación de Parámetros y Análisis}\label{sec:modelo:parametros}
