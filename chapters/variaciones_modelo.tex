@@ -10,7 +10,7 @@ Para los sangrados, se tendrán en cuenta diferentes casos. Inicialmente se tend
 
 Para esta variación del modelo, considere que en el tercer día de medición el paciente, ya sea por un corte o un accidente, pierde el $2\%$ de su cantidad de sangre en el cuerpo que, considerando el caso de que tenga 5 litros de sangre, esto equivale a 100 mililitros de fluido o a $5\times 10^{11}$ glóbulos rojos. Así, el modelo se puede ver de la siguiente manera:
 
-$$R(n+1)= \left\{ \begin{array}{lcc} (1-f)\cdot R(n)+M(n) & si & n \neq 3 \\ \\ (1-f)\cdot R(n)+M(n)-0.02\cdot R(n) & si & n = 3\end{array} \right.$$
+$$R(n+1)= \left\{ \begin{array}{lcc} (1-f)\cdot R(n)+M(n) & si & n \neq 3 \\ \\ (1-f)\cdot R(n)+M(n)-0.02\cdot R(n) & \textrm{si} & n = 3\end{array} \right.$$
 $$M(n+1)=\gamma \cdot f \cdot R(n)$$
 
 En donde:
@@ -21,26 +21,20 @@ En donde:
     \item $M(0) = 208 \times 10^{9}.$
 \end{itemize}
 
-Así, la simulación se ve así: en la figura \ref{sec:variaciones:fig:HemoLeveG1RBC} se observa la pérdida de RBC's en el tercer día, un aumento del tercero al cuarto y estabilidad del cuarto en adelante. En la figura \ref{sec:variaciones:fig:HemoLeveG1SC} se observa lo mismo pero con un día de atraso. El aumento que se puede observar está dado por el hecho de que el adendo $M(n)$ conserva lo que ha ocurrido en $R(n-1)$ así, para el cuarto día se producen la cantidad de eritrocitos que se vienen produciendo regularmente antes del accidente, y desde el cuarto día en adalente este adendo ya se acomoda a la nueva cantidad de sangre. La estabilidad que se observa del cuarto día en adelante está dada por el hecho de que $\gamma = 1$, el modelo, de esta manera, funciona como lo hace normalmente (véase \ref{subsec:modelo:simulaciones:G1}) tomando una cantidad inicial de sangre menor que la original, es decir que mantiene una estabilidad con la cantidad de RBC's del cuarto día, que es de $24.504\times 10^{12}$ glóbulos rojos. 
+Así, la simulación se ve así: en la primera gráfica de la figura \ref{sec:variaciones:fig:HemoLeveG1} se observa la pérdida de RBC's en el tercer día, un aumento del tercero al cuarto y estabilidad del cuarto en adelante. En la segunda gráfica se observa lo mismo pero con un día de atraso. El aumento que se puede observar está dado por el hecho de que el adendo $M(n)$ conserva lo que ha ocurrido en $R(n-1)$ así, para el cuarto día se producen la cantidad de eritrocitos que se vienen produciendo regularmente antes del accidente, y desde el cuarto día en adelante este adendo ya se acomoda a la nueva cantidad de sangre. La estabilidad que se observa del cuarto día en adelante está dada por el hecho de que $\gamma = 1$, el modelo, de esta manera, funciona como lo hace normalmente (véase \ref{subsec:modelo:simulaciones:G1}) tomando una cantidad inicial de sangre menor que la original, es decir que mantiene una estabilidad con la cantidad de RBC's del cuarto día, que es de $24.504\times 10^{12}$ glóbulos rojos. 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.57]{figures/HemoLeveG1RBC.png}
-    \caption{Caption?}
-    \label{sec:variaciones:fig:HemoLeveG1RBC}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.57]{figures/HemoLeveG1SC.png}
-    \caption{Caption?}
-    \label{sec:variaciones:fig:HemoLeveG1SC}
+    \captionsetup{justification=centering}
+    \includegraphics[scale=0.534]{figures/HemoLeveG1.png}
+    \caption{Simulación del modelo para el caso de una hemorragia sin recuperación de la homeostasis. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$.}
+    \label{sec:variaciones:fig:HemoLeveG1}
 \end{figure}
 
 Está claro que esta simulación está totalmente alejada de lo que ocurre en el caso real, pues lo esperado es que el cuerpo recupere con el paso del tiempo la cantidad de glóbulos rojos perdidos, esto quiere decir que para $n>3$ se debe aumentar el valor de $\gamma$ hasta que la cantidad de eritrocitos sea mayor o igual a la inicial, es decir:
 
-$$R(n+1)= \left\{ \begin{array}{lcc} (1-f)\cdot R(n)+M(n) & si & n \neq 3 \\ \\ (1-f)\cdot R(n)+M(n)-0.02\cdot R(n) & si & n = 3\end{array} \right.$$
-%%$$M(n+1)=\left\{ \begin{array}{lcc} f\cdot \gamma_1 \cdot R(n) & si & R(n) \geq R(0) \\ \\ f\cdot \gamma_2\cdot R(n) & si & R(n)<R(0)\end{array} \right.$$
+$$R(n+1)= \left\{ \begin{array}{lcc} (1-f)\cdot R(n)+M(n) & si & n \neq 3 \\ \\ (1-f)\cdot R(n)+M(n)-0.02\cdot R(n) & \textrm{si} & n = 3\end{array} \right.$$
+$$M(n+1)=\left\{ \begin{array}{lcc} f\cdot \gamma_1 \cdot R(n) & si & R(n+1) \geq R(0) \\ \\ f\cdot \gamma_2\cdot R(n) & \textrm{si} & R(n+1)<R(0)\end{array} \right.$$
 
 En donde:
 \begin{itemize}
@@ -51,21 +45,17 @@ En donde:
     \item $M(0) = 208 \times 10^{9}.$
 \end{itemize}
 
+La condición de $M(n+1)$ permite evitar el retraso del que se ha hablado anteriormente, pues si se considera que ya se alcanzó la cantidad "normal" de eritrocitos entonces el cuerpo no debe producir más de los necesarios.
+
 Para aproximar el valor de $\gamma_2$ se utilizó la información brindada por el hospital general de Massachusetts en \cite{Massachusetts}, dado que al cuerpo le toma recuperar los glóbulos rojos perdidos en 450 ml de sangre en unas 5 semanas (35 días), entonces 100 ml deben recuperarse en unos 8 días. Las simulaciones hechas muestran que $\gamma=1.305$ permite lograr esta recuperación en ese tiempo.
 Para estas simulaciones, se utilizó un tiempo de 15 días para poder observar lo que sucede después de recuperar los eritrocitos perdidos:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.57]{figures/HemoLeveG13RBC.png}
-    \caption{Caption?}
-    \label{sec:variaciones:fig:HemoLeveG13RBC}
+    \captionsetup{justification=centering}
+    \includegraphics[scale=0.534]{figures/HemoLeveG13.png}
+    \caption{Simulación del modelo para el caso de una hemorragia con recuperación de la homeostasis. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$.}
+    \label{sec:variaciones:fig:HemoLeveG13}
 \end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.57]{figures/HemoLeveG13SC.png}
-    \caption{Caption?}
-    \label{sec:variaciones:fig:HemoLeveG13SC}
-\end{figure}
-
-Lo que se puede ver en estas gráficas es como, a partir del cuarto día (dado el retraso que presenta el modelo) se hace efectivo el cambio de $\gamma_1$ a $\gamma_2$, que se evidencia por el aumento en \ref{sec:variaciones:fig:HemoLeveG13RBC} del cuarto al duodécimo día y en \ref{sec:variaciones:fig:HemoLeveG13SC} del tercer al undécimo día. En el día 11 es en el que por fin se ha superado (o igualado) la cantidad inicial de glóbulos rojos en el cuerpo, el aumento desde la pérdida muestra lo ilustrado en \ref{subsec:modelo:simulaciones:G13}, donde hay un aumento constante de eritrocitos. Del día 11 al 12 hay un último aumento de RBC's dado, nuevamente, el retraso que presentan las ecuaciones. Después de recuperar la cantidad de sangre perdida, el cuerpo vuelve a estabilizar su sistema, pues ha llegado a la homeostasis. La diferencia en \ref{sec:variaciones:fig:HemoLeveG13SC} de los días 0 a 3 y de los días 13 a 15 se debe a que ha aumentado la cantidad estable de sangre, y para compensar la pérdida el cuerpo debe producir más células.
+Lo que se puede ver en estas gráficas es como, a partir del cuarto día (dado el retraso que presenta el modelo) se hace efectivo el cambio de $\gamma_1$ a $\gamma_2$, que se evidencia por el aumento en la primera gráfica de la figura \ref{sec:variaciones:fig:HemoLeveG13} del cuarto al duodécimo día y en la segunda gráfica del cuarto al undécimo día. En el día 12 es en el que por fin se ha superado (o igualado) la cantidad inicial de glóbulos rojos en el cuerpo, el aumento desde la pérdida muestra lo ilustrado en la sección \ref{subsec:modelo:simulaciones:G13}, donde hay un aumento constante de eritrocitos. Después de recuperar la cantidad de sangre perdida, el cuerpo vuelve a estabilizar su sistema, pues ha llegado a la homeostasis. La diferencia en la segunda gráfica de los días 0 a 3 y de los días 13 a 15 se debe a que ha aumentado la cantidad estable de sangre, y para compensar la pérdida el cuerpo debe producir más células.

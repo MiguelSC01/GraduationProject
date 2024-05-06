@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,673 +18,1038 @@
 
 
 \refsection{0}
-  \datalist[entry]{none/global//global/global}
-    \entry{assi2020numerical}{book}{}
-      \name{author}{3}{}{%
-        {{hash=2218801101fe7f166ab482dbc01cb008}{%
-           family={Assi},
-           familyi={A\bibinitperiod},
-           given={Abdallah},
-           giveni={A\bibinitperiod}}}%
-        {{hash=43d2f107c8f7c951829c720da344a3cb}{%
-           family={D'Anna},
-           familyi={D\bibinitperiod},
-           given={Marco},
-           giveni={M\bibinitperiod}}}%
-        {{hash=7cafbe47365f3ee7e3ca0fab4cb47c80}{%
-           family={García-Sánchez},
-           familyi={G\bibinithyphendelim S\bibinitperiod},
-           given={Pedro\bibnamedelima A},
-           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+  \datalist[entry]{none/global//global/global/global}
+    \entry{cosgrove2021hematopoiesis}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=720e8382c9105fbdfb99904b80371fe7}{%
+           family={Cosgrove},
+           familyi={C\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e1b078cd45975d273a14f186440fe925}{%
+           family={Hustin},
+           familyi={H\bibinitperiod},
+           given={Lucie\bibnamedelima SP},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=1d8ad9453689f90924010dfc5e0158bf}{%
+           family={Boer},
+           familyi={B\bibinitperiod},
+           given={Rob\bibnamedelima J},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=39f4608f5e8d1faa05e377f01e106439}{%
+           family={Perié},
+           familyi={P\bibinitperiod},
+           given={Leı̈la},
+           giveni={L\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {Springer Nature}%
+        {Elsevier}%
       }
-      \strng{namehash}{5a96a79f59356ad2e8100be01faf3a14}
-      \strng{fullhash}{5a96a79f59356ad2e8100be01faf3a14}
-      \strng{bibnamehash}{5a96a79f59356ad2e8100be01faf3a14}
-      \strng{authorbibnamehash}{5a96a79f59356ad2e8100be01faf3a14}
-      \strng{authornamehash}{5a96a79f59356ad2e8100be01faf3a14}
-      \strng{authorfullhash}{5a96a79f59356ad2e8100be01faf3a14}
+      \strng{namehash}{a633148971cd79153631203d58d856c2}
+      \strng{fullhash}{c67c2d61d5f7ad324c0025cd39f4478c}
+      \strng{fullhashraw}{c67c2d61d5f7ad324c0025cd39f4478c}
+      \strng{bibnamehash}{c67c2d61d5f7ad324c0025cd39f4478c}
+      \strng{authorbibnamehash}{c67c2d61d5f7ad324c0025cd39f4478c}
+      \strng{authornamehash}{a633148971cd79153631203d58d856c2}
+      \strng{authorfullhash}{c67c2d61d5f7ad324c0025cd39f4478c}
+      \strng{authorfullhashraw}{c67c2d61d5f7ad324c0025cd39f4478c}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Numerical semigroups and applications}
-      \field{volume}{3}
-      \field{year}{2020}
+      \field{journaltitle}{Trends in Immunology}
+      \field{number}{12}
+      \field{title}{Hematopoiesis in numbers}
+      \field{volume}{42}
+      \field{year}{2021}
+      \field{pages}{1100\bibrangedash 1112}
+      \range{pages}{13}
     \endentry
-    \entry{de2018random}{article}{}
+    \entry{hall2021guyton}{book}{}{}
       \name{author}{3}{}{%
-        {{hash=54112fa073778d07bc28f9e8e68d242d}{%
-           family={De\bibnamedelima Loera},
-           familyi={D\bibinitperiod\bibinitdelim L\bibinitperiod},
-           given={Jesus},
+        {{hash=28ab2600bdedf8b9307a87eb0ead37e8}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={J.E.},
            giveni={J\bibinitperiod}}}%
-        {{hash=8c91068f9ffe24d6a43140c4e636d278}{%
-           family={O'Neill},
-           familyi={O\bibinitperiod},
-           given={Christopher},
-           giveni={C\bibinitperiod}}}%
-        {{hash=35d51edffbb502672875038381f2e83a}{%
-           family={Wilburne},
-           familyi={W\bibinitperiod},
-           given={Dane},
-           giveni={D\bibinitperiod}}}%
+        {{hash=043f9c1d3055fffb3b0925835b1e43af}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={M.E.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1750e8012a153d34c870a11359ac35e1}{%
+           family={Guyton},
+           familyi={G\bibinitperiod},
+           given={A.C.},
+           giveni={A\bibinitperiod}}}%
       }
-      \strng{namehash}{5370c67ff4a501ed3abb068f16584a5e}
-      \strng{fullhash}{5370c67ff4a501ed3abb068f16584a5e}
-      \strng{bibnamehash}{5370c67ff4a501ed3abb068f16584a5e}
-      \strng{authorbibnamehash}{5370c67ff4a501ed3abb068f16584a5e}
-      \strng{authornamehash}{5370c67ff4a501ed3abb068f16584a5e}
-      \strng{authorfullhash}{5370c67ff4a501ed3abb068f16584a5e}
+      \list{publisher}{1}{%
+        {ELSEVIER}%
+      }
+      \strng{namehash}{c04336463421103c31740f95e8a353d5}
+      \strng{fullhash}{c04336463421103c31740f95e8a353d5}
+      \strng{fullhashraw}{c04336463421103c31740f95e8a353d5}
+      \strng{bibnamehash}{c04336463421103c31740f95e8a353d5}
+      \strng{authorbibnamehash}{c04336463421103c31740f95e8a353d5}
+      \strng{authornamehash}{c04336463421103c31740f95e8a353d5}
+      \strng{authorfullhash}{c04336463421103c31740f95e8a353d5}
+      \strng{authorfullhashraw}{c04336463421103c31740f95e8a353d5}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{The Electronic Journal of Combinatorics}
-      \field{title}{Random Numerical Semigroups and a Simplicial Complex of Irreducible Semigroups}
-      \field{year}{2018}
-      \field{pages}{P4\bibrangedash 37}
-      \range{pages}{-1}
+      \field{isbn}{9788413820132}
+      \field{title}{GUYTON \& HALL TRATADO DE FISIOLOGIA MEDICA 14a ED}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://books.google.com.co/books?id=YtB1zgEACAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.com.co/books?id=YtB1zgEACAAJ
+      \endverb
     \endentry
-    \entry{oneill2018}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=8c91068f9ffe24d6a43140c4e636d278}{%
-           family={O'Neill},
-           familyi={O\bibinitperiod},
-           given={Christopher},
-           giveni={C\bibinitperiod}}}%
+    \entry{schippel2023dynamics}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=c95faa361ee23f3a0a703a72cb630425}{%
+           family={Schippel},
+           familyi={S\bibinitperiod},
+           given={Natascha},
+           giveni={N\bibinitperiod}}}%
+        {{hash=17d4402a1a2b4a2848c13ce02f83f460}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Shalini},
+           giveni={S\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {GitHub}%
+        {Elsevier}%
       }
-      \strng{namehash}{8c91068f9ffe24d6a43140c4e636d278}
-      \strng{fullhash}{8c91068f9ffe24d6a43140c4e636d278}
-      \strng{bibnamehash}{8c91068f9ffe24d6a43140c4e636d278}
-      \strng{authorbibnamehash}{8c91068f9ffe24d6a43140c4e636d278}
-      \strng{authornamehash}{8c91068f9ffe24d6a43140c4e636d278}
-      \strng{authorfullhash}{8c91068f9ffe24d6a43140c4e636d278}
+      \strng{namehash}{1b8e4f694c5c977aa4809c9190951d68}
+      \strng{fullhash}{1b8e4f694c5c977aa4809c9190951d68}
+      \strng{fullhashraw}{1b8e4f694c5c977aa4809c9190951d68}
+      \strng{bibnamehash}{1b8e4f694c5c977aa4809c9190951d68}
+      \strng{authorbibnamehash}{1b8e4f694c5c977aa4809c9190951d68}
+      \strng{authornamehash}{1b8e4f694c5c977aa4809c9190951d68}
+      \strng{authorfullhash}{1b8e4f694c5c977aa4809c9190951d68}
+      \strng{authorfullhashraw}{1b8e4f694c5c977aa4809c9190951d68}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://github.com/coneill-math/numsgps-sage}}
-      \field{journaltitle}{GitHub repository}
-      \field{title}{numsgps-sage}
-      \field{year}{2013}
+      \field{journaltitle}{Experimental Hematology}
+      \field{title}{Dynamics of human hematopoietic stem and progenitor cell differentiation to the erythroid lineage}
+      \field{year}{2023}
     \endentry
-    \entry{delgado2015numericalsgps}{article}{}
+    \entry{winter2014molecular}{article}{}{}
       \name{author}{3}{}{%
-        {{hash=1329d20b3c13520763ca9602de62d78c}{%
-           family={Delgado},
-           familyi={D\bibinitperiod},
-           given={Manuel},
-           giveni={M\bibinitperiod}}}%
-        {{hash=739f70fae86d50260f4ffb05e0288230}{%
-           family={Garc{ı}a-Sánchez},
-           familyi={G\bibinithyphendelim S\bibinitperiod},
-           given={PA},
-           giveni={P\bibinitperiod}}}%
-        {{hash=dd74b99f6962ff89db1293dd69670375}{%
-           family={Morais},
-           familyi={M\bibinitperiod},
-           given={J},
-           giveni={J\bibinitperiod}}}%
+        {{hash=e3541752c03b526405f99370fd20ed54}{%
+           family={Winter},
+           familyi={W\bibinitperiod},
+           given={William\bibnamedelima E},
+           giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=3aef8faee86fe35c9b6dd0ecc42b4546}{%
+           family={Bazydlo},
+           familyi={B\bibinitperiod},
+           given={Lindsay\bibnamedelima AL},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=73c93aef211309160dbc8a1dc9170776}{%
+           family={Harris},
+           familyi={H\bibinitperiod},
+           given={Neil\bibnamedelima S},
+           giveni={N\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
       }
-      \strng{namehash}{67d2374cc69c5ba9f65c6c13775cbd6f}
-      \strng{fullhash}{67d2374cc69c5ba9f65c6c13775cbd6f}
-      \strng{bibnamehash}{67d2374cc69c5ba9f65c6c13775cbd6f}
-      \strng{authorbibnamehash}{67d2374cc69c5ba9f65c6c13775cbd6f}
-      \strng{authornamehash}{67d2374cc69c5ba9f65c6c13775cbd6f}
-      \strng{authorfullhash}{67d2374cc69c5ba9f65c6c13775cbd6f}
+      \list{publisher}{1}{%
+        {Oxford University Press Oxford, UK}%
+      }
+      \strng{namehash}{0e028c62257d9c051d0635cf65144dbc}
+      \strng{fullhash}{0e028c62257d9c051d0635cf65144dbc}
+      \strng{fullhashraw}{0e028c62257d9c051d0635cf65144dbc}
+      \strng{bibnamehash}{0e028c62257d9c051d0635cf65144dbc}
+      \strng{authorbibnamehash}{0e028c62257d9c051d0635cf65144dbc}
+      \strng{authornamehash}{0e028c62257d9c051d0635cf65144dbc}
+      \strng{authorfullhash}{0e028c62257d9c051d0635cf65144dbc}
+      \strng{authorfullhashraw}{0e028c62257d9c051d0635cf65144dbc}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{A GAP package for numerical semigroups. Available via http://www. gap-system. org}
-      \field{title}{NumericalSgps}
-      \field{year}{2015}
+      \field{journaltitle}{Laboratory medicine}
+      \field{number}{2}
+      \field{title}{The molecular biology of human iron metabolism}
+      \field{volume}{45}
+      \field{year}{2014}
+      \field{pages}{92\bibrangedash 102}
+      \range{pages}{11}
     \endentry
-    \entry{delgado2013intpic}{article}{}
+    \entry{higgins2015red}{article}{}{}
       \name{author}{1}{}{%
-        {{hash=1329d20b3c13520763ca9602de62d78c}{%
-           family={Delgado},
-           familyi={D\bibinitperiod},
-           given={Manuel},
-           giveni={M\bibinitperiod}}}%
+        {{hash=d94ab1df48e2fe6caeb79156d600f7e3}{%
+           family={Higgins},
+           familyi={H\bibinitperiod},
+           given={John\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
       }
-      \strng{namehash}{1329d20b3c13520763ca9602de62d78c}
-      \strng{fullhash}{1329d20b3c13520763ca9602de62d78c}
-      \strng{bibnamehash}{1329d20b3c13520763ca9602de62d78c}
-      \strng{authorbibnamehash}{1329d20b3c13520763ca9602de62d78c}
-      \strng{authornamehash}{1329d20b3c13520763ca9602de62d78c}
-      \strng{authorfullhash}{1329d20b3c13520763ca9602de62d78c}
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{d94ab1df48e2fe6caeb79156d600f7e3}
+      \strng{fullhash}{d94ab1df48e2fe6caeb79156d600f7e3}
+      \strng{fullhashraw}{d94ab1df48e2fe6caeb79156d600f7e3}
+      \strng{bibnamehash}{d94ab1df48e2fe6caeb79156d600f7e3}
+      \strng{authorbibnamehash}{d94ab1df48e2fe6caeb79156d600f7e3}
+      \strng{authornamehash}{d94ab1df48e2fe6caeb79156d600f7e3}
+      \strng{authorfullhash}{d94ab1df48e2fe6caeb79156d600f7e3}
+      \strng{authorfullhashraw}{d94ab1df48e2fe6caeb79156d600f7e3}
       \field{extraname}{1}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{a GAP package for drawing integers, Available via http://www. fc. up. pt/cmup/mdelgado/software}
-      \field{title}{IntPic}
-      \field{year}{2013}
+      \field{journaltitle}{Clinics in laboratory medicine}
+      \field{number}{1}
+      \field{title}{Red blood cell population dynamics}
+      \field{volume}{35}
+      \field{year}{2015}
+      \field{pages}{43\bibrangedash 57}
+      \range{pages}{15}
     \endentry
-    \entry{morales2023}{misc}{}
+    \entry{edelstein1988mathematical}{book}{}{}
       \name{author}{1}{}{%
-        {{hash=748de9002afc5aac3f9617962c9db0bf}{%
-           family={Morales},
-           familyi={M\bibinitperiod},
-           given={Santiago},
-           giveni={S\bibinitperiod}}}%
+        {{hash=a17f18cc7ffe39522c4cd1b2660d6aa6}{%
+           family={Edelstein-Keshet},
+           familyi={E\bibinithyphendelim K\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {GitHub}%
+      \list{publisher}{2}{%
+        {Society for Industrial}%
+        {Applied Mathematics (SIAM, 3600 Market Street, Floor 6, Philadelphia, PA 19104)}%
       }
-      \strng{namehash}{748de9002afc5aac3f9617962c9db0bf}
-      \strng{fullhash}{748de9002afc5aac3f9617962c9db0bf}
-      \strng{bibnamehash}{748de9002afc5aac3f9617962c9db0bf}
-      \strng{authorbibnamehash}{748de9002afc5aac3f9617962c9db0bf}
-      \strng{authornamehash}{748de9002afc5aac3f9617962c9db0bf}
-      \strng{authorfullhash}{748de9002afc5aac3f9617962c9db0bf}
+      \strng{namehash}{a17f18cc7ffe39522c4cd1b2660d6aa6}
+      \strng{fullhash}{a17f18cc7ffe39522c4cd1b2660d6aa6}
+      \strng{fullhashraw}{a17f18cc7ffe39522c4cd1b2660d6aa6}
+      \strng{bibnamehash}{a17f18cc7ffe39522c4cd1b2660d6aa6}
+      \strng{authorbibnamehash}{a17f18cc7ffe39522c4cd1b2660d6aa6}
+      \strng{authornamehash}{a17f18cc7ffe39522c4cd1b2660d6aa6}
+      \strng{authorfullhash}{a17f18cc7ffe39522c4cd1b2660d6aa6}
+      \strng{authorfullhashraw}{a17f18cc7ffe39522c4cd1b2660d6aa6}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://github.com/smoralesduarte/randnumsgps}}
-      \field{journaltitle}{GitHub repository}
-      \field{title}{randnumsgps}
-      \field{year}{2023}
+      \field{isbn}{9780898719147}
+      \field{series}{Classics in Applied Mathematics}
+      \field{title}{Mathematical Models in Biology}
+      \field{year}{1988}
+      \verb{urlraw}
+      \verb https://books.google.com.co/books?id=uABYP1hnsf0C
+      \endverb
+      \verb{url}
+      \verb https://books.google.com.co/books?id=uABYP1hnsf0C
+      \endverb
     \endentry
-    \entry{alon2016probabilistic}{book}{}
-      \name{author}{2}{}{%
-        {{hash=f7a4a7818d41bcfdc8addc9e20cdcbd8}{%
-           family={Alon},
-           familyi={A\bibinitperiod},
-           given={Noga},
-           giveni={N\bibinitperiod}}}%
-        {{hash=a457f44aeb2ba9f036038cea801bc534}{%
-           family={Spencer},
-           familyi={S\bibinitperiod},
-           given={Joel\bibnamedelima H},
-           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+    \entry{liu2023research}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=bb61bf29e10f877263c5a65ff5d826a3}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yikai},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d8a08fcbd8dfcf37920de1a897c65e86}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Ruozheng},
+           giveni={R\bibinitperiod}}}%
+        {{hash=0187aecbaacba76858c5a4d819bf3ac1}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Aimin},
+           giveni={A\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {John Wiley \& Sons}%
+        {Multidisciplinary Digital Publishing Institute}%
       }
-      \strng{namehash}{ac7d8dbaf8c4f9005b765502fbc46e11}
-      \strng{fullhash}{ac7d8dbaf8c4f9005b765502fbc46e11}
-      \strng{bibnamehash}{ac7d8dbaf8c4f9005b765502fbc46e11}
-      \strng{authorbibnamehash}{ac7d8dbaf8c4f9005b765502fbc46e11}
-      \strng{authornamehash}{ac7d8dbaf8c4f9005b765502fbc46e11}
-      \strng{authorfullhash}{ac7d8dbaf8c4f9005b765502fbc46e11}
+      \strng{namehash}{7e076afceb626fb36a281f03db9bd6de}
+      \strng{fullhash}{7e076afceb626fb36a281f03db9bd6de}
+      \strng{fullhashraw}{7e076afceb626fb36a281f03db9bd6de}
+      \strng{bibnamehash}{7e076afceb626fb36a281f03db9bd6de}
+      \strng{authorbibnamehash}{7e076afceb626fb36a281f03db9bd6de}
+      \strng{authornamehash}{7e076afceb626fb36a281f03db9bd6de}
+      \strng{authorfullhash}{7e076afceb626fb36a281f03db9bd6de}
+      \strng{authorfullhashraw}{7e076afceb626fb36a281f03db9bd6de}
+      \field{extraname}{1}
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{The {P}robabilistic {M}ethod}
-      \field{year}{2016}
-    \endentry
-    \entry{park2023proof}{article}{}
-      \name{author}{2}{}{%
-        {{hash=63811a7020891206896ce3a0afacb75c}{%
-           family={Park},
-           familyi={P\bibinitperiod},
-           given={Jinyoung},
-           giveni={J\bibinitperiod}}}%
-        {{hash=cba1ff9284f1f8c7c7da6eeb1fdde56d}{%
-           family={Pham},
-           familyi={P\bibinitperiod},
-           given={Huy},
-           giveni={H\bibinitperiod}}}%
-      }
-      \strng{namehash}{de51a28a8ea4d99b93531b8b58fc51f6}
-      \strng{fullhash}{de51a28a8ea4d99b93531b8b58fc51f6}
-      \strng{bibnamehash}{de51a28a8ea4d99b93531b8b58fc51f6}
-      \strng{authorbibnamehash}{de51a28a8ea4d99b93531b8b58fc51f6}
-      \strng{authornamehash}{de51a28a8ea4d99b93531b8b58fc51f6}
-      \strng{authorfullhash}{de51a28a8ea4d99b93531b8b58fc51f6}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of the American Mathematical Society}
-      \field{title}{A proof of the {K}ahn--{K}alai conjecture}
+      \field{journaltitle}{Mathematics}
+      \field{number}{13}
+      \field{title}{Research on Medical Problems Based on Mathematical Models}
+      \field{volume}{11}
       \field{year}{2023}
-    \endentry
-    \entry{rosales2009numerical}{book}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{2}{}{%
-        {{hash=bf6837d39e726be71f7908e5ef0a41a0}{%
-           family={Rosales},
-           familyi={R\bibinitperiod},
-           given={José\bibnamedelima Carlos},
-           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=7cafbe47365f3ee7e3ca0fab4cb47c80}{%
-           family={García-Sánchez},
-           familyi={G\bibinithyphendelim S\bibinitperiod},
-           given={Pedro\bibnamedelima A},
-           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{d3f455a893d21c193865ebea6607c738}
-      \strng{fullhash}{d3f455a893d21c193865ebea6607c738}
-      \strng{bibnamehash}{d3f455a893d21c193865ebea6607c738}
-      \strng{authorbibnamehash}{d3f455a893d21c193865ebea6607c738}
-      \strng{authornamehash}{d3f455a893d21c193865ebea6607c738}
-      \strng{authorfullhash}{d3f455a893d21c193865ebea6607c738}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Numerical semigroups}
-      \field{year}{2009}
-    \endentry
-    \entry{youtube}{online}{}
-      \name{author}{1}{}{%
-        {{hash=630e5240a309c99b3ce929cee29c973f}{%
-           family={Grime},
-           familyi={G\bibinitperiod},
-           given={James},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {Youtube}%
-      }
-      \strng{namehash}{630e5240a309c99b3ce929cee29c973f}
-      \strng{fullhash}{630e5240a309c99b3ce929cee29c973f}
-      \strng{bibnamehash}{630e5240a309c99b3ce929cee29c973f}
-      \strng{authorbibnamehash}{630e5240a309c99b3ce929cee29c973f}
-      \strng{authornamehash}{630e5240a309c99b3ce929cee29c973f}
-      \strng{authorfullhash}{630e5240a309c99b3ce929cee29c973f}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{How to order 43 McNuggets - Numberphile}
-      \field{year}{2012}
-      \field{dateera}{ce}
-      \verb{urlraw}
-      \verb https://www.youtube.com/watch?v=vNTSugyS038&ab_channel=Numberphile
-      \endverb
-      \verb{url}
-      \verb https://www.youtube.com/watch?v=vNTSugyS038&ab_channel=Numberphile
-      \endverb
-    \endentry
-    \entry{ramirez1996complexity}{article}{}
-      \name{author}{1}{}{%
-        {{hash=34af85afc9ae313e282c960349f90f5f}{%
-           family={Ramírez-Alfonsín},
-           familyi={R\bibinithyphendelim A\bibinitperiod},
-           given={Jorge\bibnamedelima Luis},
-           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{34af85afc9ae313e282c960349f90f5f}
-      \strng{fullhash}{34af85afc9ae313e282c960349f90f5f}
-      \strng{bibnamehash}{34af85afc9ae313e282c960349f90f5f}
-      \strng{authorbibnamehash}{34af85afc9ae313e282c960349f90f5f}
-      \strng{authornamehash}{34af85afc9ae313e282c960349f90f5f}
-      \strng{authorfullhash}{34af85afc9ae313e282c960349f90f5f}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Combinatorica}
-      \field{title}{Complexity of the {F}robenius problem}
-      \field{volume}{16}
-      \field{year}{1996}
-      \field{pages}{143\bibrangedash 147}
-      \range{pages}{5}
-    \endentry
-    \entry{aliev2011expected}{article}{}
-      \name{author}{3}{}{%
-        {{hash=b25b513954a9ffcf750423040e33b7dc}{%
-           family={Aliev},
-           familyi={A\bibinitperiod},
-           given={Iskander},
-           giveni={I\bibinitperiod}}}%
-        {{hash=8ee962be8b88516991b3cbffe6789f01}{%
-           family={Henk},
-           familyi={H\bibinitperiod},
-           given={Martin},
-           giveni={M\bibinitperiod}}}%
-        {{hash=97e7c7564c78a93af1900c3cc769e404}{%
-           family={Hinrichs},
-           familyi={H\bibinitperiod},
-           given={Aicke},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{3a3b0d34255da4342ab7ffba63567a33}
-      \strng{fullhash}{3a3b0d34255da4342ab7ffba63567a33}
-      \strng{bibnamehash}{3a3b0d34255da4342ab7ffba63567a33}
-      \strng{authorbibnamehash}{3a3b0d34255da4342ab7ffba63567a33}
-      \strng{authornamehash}{3a3b0d34255da4342ab7ffba63567a33}
-      \strng{authorfullhash}{3a3b0d34255da4342ab7ffba63567a33}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Combinatorial Theory, Series A}
-      \field{number}{2}
-      \field{title}{Expected {F}robenius numbers}
-      \field{volume}{118}
-      \field{year}{2011}
-      \field{pages}{525\bibrangedash 531}
-      \range{pages}{7}
-    \endentry
-    \entry{apery1946branches}{article}{}
-      \name{author}{1}{}{%
-        {{hash=bbea8657d33e975b47da378d3d179fbc}{%
-           family={Apéry},
-           familyi={A\bibinitperiod},
-           given={Roger},
-           giveni={R\bibinitperiod}}}%
-      }
-      \strng{namehash}{bbea8657d33e975b47da378d3d179fbc}
-      \strng{fullhash}{bbea8657d33e975b47da378d3d179fbc}
-      \strng{bibnamehash}{bbea8657d33e975b47da378d3d179fbc}
-      \strng{authorbibnamehash}{bbea8657d33e975b47da378d3d179fbc}
-      \strng{authornamehash}{bbea8657d33e975b47da378d3d179fbc}
-      \strng{authorfullhash}{bbea8657d33e975b47da378d3d179fbc}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{CR Acad. Sci. Paris}
-      \field{number}{1198}
-      \field{title}{Sur les branches superlinéaires des courbes algébriques}
-      \field{volume}{222}
-      \field{year}{1946}
-      \field{pages}{2000}
+      \field{pages}{2842}
       \range{pages}{1}
     \endentry
-    \entry{selmer1977linear}{article}{}
+    \entry{murray2007mathematical}{book}{}{}
       \name{author}{1}{}{%
-        {{hash=805629bc69dee97df6127e1f3eed6221}{%
-           family={Selmer},
-           familyi={S\bibinitperiod},
-           given={Ernst\bibnamedelima S},
-           giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=29820554483e0151cc9f851a9b33214b}{%
+           family={Murray},
+           familyi={M\bibinitperiod},
+           given={J.D.},
+           giveni={J\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {Walter de Gruyter, Berlin/New York Berlin, New York}%
+        {Springer New York}%
       }
-      \strng{namehash}{805629bc69dee97df6127e1f3eed6221}
-      \strng{fullhash}{805629bc69dee97df6127e1f3eed6221}
-      \strng{bibnamehash}{805629bc69dee97df6127e1f3eed6221}
-      \strng{authorbibnamehash}{805629bc69dee97df6127e1f3eed6221}
-      \strng{authornamehash}{805629bc69dee97df6127e1f3eed6221}
-      \strng{authorfullhash}{805629bc69dee97df6127e1f3eed6221}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{On the linear {D}iophantine problem of {F}robenius}
-      \field{year}{1977}
-    \endentry
-    \entry{wilf1978circle}{article}{}
-      \name{author}{1}{}{%
-        {{hash=9cba74c03d2a5efde985e575dab99466}{%
-           family={Wilf},
-           familyi={W\bibinitperiod},
-           given={Herbert\bibnamedelima S},
-           giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Taylor \& Francis}%
-      }
-      \strng{namehash}{9cba74c03d2a5efde985e575dab99466}
-      \strng{fullhash}{9cba74c03d2a5efde985e575dab99466}
-      \strng{bibnamehash}{9cba74c03d2a5efde985e575dab99466}
-      \strng{authorbibnamehash}{9cba74c03d2a5efde985e575dab99466}
-      \strng{authornamehash}{9cba74c03d2a5efde985e575dab99466}
-      \strng{authorfullhash}{9cba74c03d2a5efde985e575dab99466}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The American Mathematical Monthly}
-      \field{number}{7}
-      \field{title}{A circle-of-lights algorithm for the “money-changing problem”}
-      \field{volume}{85}
-      \field{year}{1978}
-      \field{pages}{562\bibrangedash 565}
-      \range{pages}{4}
-    \endentry
-    \entry{2020conjecture}{article}{}
-      \name{author}{1}{}{%
-        {{hash=1329d20b3c13520763ca9602de62d78c}{%
-           family={Delgado},
-           familyi={D\bibinitperiod},
-           given={Manuel},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{1329d20b3c13520763ca9602de62d78c}
-      \strng{fullhash}{1329d20b3c13520763ca9602de62d78c}
-      \strng{bibnamehash}{1329d20b3c13520763ca9602de62d78c}
-      \strng{authorbibnamehash}{1329d20b3c13520763ca9602de62d78c}
-      \strng{authornamehash}{1329d20b3c13520763ca9602de62d78c}
-      \strng{authorfullhash}{1329d20b3c13520763ca9602de62d78c}
-      \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Numerical Semigroups: IMNS 2018}
-      \field{title}{Conjecture of {W}ilf: a survey}
-      \field{year}{2020}
-      \field{pages}{39\bibrangedash 62}
-      \range{pages}{24}
-    \endentry
-    \entry{arnold1999weak}{article}{}
-      \name{author}{1}{}{%
-        {{hash=d078140f1c09ae9467d2d203e41258cb}{%
-           family={Arnold},
-           familyi={A\bibinitperiod},
-           given={Vladimir\bibnamedelima Igorevich},
-           giveni={V\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{d078140f1c09ae9467d2d203e41258cb}
-      \strng{fullhash}{d078140f1c09ae9467d2d203e41258cb}
-      \strng{bibnamehash}{d078140f1c09ae9467d2d203e41258cb}
-      \strng{authorbibnamehash}{d078140f1c09ae9467d2d203e41258cb}
-      \strng{authornamehash}{d078140f1c09ae9467d2d203e41258cb}
-      \strng{authorfullhash}{d078140f1c09ae9467d2d203e41258cb}
+      \strng{namehash}{29820554483e0151cc9f851a9b33214b}
+      \strng{fullhash}{29820554483e0151cc9f851a9b33214b}
+      \strng{fullhashraw}{29820554483e0151cc9f851a9b33214b}
+      \strng{bibnamehash}{29820554483e0151cc9f851a9b33214b}
+      \strng{authorbibnamehash}{29820554483e0151cc9f851a9b33214b}
+      \strng{authornamehash}{29820554483e0151cc9f851a9b33214b}
+      \strng{authorfullhash}{29820554483e0151cc9f851a9b33214b}
+      \strng{authorfullhashraw}{29820554483e0151cc9f851a9b33214b}
       \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Functional Analysis and Its Applications}
-      \field{number}{4}
-      \field{title}{Weak asymptotics for the numbers of solutions of {D}iophantine problems}
-      \field{volume}{33}
-      \field{year}{1999}
-      \field{pages}{292\bibrangedash 293}
-      \range{pages}{2}
+      \field{isbn}{9780387224374}
+      \field{series}{Interdisciplinary Applied Mathematics}
+      \field{title}{Mathematical Biology: I. An Introduction}
+      \field{year}{2007}
+      \verb{urlraw}
+      \verb https://books.google.com.co/books?id=4WbpP90Gk1YC
+      \endverb
+      \verb{url}
+      \verb https://books.google.com.co/books?id=4WbpP90Gk1YC
+      \endverb
     \endentry
-    \entry{erdos1972linear}{article}{}
-      \name{author}{2}{}{%
-        {{hash=f99c9ed4dd140ef67742ccb5e0df42df}{%
-           family={Erdös},
-           familyi={E\bibinitperiod},
-           given={Paul},
-           giveni={P\bibinitperiod}}}%
-        {{hash=64759ae18ce4891a547b035d2ebc9fd5}{%
-           family={Graham},
-           familyi={G\bibinitperiod},
-           given={Ronald},
-           giveni={R\bibinitperiod}}}%
+    \entry{bunn2013erythropoietin}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=9fe66f71b33fedc772becf678330937e}{%
+           family={Bunn},
+           familyi={B\bibinitperiod},
+           given={H\bibnamedelima Franklin},
+           giveni={H\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
       }
-      \strng{namehash}{578db632abd3c1f7fc854b9f3a2f3c00}
-      \strng{fullhash}{578db632abd3c1f7fc854b9f3a2f3c00}
-      \strng{bibnamehash}{578db632abd3c1f7fc854b9f3a2f3c00}
-      \strng{authorbibnamehash}{578db632abd3c1f7fc854b9f3a2f3c00}
-      \strng{authornamehash}{578db632abd3c1f7fc854b9f3a2f3c00}
-      \strng{authorfullhash}{578db632abd3c1f7fc854b9f3a2f3c00}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \list{publisher}{1}{%
+        {Cold Spring Harbor Laboratory Press}%
+      }
+      \strng{namehash}{9fe66f71b33fedc772becf678330937e}
+      \strng{fullhash}{9fe66f71b33fedc772becf678330937e}
+      \strng{fullhashraw}{9fe66f71b33fedc772becf678330937e}
+      \strng{bibnamehash}{9fe66f71b33fedc772becf678330937e}
+      \strng{authorbibnamehash}{9fe66f71b33fedc772becf678330937e}
+      \strng{authornamehash}{9fe66f71b33fedc772becf678330937e}
+      \strng{authorfullhash}{9fe66f71b33fedc772becf678330937e}
+      \strng{authorfullhashraw}{9fe66f71b33fedc772becf678330937e}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Acta Arithmetica}
-      \field{number}{21}
-      \field{title}{On a linear {D}iophantine problem of {F}robenius}
-      \field{volume}{1}
-      \field{year}{1972}
-      \field{pages}{399\bibrangedash 408}
-      \range{pages}{10}
+      \field{journaltitle}{Cold Spring Harbor perspectives in medicine}
+      \field{number}{3}
+      \field{title}{Erythropoietin}
+      \field{volume}{3}
+      \field{year}{2013}
+      \field{pages}{a011619}
+      \range{pages}{-1}
     \endentry
-    \entry{aliev2007optimal}{article}{}
-      \name{author}{2}{}{%
-        {{hash=6ec1963a93dff052abf89480a10fcbf6}{%
-           family={Aliev},
-           familyi={A\bibinitperiod},
-           given={Iskander\bibnamedelima M},
-           giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=a10b2a743d6e41f82b08410b7b562aad}{%
-           family={Gruber},
-           familyi={G\bibinitperiod},
-           given={Peter\bibnamedelima M},
-           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+    \entry{heras2023anemia}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=573a32ca3308823dee84b9192e164d0a}{%
+           family={Heras-Benito},
+           familyi={H\bibinithyphendelim B\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Elsevier}%
       }
-      \strng{namehash}{4f145fdcf178efccaebf729723dd56ce}
-      \strng{fullhash}{4f145fdcf178efccaebf729723dd56ce}
-      \strng{bibnamehash}{4f145fdcf178efccaebf729723dd56ce}
-      \strng{authorbibnamehash}{4f145fdcf178efccaebf729723dd56ce}
-      \strng{authornamehash}{4f145fdcf178efccaebf729723dd56ce}
-      \strng{authorfullhash}{4f145fdcf178efccaebf729723dd56ce}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \strng{namehash}{573a32ca3308823dee84b9192e164d0a}
+      \strng{fullhash}{573a32ca3308823dee84b9192e164d0a}
+      \strng{fullhashraw}{573a32ca3308823dee84b9192e164d0a}
+      \strng{bibnamehash}{573a32ca3308823dee84b9192e164d0a}
+      \strng{authorbibnamehash}{573a32ca3308823dee84b9192e164d0a}
+      \strng{authornamehash}{573a32ca3308823dee84b9192e164d0a}
+      \strng{authorfullhash}{573a32ca3308823dee84b9192e164d0a}
+      \strng{authorfullhashraw}{573a32ca3308823dee84b9192e164d0a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Number Theory}
-      \field{number}{1}
-      \field{title}{An optimal lower bound for the {F}robenius problem}
-      \field{volume}{123}
-      \field{year}{2007}
-      \field{pages}{71\bibrangedash 79}
-      \range{pages}{9}
+      \field{journaltitle}{Revista Clínica Española}
+      \field{title}{Anemia renal: tratamientos actuales y moléculas emergentes}
+      \field{year}{2023}
     \endentry
-    \entry{arnold2004arnold}{book}{}
-      \name{author}{1}{}{%
-        {{hash=92d7efabd161dd52a00501a33ccb997d}{%
-           family={Arnold},
-           familyi={A\bibinitperiod},
-           given={Vladimir\bibnamedelima I},
-           giveni={V\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+    \entry{portoles2021anemia}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=7767c392ffb2c591243378ad75ab0458}{%
+           family={Portolés},
+           familyi={P\bibinitperiod},
+           given={Jose},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d758d37b6dc23121f115fd8c7944a661}{%
+           family={Martín},
+           familyi={M\bibinitperiod},
+           given={Leyre},
+           giveni={L\bibinitperiod}}}%
+        {{hash=9c760ef12833cced39beec1e749b8d57}{%
+           family={Broseta},
+           familyi={B\bibinitperiod},
+           given={José\bibnamedelima Jesús},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=5c4cea331c51efcf6ec218f242c622b6}{%
+           family={Cases},
+           familyi={C\bibinitperiod},
+           given={Aleix},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{8eb95b4e482158498ccaa8a9f97a637f}
+      \strng{fullhash}{a0c652a98284f33489eafef220390a82}
+      \strng{fullhashraw}{a0c652a98284f33489eafef220390a82}
+      \strng{bibnamehash}{a0c652a98284f33489eafef220390a82}
+      \strng{authorbibnamehash}{a0c652a98284f33489eafef220390a82}
+      \strng{authornamehash}{8eb95b4e482158498ccaa8a9f97a637f}
+      \strng{authorfullhash}{a0c652a98284f33489eafef220390a82}
+      \strng{authorfullhashraw}{a0c652a98284f33489eafef220390a82}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2296-858X}
+      \field{journaltitle}{Frontiers in Medicine}
+      \field{title}{Anemia in Chronic Kidney Disease: From Pathophysiology and Current Treatments, to Future Agents}
+      \field{volume}{8}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.3389/fmed.2021.642296
+      \endverb
+      \verb{urlraw}
+      \verb https://www.frontiersin.org/articles/10.3389/fmed.2021.642296
+      \endverb
+      \verb{url}
+      \verb https://www.frontiersin.org/articles/10.3389/fmed.2021.642296
+      \endverb
+    \endentry
+    \entry{shrestha2016models}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=0f3249815c59dd53c8d8a00ade3dcf33}{%
+           family={Shrestha},
+           familyi={S\bibinitperiod},
+           given={Rajiv\bibnamedelima P},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=0215ae8ccd13821f343c5c874c8a520c}{%
+           family={Horowitz},
+           familyi={H\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5fc51a2846ef5f5d115e7f3ad530f365}{%
+           family={Hollot},
+           familyi={H\bibinitperiod},
+           given={Christopher\bibnamedelima V},
+           giveni={C\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=9d44513bde2656fd3121b21c8dc516e9}{%
+           family={Germain},
+           familyi={G\bibinitperiod},
+           given={Michael\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=fd44409b3f2556664d7eb92b27e84cdf}{%
+           family={Widness},
+           familyi={W\bibinitperiod},
+           given={John\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=8d9bbd200919d2f1f02cf2f24ef8eb0a}{%
+           family={Mock},
+           familyi={M\bibinitperiod},
+           given={Donald\bibnamedelima M},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=024821fcd28d2629287cd5769036e9b3}{%
+           family={Veng-Pedersen},
+           familyi={V\bibinithyphendelim P\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9e423af815ac5b0cc8569984a031fe7d}{%
+           family={Chait},
+           familyi={C\bibinitperiod},
+           given={Yossi},
+           giveni={Y\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Springer}%
       }
-      \strng{namehash}{92d7efabd161dd52a00501a33ccb997d}
-      \strng{fullhash}{92d7efabd161dd52a00501a33ccb997d}
-      \strng{bibnamehash}{92d7efabd161dd52a00501a33ccb997d}
-      \strng{authorbibnamehash}{92d7efabd161dd52a00501a33ccb997d}
-      \strng{authornamehash}{92d7efabd161dd52a00501a33ccb997d}
-      \strng{authorfullhash}{92d7efabd161dd52a00501a33ccb997d}
+      \strng{namehash}{59c6a1abfa8427ffaf4a8ed25d62b4f4}
+      \strng{fullhash}{45cb329200b74f5fbca11cc455c0f536}
+      \strng{fullhashraw}{45cb329200b74f5fbca11cc455c0f536}
+      \strng{bibnamehash}{59c6a1abfa8427ffaf4a8ed25d62b4f4}
+      \strng{authorbibnamehash}{59c6a1abfa8427ffaf4a8ed25d62b4f4}
+      \strng{authornamehash}{59c6a1abfa8427ffaf4a8ed25d62b4f4}
+      \strng{authorfullhash}{45cb329200b74f5fbca11cc455c0f536}
+      \strng{authorfullhashraw}{45cb329200b74f5fbca11cc455c0f536}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of pharmacokinetics and pharmacodynamics}
+      \field{title}{Models for the red blood cell lifespan}
+      \field{volume}{43}
+      \field{year}{2016}
+      \field{pages}{259\bibrangedash 274}
+      \range{pages}{16}
+    \endentry
+    \entry{kirk1968mathematical}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=1ec67d77197671587ace7cab71150222}{%
+           family={Kirk},
+           familyi={K\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2e317d03541d5e62673678b9e1d83f01}{%
+           family={Orr},
+           familyi={O\bibinitperiod},
+           given={JS},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f93a487c21fe98b699eedbf79426d27e}{%
+           family={Hope},
+           familyi={H\bibinitperiod},
+           given={CS},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{793f5efc76f936b26bea2a5d44b5ac1b}
+      \strng{fullhash}{793f5efc76f936b26bea2a5d44b5ac1b}
+      \strng{fullhashraw}{793f5efc76f936b26bea2a5d44b5ac1b}
+      \strng{bibnamehash}{793f5efc76f936b26bea2a5d44b5ac1b}
+      \strng{authorbibnamehash}{793f5efc76f936b26bea2a5d44b5ac1b}
+      \strng{authornamehash}{793f5efc76f936b26bea2a5d44b5ac1b}
+      \strng{authorfullhash}{793f5efc76f936b26bea2a5d44b5ac1b}
+      \strng{authorfullhashraw}{793f5efc76f936b26bea2a5d44b5ac1b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{British journal of haematology}
+      \field{number}{1}
+      \field{title}{A mathematical analysis of red blood cell and bone marrow stem cell control mechanisms}
+      \field{volume}{15}
+      \field{year}{1968}
+      \field{pages}{35\bibrangedash 46}
+      \range{pages}{12}
+    \endentry
+    \entry{thiagarajan2021red}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=ded22bc90f442d103c6fc5ee9fb9ede6}{%
+           family={Thiagarajan},
+           familyi={T\bibinitperiod},
+           given={Perumal},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2751d9157a4682057bcc0975ded9e065}{%
+           family={Parker},
+           familyi={P\bibinitperiod},
+           given={Charles\bibnamedelima J},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=f78c8b3a36899271a83716a1d8dd403f}{%
+           family={Prchal},
+           familyi={P\bibinitperiod},
+           given={Josef\bibnamedelima T},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Frontiers Media SA}%
+      }
+      \strng{namehash}{77b3e3607f616077ef99cfa69a6a9bd1}
+      \strng{fullhash}{77b3e3607f616077ef99cfa69a6a9bd1}
+      \strng{fullhashraw}{77b3e3607f616077ef99cfa69a6a9bd1}
+      \strng{bibnamehash}{77b3e3607f616077ef99cfa69a6a9bd1}
+      \strng{authorbibnamehash}{77b3e3607f616077ef99cfa69a6a9bd1}
+      \strng{authornamehash}{77b3e3607f616077ef99cfa69a6a9bd1}
+      \strng{authorfullhash}{77b3e3607f616077ef99cfa69a6a9bd1}
+      \strng{authorfullhashraw}{77b3e3607f616077ef99cfa69a6a9bd1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in physiology}
+      \field{title}{How do red blood cells die?}
+      \field{volume}{12}
+      \field{year}{2021}
+      \field{pages}{655393}
+      \range{pages}{1}
+    \endentry
+    \entry{enwiki:1217153817}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://en.wikipedia.org/w/index.php?title=Red_blood_cell&oldid=1217153817}}
+      \field{note}{[Online; accessed 25-April-2024]}
+      \field{title}{Red blood cell --- {Wikipedia}{,} The Free Encyclopedia}
+      \field{year}{2024}
+    \endentry
+    \entry{eswiki:159489943}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{%
+           family={Wikipedia},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhashraw}{9c677286866aad38f8e9b660f5411814}
+      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhashraw}{9c677286866aad38f8e9b660f5411814}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Internet; descargado 17-abril-2024]}
+      \field{title}{Aparato circulatorio --- Wikipedia{,} La enciclopedia libre}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb \url{https://es.wikipedia.org/w/index.php?title=Aparato_circulatorio&oldid=159489943}
+      \endverb
+      \verb{url}
+      \verb %5Curl%7Bhttps://es.wikipedia.org/w/index.php?title=Aparato_circulatorio&oldid=159489943%7D
+      \endverb
+    \endentry
+    \entry{Sanchez2000Hemorragias}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=142a0e022cfe7ff2c4f1b14fb6911271}{%
+           family={Sánchez\bibnamedelima Sánchez},
+           familyi={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=cd54008fcdb6fce5dfe4b4b54e5fba9d}{%
+           family={MiróAndreu},
+           familyi={M\bibinitperiod},
+           given={O},
+           giveni={O\bibinitperiod}}}%
+        {{hash=1600af22fe689b89884bb6b9625878c9}{%
+           family={Coll-Vinent\bibnamedelima Puig},
+           familyi={C\bibinithyphendelim V\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={B},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cold Spring Harbor Laboratory Press}%
+      }
+      \strng{namehash}{d43d223410496ea966b8c51ff59a633e}
+      \strng{fullhash}{d43d223410496ea966b8c51ff59a633e}
+      \strng{fullhashraw}{d43d223410496ea966b8c51ff59a633e}
+      \strng{bibnamehash}{d43d223410496ea966b8c51ff59a633e}
+      \strng{authorbibnamehash}{d43d223410496ea966b8c51ff59a633e}
+      \strng{authornamehash}{d43d223410496ea966b8c51ff59a633e}
+      \strng{authorfullhash}{d43d223410496ea966b8c51ff59a633e}
+      \strng{authorfullhashraw}{d43d223410496ea966b8c51ff59a633e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Medicina Integral}
+      \field{number}{6}
+      \field{title}{Las Hemorragias}
+      \field{volume}{36}
+      \field{year}{2000}
+      \field{pages}{203\bibrangedash 210}
+      \range{pages}{8}
+    \endentry
+    \entry{edelstein2005}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=2c3c8aaa1373744e32269ac3492bb520}{%
+           family={Edelstein},
+           familyi={E\bibinitperiod},
+           given={Leah},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SIAM}%
+      }
+      \strng{namehash}{2c3c8aaa1373744e32269ac3492bb520}
+      \strng{fullhash}{2c3c8aaa1373744e32269ac3492bb520}
+      \strng{fullhashraw}{2c3c8aaa1373744e32269ac3492bb520}
+      \strng{bibnamehash}{2c3c8aaa1373744e32269ac3492bb520}
+      \strng{authorbibnamehash}{2c3c8aaa1373744e32269ac3492bb520}
+      \strng{authornamehash}{2c3c8aaa1373744e32269ac3492bb520}
+      \strng{authorfullhash}{2c3c8aaa1373744e32269ac3492bb520}
+      \strng{authorfullhashraw}{2c3c8aaa1373744e32269ac3492bb520}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Problem 2, page 27 and Problem 16, page 33.}
+      \field{title}{Mathematical Models in Biology}
+      \field{year}{2005}
+    \endentry
+    \entry{Massachusetts}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=d1a9e8b97ae5c78d0c6effa52671d282}{%
+           family={Hospital},
+           familyi={H\bibinitperiod},
+           given={Massachusetts\bibnamedelima General},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{d1a9e8b97ae5c78d0c6effa52671d282}
+      \strng{fullhash}{d1a9e8b97ae5c78d0c6effa52671d282}
+      \strng{fullhashraw}{d1a9e8b97ae5c78d0c6effa52671d282}
+      \strng{bibnamehash}{d1a9e8b97ae5c78d0c6effa52671d282}
+      \strng{authorbibnamehash}{d1a9e8b97ae5c78d0c6effa52671d282}
+      \strng{authornamehash}{d1a9e8b97ae5c78d0c6effa52671d282}
+      \strng{authorfullhash}{d1a9e8b97ae5c78d0c6effa52671d282}
+      \strng{authorfullhashraw}{d1a9e8b97ae5c78d0c6effa52671d282}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Internet; descargado 2-mayo-2024]}
+      \field{title}{Frequently Asked Questions About Donating Blood}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb \url{https://www.massgeneral.org/blood-donor/faq}
+      \endverb
+      \verb{url}
+      \verb %5Curl%7Bhttps://www.massgeneral.org/blood-donor/faq%7D
+      \endverb
+    \endentry
+    \entry{liu2023}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=bb61bf29e10f877263c5a65ff5d826a3}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yikai},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d8a08fcbd8dfcf37920de1a897c65e86}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Ruozheng},
+           giveni={R\bibinitperiod}}}%
+        {{hash=0187aecbaacba76858c5a4d819bf3ac1}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Aimin},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7e076afceb626fb36a281f03db9bd6de}
+      \strng{fullhash}{7e076afceb626fb36a281f03db9bd6de}
+      \strng{fullhashraw}{7e076afceb626fb36a281f03db9bd6de}
+      \strng{bibnamehash}{7e076afceb626fb36a281f03db9bd6de}
+      \strng{authorbibnamehash}{7e076afceb626fb36a281f03db9bd6de}
+      \strng{authornamehash}{7e076afceb626fb36a281f03db9bd6de}
+      \strng{authorfullhash}{7e076afceb626fb36a281f03db9bd6de}
+      \strng{authorfullhashraw}{7e076afceb626fb36a281f03db9bd6de}
       \field{extraname}{2}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{A}rnold's problems}
-      \field{year}{2004}
+      \field{title}{Research on Medical Problems Based on Mathematical Models}
+      \field{year}{2023}
+      \true{nocite}
     \endentry
-    \entry{stanley2007combinatorics}{book}{}
-      \name{author}{1}{}{%
-        {{hash=a61a7c4d8f4b467437038b8bc2aee208}{%
-           family={Stanley},
+    \entry{shrestha2016}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=0f3249815c59dd53c8d8a00ade3dcf33}{%
+           family={Shrestha},
            familyi={S\bibinitperiod},
-           given={Richard\bibnamedelima P},
+           given={Rajiv\bibnamedelima P.},
            giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer Science \& Business Media}%
-      }
-      \strng{namehash}{a61a7c4d8f4b467437038b8bc2aee208}
-      \strng{fullhash}{a61a7c4d8f4b467437038b8bc2aee208}
-      \strng{bibnamehash}{a61a7c4d8f4b467437038b8bc2aee208}
-      \strng{authorbibnamehash}{a61a7c4d8f4b467437038b8bc2aee208}
-      \strng{authornamehash}{a61a7c4d8f4b467437038b8bc2aee208}
-      \strng{authorfullhash}{a61a7c4d8f4b467437038b8bc2aee208}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Combinatorics and commutative algebra}
-      \field{volume}{41}
-      \field{year}{2007}
-    \endentry
-    \entry{hardy1979introduction}{book}{}
-      \name{author}{2}{}{%
-        {{hash=2deeecde529db36a341e1636ab5c3c7b}{%
-           family={Hardy},
+        {{hash=0215ae8ccd13821f343c5c874c8a520c}{%
+           family={Horowitz},
            familyi={H\bibinitperiod},
-           given={Godfrey\bibnamedelima Harold},
-           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{hash=7300d1accd7c5cfa1c802808ba9c8804}{%
-           family={Wright},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5fc51a2846ef5f5d115e7f3ad530f365}{%
+           family={Hollot},
+           familyi={H\bibinitperiod},
+           given={Christopher\bibnamedelima V.},
+           giveni={C\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=9d44513bde2656fd3121b21c8dc516e9}{%
+           family={Germain},
+           familyi={G\bibinitperiod},
+           given={Michael\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=fd44409b3f2556664d7eb92b27e84cdf}{%
+           family={Widness},
            familyi={W\bibinitperiod},
-           given={Edward\bibnamedelima Maitland},
-           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+           given={John\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=8d9bbd200919d2f1f02cf2f24ef8eb0a}{%
+           family={Mock},
+           familyi={M\bibinitperiod},
+           given={Donald\bibnamedelima M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=024821fcd28d2629287cd5769036e9b3}{%
+           family={Veng-Pedersen},
+           familyi={V\bibinithyphendelim P\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9e423af815ac5b0cc8569984a031fe7d}{%
+           family={Chait},
+           familyi={C\bibinitperiod},
+           given={Yossi},
+           giveni={Y\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Oxford university press}%
+      \strng{namehash}{59c6a1abfa8427ffaf4a8ed25d62b4f4}
+      \strng{fullhash}{45cb329200b74f5fbca11cc455c0f536}
+      \strng{fullhashraw}{45cb329200b74f5fbca11cc455c0f536}
+      \strng{bibnamehash}{59c6a1abfa8427ffaf4a8ed25d62b4f4}
+      \strng{authorbibnamehash}{59c6a1abfa8427ffaf4a8ed25d62b4f4}
+      \strng{authornamehash}{59c6a1abfa8427ffaf4a8ed25d62b4f4}
+      \strng{authorfullhash}{45cb329200b74f5fbca11cc455c0f536}
+      \strng{authorfullhashraw}{45cb329200b74f5fbca11cc455c0f536}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Models for the red blood cell lifespan}
+      \field{year}{2016}
+      \true{nocite}
+    \endentry
+    \entry{loeffler1989}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=0369887707b047b299f311426940b9f7}{%
+           family={Loeffler},
+           familyi={L\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1e367a358df3b3e00ef032a2623ee683}{%
+           family={Pantel},
+           familyi={P\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=7211ee06cfca1697abd47b04d5a1c5c7}{%
+           family={Wulfff},
+           familyi={W\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=69c34eb276bac42aa9e8a2e15fbff8e6}{%
+           family={Wichmannt},
+           familyi={W\bibinitperiod},
+           given={H.\bibnamedelimi E.},
+           giveni={H\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
       }
-      \strng{namehash}{ccc0be46ff9fb1b695befd840fd53bc2}
-      \strng{fullhash}{ccc0be46ff9fb1b695befd840fd53bc2}
-      \strng{bibnamehash}{ccc0be46ff9fb1b695befd840fd53bc2}
-      \strng{authorbibnamehash}{ccc0be46ff9fb1b695befd840fd53bc2}
-      \strng{authornamehash}{ccc0be46ff9fb1b695befd840fd53bc2}
-      \strng{authorfullhash}{ccc0be46ff9fb1b695befd840fd53bc2}
+      \strng{namehash}{7797f9c4b5c684bd2bc8223faffd6058}
+      \strng{fullhash}{615f2d7bcd28848e0aa74f949c550ef5}
+      \strng{fullhashraw}{615f2d7bcd28848e0aa74f949c550ef5}
+      \strng{bibnamehash}{615f2d7bcd28848e0aa74f949c550ef5}
+      \strng{authorbibnamehash}{615f2d7bcd28848e0aa74f949c550ef5}
+      \strng{authornamehash}{7797f9c4b5c684bd2bc8223faffd6058}
+      \strng{authorfullhash}{615f2d7bcd28848e0aa74f949c550ef5}
+      \strng{authorfullhashraw}{615f2d7bcd28848e0aa74f949c550ef5}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{An introduction to the theory of numbers}
-      \field{year}{1979}
+      \field{title}{A mathematical model of erythropoiesis in mice and rats Part 1: Structure of the model}
+      \field{year}{1989}
+      \true{nocite}
     \endentry
-    \entry{feller}{book}{}
+    \entry{murray2001}{book}{}{}
       \name{author}{1}{}{%
-        {{hash=0dc1084389f176f601af7787031a22f1}{%
-           family={Feller},
-           familyi={F\bibinitperiod},
-           given={William},
-           giveni={W\bibinitperiod}}}%
+        {{hash=29820554483e0151cc9f851a9b33214b}{%
+           family={Murray},
+           familyi={M\bibinitperiod},
+           given={J.D.},
+           giveni={J\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {John Wiley \& Sons}%
-      }
-      \strng{namehash}{0dc1084389f176f601af7787031a22f1}
-      \strng{fullhash}{0dc1084389f176f601af7787031a22f1}
-      \strng{bibnamehash}{0dc1084389f176f601af7787031a22f1}
-      \strng{authorbibnamehash}{0dc1084389f176f601af7787031a22f1}
-      \strng{authornamehash}{0dc1084389f176f601af7787031a22f1}
-      \strng{authorfullhash}{0dc1084389f176f601af7787031a22f1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \strng{namehash}{29820554483e0151cc9f851a9b33214b}
+      \strng{fullhash}{29820554483e0151cc9f851a9b33214b}
+      \strng{fullhashraw}{29820554483e0151cc9f851a9b33214b}
+      \strng{bibnamehash}{29820554483e0151cc9f851a9b33214b}
+      \strng{authorbibnamehash}{29820554483e0151cc9f851a9b33214b}
+      \strng{authornamehash}{29820554483e0151cc9f851a9b33214b}
+      \strng{authorfullhash}{29820554483e0151cc9f851a9b33214b}
+      \strng{authorfullhashraw}{29820554483e0151cc9f851a9b33214b}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{An introduction to probability theory and its applications}
-      \field{volume}{1}
-      \field{year}{1971}
+      \field{title}{Mathematical Biology: I. An Introduction, Third Edition}
+      \field{year}{2001}
+      \true{nocite}
+    \endentry
+    \entry{yourkey}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=d94ab1df48e2fe6caeb79156d600f7e3}{%
+           family={Higgins},
+           familyi={H\bibinitperiod},
+           given={John\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d94ab1df48e2fe6caeb79156d600f7e3}
+      \strng{fullhash}{d94ab1df48e2fe6caeb79156d600f7e3}
+      \strng{fullhashraw}{d94ab1df48e2fe6caeb79156d600f7e3}
+      \strng{bibnamehash}{d94ab1df48e2fe6caeb79156d600f7e3}
+      \strng{authorbibnamehash}{d94ab1df48e2fe6caeb79156d600f7e3}
+      \strng{authornamehash}{d94ab1df48e2fe6caeb79156d600f7e3}
+      \strng{authorfullhash}{d94ab1df48e2fe6caeb79156d600f7e3}
+      \strng{authorfullhashraw}{d94ab1df48e2fe6caeb79156d600f7e3}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: Date you accessed the website}
+      \field{title}{Red Blood Cell Population Dynamics}
+      \field{year}{2016}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4717490/#:~:text=The%20RBC%20population%20is%20in,before%20being%20recycled%20and%20replaced
+      \endverb
+      \verb{url}
+      \verb https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4717490/#:~:text=The%20RBC%20population%20is%20in,before%20being%20recycled%20and%20replaced
+      \endverb
+    \endentry
+    \entry{tetschke2018}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=fac3fc3def592a13f666f8a7e2e482b8}{%
+           family={Manuel},
+           familyi={M\bibinitperiod},
+           given={Tetschke},
+           giveni={T\bibinitperiod}}}%
+        {{hash=a581a65f9b88a353e5d43036875352af}{%
+           family={Patrick},
+           familyi={P\bibinitperiod},
+           given={Lilienthal},
+           giveni={L\bibinitperiod}}}%
+        {{hash=6bb63a29d5bd25563f471ff9d3620d36}{%
+           family={Torben},
+           familyi={T\bibinitperiod},
+           given={Pottgiesser},
+           giveni={P\bibinitperiod}}}%
+        {{hash=a8cb74856314d91b6162d4a494902e21}{%
+           family={Thomas},
+           familyi={T\bibinitperiod},
+           given={Fischer},
+           giveni={F\bibinitperiod}}}%
+        {{hash=941d8b1cd9fa32de3551179758808817}{%
+           family={Enrico},
+           familyi={E\bibinitperiod},
+           given={Schalk},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1e7ecfc0215c541e39fdf4c9a3753251}{%
+           family={Sager},
+           familyi={S\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{edb29931aa600f449db9704ad720ac6e}
+      \strng{fullhash}{afc003f423891024eb3286a105e93cca}
+      \strng{fullhashraw}{afc003f423891024eb3286a105e93cca}
+      \strng{bibnamehash}{afc003f423891024eb3286a105e93cca}
+      \strng{authorbibnamehash}{afc003f423891024eb3286a105e93cca}
+      \strng{authornamehash}{edb29931aa600f449db9704ad720ac6e}
+      \strng{authorfullhash}{afc003f423891024eb3286a105e93cca}
+      \strng{authorfullhashraw}{afc003f423891024eb3286a105e93cca}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{processes MDPI}
+      \field{title}{Mathematical Modeling of RBC Count Dynamics after Blood Loss}
+      \field{year}{2018}
+      \true{nocite}
+    \endentry
+    \entry{crispino2023introduction}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=77db1df21fbb41454547bc00fd567880}{%
+           family={Crispino},
+           familyi={C\bibinitperiod},
+           given={John\bibnamedelima D},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Society of Hematology}%
+      }
+      \strng{namehash}{77db1df21fbb41454547bc00fd567880}
+      \strng{fullhash}{77db1df21fbb41454547bc00fd567880}
+      \strng{fullhashraw}{77db1df21fbb41454547bc00fd567880}
+      \strng{bibnamehash}{77db1df21fbb41454547bc00fd567880}
+      \strng{authorbibnamehash}{77db1df21fbb41454547bc00fd567880}
+      \strng{authornamehash}{77db1df21fbb41454547bc00fd567880}
+      \strng{authorfullhash}{77db1df21fbb41454547bc00fd567880}
+      \strng{authorfullhashraw}{77db1df21fbb41454547bc00fd567880}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Blood}
+      \field{number}{6}
+      \field{title}{Introduction to a review series on hematopoietic stem cells}
+      \field{volume}{142}
+      \field{year}{2023}
+      \true{nocite}
+      \field{pages}{497\bibrangedash 497}
+      \range{pages}{1}
+    \endentry
+    \entry{loeffler1989mathematical}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=0369887707b047b299f311426940b9f7}{%
+           family={Loeffler},
+           familyi={L\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1e367a358df3b3e00ef032a2623ee683}{%
+           family={Pantel},
+           familyi={P\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+        {{hash=565c14fcd49833d6104d757848545cc6}{%
+           family={Wulff},
+           familyi={W\bibinitperiod},
+           given={H},
+           giveni={H\bibinitperiod}}}%
+        {{hash=4d3a206eb2e266af6a89b3ce507905ae}{%
+           family={Wichmann},
+           familyi={W\bibinitperiod},
+           given={HE},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{425339897d266cb1ae0cc51a595cb7af}
+      \strng{fullhash}{ea81758d59f204032b44eccf2db41cac}
+      \strng{fullhashraw}{ea81758d59f204032b44eccf2db41cac}
+      \strng{bibnamehash}{ea81758d59f204032b44eccf2db41cac}
+      \strng{authorbibnamehash}{ea81758d59f204032b44eccf2db41cac}
+      \strng{authornamehash}{425339897d266cb1ae0cc51a595cb7af}
+      \strng{authorfullhash}{ea81758d59f204032b44eccf2db41cac}
+      \strng{authorfullhashraw}{ea81758d59f204032b44eccf2db41cac}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cell Proliferation}
+      \field{number}{1}
+      \field{title}{A mathematical model of erythropoiesis in mice and rats Part 1: Structure of the model}
+      \field{volume}{22}
+      \field{year}{1989}
+      \true{nocite}
+      \field{pages}{13\bibrangedash 30}
+      \range{pages}{18}
     \endentry
   \enddatalist
 \endrefsection

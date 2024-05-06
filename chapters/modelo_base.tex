@@ -120,9 +120,9 @@ Determinar el valor biológico de $\gamma$ es mucho más complicado, pues no ha 
     \item  $\gamma>1$: Este caso implica que el cuerpo produce una mayor cantidad de eritrocitos respecto a la que elimina, por lo que los resultados deberían mostrar un crecimiento en la cantidad de glóbulos rojos.
 \end{enumerate}
 
-En el caso esperado, es decir en el que el cuerpo alcanza la homeostasis, el valor deseado de $\gamma$ es $1$, pues de esta manera el cuerpo no pierde células, ya que todas aquellas que mueren son producidas. En todo caso, las simulaciones que se hagan utilizarán variaciones en este parámetro.
+En el caso esperado, es decir en el que el cuerpo alcanza la homeostasis, el valor deseado de $\gamma$ es $1$, pues de esta manera el cuerpo no pierde células, ya que todas aquellas que mueren son producidas. En todo caso, las simulaciones que se hagan utilizarán variaciones en este parámetro con valores cualquiera de ejemplo que puedan ilustrar el análisis.
 
-Como ya se ha visto en \ref{sec:modelo:analisis}, las soluciones del problema dependen de las constantes y de los valores iniciales, a continuación se calcularán las soluciones bajo los valores derivados para cada parámetro: $\gamma = 1$, $f = 0.00832$, $R(0)=25\times 10^{12}$, $M(0)=208\times 10^{9}$ 
+Como ya se ha visto en la sección \ref{sec:modelo:analisis}, las soluciones del problema dependen de las constantes y de los valores iniciales, a continuación se calcularán las soluciones bajo los valores derivados para cada parámetro: $\gamma = 1$, $f = 0.00832$, $R(0)=25\times 10^{12}$, $M(0)=208\times 10^{9}$ 
 
 \begin{itemize}
     \item Para el caso de ecuaciones en diferencias, se obtiene que las soluciones del polinomio característico de la ecuación son:
@@ -136,6 +136,7 @@ Como ya se ha visto en \ref{sec:modelo:analisis}, las soluciones del problema de
         $$=c_1-0.00832\cdot c_2,$$
         resolviendo el sistema $2\times 2$ conformado por $c_{1,2}$ se obtienen los resultados $c_1=25\times 10^{12}$, $c_2 = 0$. Lo que quiere decir que la solución del problema, dadas las condiciones iniciales es:
         $$R(n)=25\times 10^{12},$$
+        $$M(n)=208\times 10^{9},$$
         como es esperado, pues obtener una solución constante implica que el cuerpo logra mantener la homeostasis, es decir que en ningún momento hay pérdidas o ganancias de RBC's en el cuerpo.
     \item En el caso de utilizar la matriz que representa el modelo, los valores propios hallados son
         $$\lambda_1 = 1, \;\;\; \lambda_2 = -0.00832=-f,$$
@@ -158,6 +159,7 @@ Considerando el caso $\gamma = 0.7$, las soluciones son las siguientes:
         $$R(n)=c_1(0.9975)^n+c_2(-0.0058)^n$$
         resolviendo el sistema $2\times 2$ conformado por $c_{1,2}$ se obtienen los resultados $c_1=25.0618\times 10^{12}$, $c_2 = -61.8302\times 10^{9}$. Lo que quiere decir que la solución del problema, dadas las condiciones iniciales es:
         $$R(n)=(25.0618\times 10^{12})(0.9975)^n+(-61.8302\times 10^{9})(-0.0058)^n,$$
+        $$M(n)=(145.96\times 10^{9})(0.9975)^{n-1}+(-360.1\times 10^{6})(-0.0058)^{n-1},$$
         nótese que en este caso el valor absoluto de los valores propios son ambos menores a 1, esto quiere decir que entre más tiempo avance, al elevar estos valores a la $n$-ésima potencia, la solución se acercará al 0. Esto quiere decir que, como se esperaba, hay una pérdida en la cantidad de glóbulos rojos con el paso del tiempo.
     \item En el caso de utilizar la matriz que representa el modelo, los valores propios hallados son (aproximando a 4 cifras significativas):
         $$\lambda_1 = 0.9975, \;\;\; \lambda_2 = -0.0058,$$
@@ -179,7 +181,8 @@ Considerando el caso $\gamma = 1.3$, las soluciones son las siguientes:
         Y así, la solución general está dada por 
         $$R(n)=c_1(1.0025)^n+c_2(-0.0108)^n$$
         resolviendo el sistema $2\times 2$ conformado por $c_{1,2}$ se obtienen los resultados $c_1=24.9391\times 10^{12}$, $c_2 = 60.9261\times 10^{9}$. Lo que quiere decir que la solución del problema, dadas las condiciones iniciales es:
-        $$R(n)=(24.9391\times 10^{12})(1.0025)^n+(c_2 = 60.9261\times 10^{9})(-0.0108)^n,$$
+        $$R(n)=(24.9391\times 10^{12})(1.0025)^n+(60.9261\times 10^{9})(-0.0108)^n,$$
+        $$M(n)=(269.741\times 10^{9})(1.0025)^{n-1}+(658.977\times 10^{6})(-0.0108)^{n-1},$$
         nótese que en este caso $\lambda_1>1$ y $|\lambda_2|<1$, esto quiere decir que entre más tiempo avance, al elevar estos valores a la $n$-ésima potencia el adendo con $\lambda_1$ crecerá hacia el infinito mientras que el de $\lambda_2$ caerá hacia el 0. Esto quiere decir que, como se esperaba, hay un aumento en la cantidad de glóbulos rojos con el paso del tiempo.
     \item En el caso de utilizar la matriz que representa el modelo, los valores propios hallados son (aproximando a 4 cifras significativas):
         $$\lambda_1 = 1.0025, \;\;\; \lambda_2 = -0.0108,$$
@@ -207,18 +210,20 @@ Para cada una de las simulaciones, estos valores son fijos:
 \subsection{Caso $\gamma=1$}\label{subsec:modelo:simulaciones:G1}
 \begin{figure}[H]
     \centering
+    \captionsetup{justification=centering}
     \includegraphics[scale=0.534]{BaseG1.png}
-    \caption{Caption?}
+    \caption{Simulación del modelo para $\gamma = 1$. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$.}
     \label{sec:modelo:fig:G1}
 \end{figure}
 
-Como era esperado, según los análisis hechos en \ref{sec:modelo:analisis}, para el caso $\gamma = 1$ se obtiene una simulación totalmente estable, manteniendo el nivel de glóbulos rojos diarios en $25\times 10^{12}$ y la cantidad de glóbulos rojos producidos diariamente en $208\times 10^{9}$ como bien se puede observar en las gráficas de la figura \ref{sec:modelo:fig:G1}. Esta simulación representa el caso ideal en el que un paciente no tenga ninguna enfermedad o complicación médica y sea completamente saludable. Para este caso, todo glóbulo rojo que es eliminado por el bazo es producido por la médula ósea, por lo que no hay variaciones en las cantidades.
+Como era esperado, según los análisis hechos en la sección \ref{sec:modelo:analisis}, para el caso $\gamma = 1$ se obtiene una simulación totalmente estable, manteniendo el nivel de glóbulos rojos diarios en $25\times 10^{12}$ y la cantidad de glóbulos rojos producidos diariamente en $208\times 10^{9}$ como bien se puede observar en las gráficas de la figura \ref{sec:modelo:fig:G1}. Esta simulación representa el caso ideal en el que un paciente no tenga ninguna enfermedad o complicación médica y sea completamente saludable. Para este caso, todo glóbulo rojo que es eliminado por el bazo es producido por la médula ósea, por lo que no hay variaciones en las cantidades.
 
 \subsection{Caso $\gamma=0.7$}
 \begin{figure}[H]
     \centering
+    \captionsetup{justification=centering}
     \includegraphics[scale=0.534]{BaseG07.png}
-    \caption{Caption?}
+    \caption{Simulación del modelo para $\gamma = 0.7$. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$.}
     \label{sec:modelo:fig:G07}
 \end{figure}
 
@@ -227,12 +232,13 @@ En este caso, el paciente padece de una enfermedad que afecta la producción de 
 
 \subsection{Caso $\gamma=1.3$}\label{subsec:modelo:simulaciones:G13}
 
-En este caso, el paciente produce más glóbulos rojos de los que elimina. Esto puede tener diferentes causas, como bajos valores de hierro y, por lo tanto, de hemoglobina o dificultades pulmonares del paciente que produzcan bajos niveles de oxígeno en la sangre. Como bien se puede observar en las gráficas de la figura \ref{sec:modelo:fig:G13}, para valores de $\gamma$ mayores a 1 se obtiene un crecimiento en la cantidad de glóbulos rojos en el cuerpo y en la cantidad diaria producida por la médula ósea, esto se debe a que el cuerpo está produciendo una media de 1.3 RBC's por cada uno perdido, por lo que es normal que la cantidad de estos aumente. Así como en la simulación para $\gamma = 0.7$, la anomalía presentada del día 0 al día 1 se debe a las condiciones iniciales del problema. Al extender los días de la simulación, se encuentra que en el día 183 la cantidad de eritrocitos en el cuerpo se ha duplicado respecto al valor inicial. Como se analizó en \ref{sec:modelo:analisis}, si se quisiera extender la simulación al infinito los glóbulos rojos también tenderían hacia el infinito. 
+En este caso, el paciente produce más glóbulos rojos de los que elimina. Esto puede tener diferentes causas, como bajos valores de hierro y, por lo tanto, de hemoglobina o dificultades pulmonares del paciente que produzcan bajos niveles de oxígeno en la sangre. Como bien se puede observar en las gráficas de la figura \ref{sec:modelo:fig:G13}, para valores de $\gamma$ mayores a 1 se obtiene un crecimiento en la cantidad de glóbulos rojos en el cuerpo y en la cantidad diaria producida por la médula ósea, esto se debe a que el cuerpo está produciendo una media de 1.3 RBC's por cada uno perdido, por lo que es normal que la cantidad de estos aumente. Así como en la simulación para $\gamma = 0.7$, la anomalía presentada del día 0 al día 1 se debe a las condiciones iniciales del problema. Al extender los días de la simulación, se encuentra que en el día 183 la cantidad de eritrocitos en el cuerpo se ha duplicado respecto al valor inicial. Como se analizó en la sección \ref{sec:modelo:analisis}, si se quisiera extender la simulación al infinito los glóbulos rojos también tenderían hacia el infinito. 
 
 \begin{figure}[H]
     \centering
+    \captionsetup{justification=centering}
     \includegraphics[scale=0.534]{BaseG13.png}
-    \caption{Caption?}
+    \caption{Simulación del modelo para $\gamma = 1.3$. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$.}
     \label{sec:modelo:fig:G13}
 \end{figure}
 Habiendo ya analizado y entendido el modelo base para los diferentes casos, el siguiente capítulo buscará acoplar a este modelo dos variaciones posibles: cuando el paciente padece anemia renal o cuando el paciente ha sufrido una hemorragia.
