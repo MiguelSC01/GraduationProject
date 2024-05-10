@@ -97,5 +97,13 @@ Para ilustrar los diferentes estados del cuerpo mencionados anteriormente, se am
     \captionsetup{justification=centering}
     \includegraphics[scale=0.534]{figures/HemoGrave.png}
     \caption{Simulación del modelo para el caso de una hemorragia grave con transfusión. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$.}
-    \label{sec:variaciones:fig:HemoLeveG13}
+    \label{sec:variaciones:fig:HemoGrave}
 \end{figure}
+
+Para los primeros dos días, el cuerpo se encuentra en el estado estable de $\gamma = 1$. En el tercer día ocurre la hemorragia grave y se puede ver una amplia caída en la cantidad de glóbulos en la gráfica izquierda de la figura \ref{sec:variaciones:fig:HemoGrave}. Esta pérdida, sin embargo, se ve mitigada un poco debido a la producción normal de eritrocitos por parte de la médula ósea. A partir de este día inicia el fuerte crecimiento en la producción de RBC's, pues el cuerpo debe intentar recuperar lo perdido (gráfica derecha a partir del cuarto día). En el día cuatro se puede ver el efecto de la transfusión efectuada a través de un gran aumento en la cantidad de eritrocitos respecto al día anterior. En el quinto hay en la gráfica izquierda una disminución en la pendiente respecto al día anterior que se debe a la transición de $\gamma_2$ a $\gamma_3$, y esto se ve reflejado en la primera gráfica por el cambio de pendiente en los días 4-5 y 5-6. A partir del quinto día el cuerpo produce glóbulos rojos según $\gamma_3$ hasta volver al valor inicial y así volver a la estabilidad brindada por $\gamma_1$.
+
+\section{Caso con Anemia Renal}\label{Sec:variaciones:anemia}
+
+Para este caso se considerará un paciente con anemia renal producida por falta de eritropoyetina en el torrente sanguíneo, es decir que los riñones no segregan la suficiente cantidad de la hormona que le indica al cuerpo que debe acelerar la producción de RBC's.
+
+Como se expuso en la sección \ref{subsec:RBC:enfermedades:anemia}, el tratamiento de inyección de EPO depende del peso del paciente, se debe encontrar un peso en el que basar la dosis pra el modelo. Siguiendo el estudio realizado por el periódico el Tiempo en \cite{elTiempo}, la altura promedio de un hombre colombiano en 2021 es de aproximadamente 172 cm. Utilizando el índice de masa corporal (\cite{IMC}), una medida para hallar el rango de peso ideal según la estatura de una persona, el peso ideal de un hombre que mide 172 cm de altura es de aproximadamente unos 65 kg. De esta manera, la dosis de EPO que se tendrá en cuenta para esta variación del modelo es de 4875 unidades cada tres días (0.975 mU/ml).
