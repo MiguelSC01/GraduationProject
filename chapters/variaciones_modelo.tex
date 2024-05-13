@@ -104,38 +104,84 @@ Para los primeros dos días, el cuerpo se encuentra en el estado estable de $\ga
 
 \section{Caso con Anemia Renal}\label{Sec:variaciones:anemia}
 
-Para este caso se considerará un paciente con anemia renal producida por falta de eritropoyetina en el torrente sanguíneo, es decir que los riñones no segregan la suficiente cantidad de la hormona que le indica al cuerpo que debe acelerar la producción de RBC's.
+Para este caso se considerará un paciente con anemia renal producida por falta de eritropoyetina en el torrente sanguíneo, es decir que los riñones no segregan la suficiente cantidad de la hormona que le indica al cuerpo que debe acelerar la producción de RBC's. Este paciente debe ser tratado mediante la aplicación de eritropoyetina por vía intravenosa para poder elevar la producción de eritrocitos por parte de la médula ósea. 
 
-Como se expuso en la sección \ref{subsec:RBC:enfermedades:anemia}, el tratamiento de inyección de EPO depende del peso del paciente, se debe encontrar un peso en el que basar la dosis pra el modelo. Siguiendo el estudio realizado por el periódico el Tiempo en \cite{elTiempo}, la altura promedio de un hombre colombiano en 2021 es de aproximadamente 172 cm. Utilizando el índice de masa corporal (\cite{IMC}), una medida para hallar el rango de peso ideal según la estatura de una persona, el peso ideal de un hombre que mide 172 cm de altura es de aproximadamente unos 65 kg. De esta manera, la dosis de EPO que se tendrá en cuenta para esta variación del modelo es de 4875 unidades cada tres días (0.975 mU/ml).
+Por el análisis hecho en la sección \ref{sec:modelo:presentacion}, el parámetro $\gamma$ determina la cantidad de glóbulos rojos producidos por la médula ósea por cada uno eliminado por el bazo. De esta manera, $\gamma$ y la concentración de EPO en el paciente están estrechamente relacionadas. A continuación se considerará que este parámetro depende de la concentración de eritropoyetina en sangre.
 
-Para poder adecuar los parámetros de las ecuaciones, se seguirá el artículo de Panjeta (\cite{panjeta2017interpretation}). Para el grupo de pacientes sin anemia, el promedio de EPO en sangre fue de 11.0 mU/ml, mientras que para el grupo con anemia renal de etapa 4 fue de 8.9 mU/ml. Dado que la eritropoyetina es la hormona encargada de indicarle a la médula ósea que produzca nuevos RBC's, se puede ligar la eritropoyetina al parámetro $\gamma$ del modelo. Dado que este esta dado en una fracción, entonces se tomara que el valor normal $\gamma = 1$ corresponde a la concentración de 11.0 mU/ml de EPO; de esta manera, para los pacientes con anemia renal de cuarta etapa, se tendría que $\gamma = 0.809$. 
-
-El siguiente paso es adecuar las dosis de EPO al modelo. Note que, al considerar que $\gamma$ depende de la concentración de EPO en la sangre, entonces se puede adecuar la ecuación $M(n+1)$ de la siguiente manera:
+Note que, al hacer esta consideración, entonces se puede adecuar la ecuación $M(n+1)$ de la siguiente manera:
 $$M(n+1)=g(n)\cdot f \cdot R(n),$$
 
-es decir que la cantidad de glóbulos rojos producidos por la médula ósea en el día $n+1$ ahora también dependerá de la concentración de EPO en el día $n$, $g(n)$. Esto implica que se debe definir una ecuación para $g(n)$, esta se basa en el artículo de Frymoyer (\cite{FRYMOYER2019123}), en donde se puede modelar la concentración de un fármaco aplicado por vía intravenosa mediante la ecuación diferencial
+es decir que la cantidad de glóbulos rojos producidos por la médula ósea en el día $n+1$ ahora también dependerá de la concentración de EPO en el día $n$, $g(n)$. Esto implica que se debe definir una ecuación para $g(n)$. Esta se basa en el artículo de Frymoyer (\cite{FRYMOYER2019123}), en donde se puede modelar la concentración de una dosis de un fármaco aplicado por vía intravenosa mediante la ecuación diferencial
+
 $$\dfrac{d\delta}{dt}=-k_e \delta(t),$$
+
 en donde $k_e$ es una constante que representa la velocidad a la que el cuerpo elimina el fármaco. Para el caso de la eritropoyetina, Garzone en \cite{GARZONE2012547}, define $k_e=0.077$. La fracción $\dfrac{d\delta}{dt}$ está medido en [(mU/ml)/h], miliunidades por mililitro por hora.
+
+La solución de esta ecuación diferencial es:
+
+$$\delta(t)=\delta_0\cdot e^{-k_e\cdot t},$$
+
+donde $\delta_0$ es la concentración de una dosis.
+
+Para poder modelar múltiples dosis de un fármaco, entonces se debe modificar esta ecuación diferencial para que cuando se deba administrar la nueva dosis (aplicada cada $t_0$ horas), se considere la concentración de fármaco que queda en el cuerpo de la dosis anterior, esto se puede hacer de la siguiente manera:
+
+considere $\delta_n$ como la concentración del fármaco en la sangre en la $n$-ésima dosis, entonce se tiene que 
+
+$$\delta_0 = \delta_0,$$
+$$\delta_1 = \delta_0 + \delta_0\cdot e^{-k_e\cdot t_0},$$
+$$\delta_2 = \delta_0 + \delta_1\cdot e^{-k_e\cdot t_0}= \delta_0\left(1+e^{-k_e\cdot t_0}+\left(e^{-k_e\cdot t_0}\right)^2\right),$$
+$$\cdots$$
+$$\delta_n = \delta_0(1+\alpha+\alpha^2+...+\alpha^{n}) $$
+$$\implies \delta_n = \delta_0\left(\frac{1-\alpha^{n+1}}{1-\alpha}\right),\quad \alpha=e^{-k_e\cdot t_0}.$$
+
+Adecuando este resultado a una ecuación continua se obtiene que, para cada intervalo entre dos dosis:
+
+$$ \delta(t) = \delta_{0} \left(\dfrac{1-\alpha^{n}}{1 - \alpha}\right) e^{-(t- (n-1) t_{0})\cdot k_e} $$
+en donde $\alpha = e^{-t_0\cdot k_e}$.
 
 De esta manera, el modelo para un paciente con anemia renal es:
 
 $$R(n+1)=(1-f)R(n)+M(n),$$
 $$M(n+1)=g(n) \cdot f\cdot R(n),$$
 $$g(n+1)=\dfrac{\gamma + \delta(24\cdot n)}{\gamma_s},$$
-$$\dfrac{d\delta}{dt}=-k_e \delta.$$
+$$ \delta(t) = \delta_{0} \left(\dfrac{1-\alpha^{n}}{1 - \alpha}\right) e^{-(t- (n-1) t_{0})\cdot k_e} ; \quad (n-1)t_{0} \leq t < n t_{0}, \quad n=1,2,\dots$$
 
 En donde:
 \begin{itemize}
-    \item $\gamma=8.9;$ (concentración EPO paciente) [mU/ml];
-    \item $\gamma_s=11;$ (concentración normal EPO) [mU/ml];
-    \item $f=0.00832;$
-    \item $R(0) = 25\times 10^{12};$
-    \item $M(0) = R(0)\cdot f \cdot 0.809 = 145.6\times 10^{9};$
-    \item $\delta(0) = 0.975;$ (concentración dosis) [mU/ml]
-    \item $k_e=0.077.$ (constante de elminación) [$\textrm{h}^{-1}$]
+    \item $\gamma$ es la concentración de EPO en el paciente sin fármaco [mU/ml];
+    \item $\gamma_s$ es la concentración normal de EPO [mU/ml];
+    \item $f=0.00832;$ (fracción de RBC's eliminada cada día)
+    \item $R(0) = 25\times 10^{12};$ (valor inicial de RBC's)
+    \item $M(0) = R(0)\cdot f \cdot 0.809 = 145.6\times 10^{9};$ (RBC's eliminados por la médula ósea en el día 0)
+    \item $\delta_0$ es la concentración de cada dosis [mU/ml];
+    \item $k_e=0.077.$ (constante de eliminación) [$\textrm{h}^{-1}$];
+    \item $t_0$ es el tiempo que debe pasar entra cada dosis [h].
 \end{itemize}
 
 El valor $24\cdot n$ en la función $\delta(t)$ para calcular $g(t)$ se utiliza para acoplar el modelo continuo de la concentración del fármaco al modelo base, que es discreto. El valor $24 \cdot n$ indica la concentración del fármaco al comienzo del día $n$, pues $t$ se mide en horas.
+
+Para poder definir los parámetros de las ecuaciones, se seguirá el estudio de Panjeta (\cite{panjeta2017interpretation}) sobre la concentración de EPO en pacientes con anemia renal. Para el grupo de pacientes sin anemia, el promedio de EPO en sangre fue de 11.0 mU/ml, mientras que para el grupo con anemia renal de etapa 4 fue de 8.9 mU/ml. Dado que el valor de $g(n)$ está dado en una fracción, entonces se tomará que el valor normal $\gamma_s =$ 11.0 mU/ml de EPO. Para los pacientes con anemia renal de cuarta etapa, se tendría que $\gamma = 8.9$ mU/ml.
+
+El siguiente paso para las simulaciones es establecer la concentración de dosis que se le debe inyectar al paciente.
+
+\subsection{Concentración de Dosis  = 0.975 mU/ml}
+
+Como se expuso en la sección \ref{subsec:RBC:enfermedades:anemia}, el tratamiento de inyección de EPO depende del peso del paciente, se debe encontrar un peso en el que basar la dosis pra el modelo. Siguiendo el estudio realizado por el periódico el Tiempo en \cite{elTiempo}, la altura promedio de un hombre colombiano en 2021 es de aproximadamente 172 cm. Utilizando el índice de masa corporal (\cite{IMC}), una medida para hallar el rango de peso ideal según la estatura de una persona, el peso ideal de un hombre que mide 172 cm de altura es de aproximadamente unos 65 kg. De esta manera, la dosis de EPO que se tendrá en cuenta para la primera simulación de esta variación del modelo es de 4875 unidades cada tres días (0.975 mU/ml).
+
+Así, para la concentración de 0.975 mU/ml de EPO, se tienen los siguientes valores:
+
+\begin{itemize}
+    \item $\gamma = 8.9$ es la concentración de EPO en el paciente sin fármaco [mU/ml];
+    \item $\gamma_s = 11$ es la concentración normal de EPO [mU/ml];
+    \item $f=0.00832;$ (fracción de RBC's eliminada cada día)
+    \item $R(0) = 25\times 10^{12};$ (valor inicial de RBC's)
+    \item $M(0) = R(0)\cdot f \cdot 0.809 = 145.6\times 10^{9};$ (RBC's eliminados por la médula ósea en el día 0)
+    \item $\delta_0=0.975$ es la concentración de cada dosis [mU/ml];
+    \item $k_e=0.077.$ (constante de eliminación) [$\textrm{h}^{-1}$];
+    \item $t_0=72$ es el tiempo que debe pasar entra cada dosis [h].
+\end{itemize}
+
+Como bien se puede ver en la figura \ref{sec:variaciones:fig:Anemia1}, la dosis de EPO administrada no es suficiente para sanar la constante pérdida de glóbulos rojos en el paciente, pues $R(n)$ presenta una disminución en el tiempo, que al infinito se vuelve 0. Esto ocurre dado que $\gamma + \delta_0=9.875 < \gamma_s$, y ya que la concentración del fármaco se estabiliza rápido, nunca se llega a la concentración esperada de 11 mU/ml para lograr la estabilización. Sin embargo, la simulación muestra como cada dosis aplicada hace que el cuerpo aumente de una manera significativa su producción de eritrocitos, como se ve en la gráfica para $M(n)$.
 
 \begin{figure}[H]
     \centering
@@ -146,15 +192,32 @@ El valor $24\cdot n$ en la función $\delta(t)$ para calcular $g(t)$ se utiliza 
     \label{sec:variaciones:fig:Anemia1}
 \end{figure}
 
-Como bien se puede ver en la figura \ref{sec:variaciones:fig:Anemia1}, la dosis de EPO administrada no es suficiente para sanar la constante pérdida de glóbulos rojos en el paciente, pues $R(n)$ presenta una disminución en el tiempo. Esto es un resultado esperado, pues $\gamma + \delta(0)=9.875 < \gamma_s$, y dado que la concentración del fármaco se estabiliza rápido, nunca se llega al valor esperado de 11. Sin embargo, la simulación muestra un esfuerzo del cuerpo por aumentar su producción de eritrocitos, como se ve en la gráfica para $M(n)$. De esta manera, para intentar alcanzar una estabilidad en $R(n)$ se debe aumentar la concentración de la dosis.
+Se concluye que la dosis aplicada de 0.975 mU/ml no es suficiente para que se contrarresten los efectos de la anemia renal del paciente. De esta manera, se debe encontrar un valor de la dosis para que el paciente logre estabilizar su cantidad de eritrocitos.
 
-De esta manera, se realizaron varias simulaciones para hallar una concentración de la dosis que permita una estabilidad en la cantidad de glóbulos rojos del paciente. Se halló que para $\delta(0) = 5.307 [mU/mL]$ se logra llegar a la estabilidad esperada: 
+\subsection{Concentración de Dosis = 5.307 mU/ml}
+
+Para hallar una concentración de dosis que permita lograr los resultados esperados, se realizaron varias simulaciones para hallar una concentración de la dosis que permita una estabilidad en la cantidad de glóbulos rojos del paciente. Se halló que para $\delta_0 = 5.307 [mU/ml]$ se logra llegar a la estabilidad esperada: 
+
+Así, para la concentración de 5.307 mU/ml de EPO, se tienen los siguientes valores:
+
+\begin{itemize}
+    \item $\gamma = 8.9$ es la concentración de EPO en el paciente sin fármaco [mU/ml];
+    \item $\gamma_s = 11$ es la concentración normal de EPO [mU/ml];
+    \item $f=0.00832;$ (fracción de RBC's eliminada cada día)
+    \item $R(0) = 25\times 10^{12};$ (valor inicial de RBC's)
+    \item $M(0) = R(0)\cdot f \cdot 0.809 = 145.6\times 10^{9};$ (RBC's eliminados por la médula ósea en el día 0)
+    \item $\delta_0=5.307$ es la concentración de cada dosis [mU/ml];
+    \item $k_e=0.077.$ (constante de eliminación) [$\textrm{h}^{-1}$];
+    \item $t_0=72$ es el tiempo que debe pasar entra cada dosis [h].
+\end{itemize}
+
+
 \begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
     \includegraphics[scale=0.526]{figures/AR21.png}
     \includegraphics[scale=0.8]{figures/AR22.png}
-    \caption{Simulación del modelo para el caso de anemia renal con dosis de EPO de 5.309mU/mL. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$, abajo la de $\delta(t)$.}
+    \caption{Simulación del modelo para el caso de anemia renal con dosis de EPO de 5.309mU/ml. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$, abajo la de $\delta(t)$.}
     \label{sec:variaciones:fig:Anemia2}
 \end{figure}
 
