@@ -11,7 +11,7 @@ Es importante tener en cuenta que el modelo que sea que se analice debe tener co
 
 \section{Presentación del Modelo}\label{sec:modelo:presentacion}
 
-Considerando la eliminación de glóbulos rojos por parte del bazo y su producción por la médula ósea para mantener la homeostasis y el diagrama compartimental \ref{sec:RBC:fig:VidaRBC}, el modelo propuesto por Eldestein es el siguiente:
+Considerando la eliminación de glóbulos rojos por parte del bazo y su producción por la médula ósea para mantener la homeostasis y el diagrama compartimental de la figura \ref{sec:RBC:fig:VidaRBC}, el modelo propuesto por Eldestein es el siguiente:
 
 $$R(n+1)=(1-f)R(n)+M(n),$$
 $$M(n+1)=\gamma \cdot f\cdot R(n),$$
@@ -202,9 +202,9 @@ A continuación se presentarán las simulaciones computacionales del modelo y su
 
 Para cada una de las simulaciones, estos valores son fijos:
 \begin{itemize}
-    \item $f=0.00832$;
-    \item $R(0) = 25\times 10^{12};$
-    \item $M(0) = 208 \times 10^{9}.$
+    \item $f=0.00832$; (fracción de glóbulos rojos eliminados diariamente)
+    \item $R(0) = 25\times 10^{12}$; (cantidad inicial de glóbulos rojos)
+    \item $M(0) = 208 \times 10^{9}$. (RBC's eliminados por la médula ósea en el día 0)
 \end{itemize}
 
 \subsection{Caso $\gamma=1$}\label{subsec:modelo:simulaciones:G1}

@@ -1,28 +1,29 @@
 \chapter{Variaciones del Modelo}\label{chap:variaciones}
 
-Teniendo ya claros los conceptos médicos y el análisis de un modelo base acorde con tales conceptos, es momento de introducir al modelo las dos enfermedades presentadas en \ref{sec:RBC:enfermedades}. El caso de las hemorragias es más sencillo que el de la anemia, pues los sangrados son tratados una única vez (hasta que sean frenados), mientras que la anemia es una enfermedad cuyo tratamiento es para toda la vida. En este capítulo se presentarán las variaciones matemáticas del modelo y el análisis de las simulaciones de estas, esperando que los resultados obtenidos logren mantener la homeostasis del paciente y, para el caso de la anemia, ver si un aumento o disminución de la dosis afecta realmente los resultados.
+Teniendo ya claros los conceptos médicos y el análisis de un modelo base acorde con tales conceptos, es momento de introducir al modelo las dos enfermedades presentadas en la sección \ref{sec:RBC:enfermedades}: el caso de las hemorragias y el de la anemia. Los sangrados son tratados una única vez (hasta que sean frenados), mientras que la anemia es una enfermedad cuyo tratamiento es para toda la vida. En este capítulo se presentarán las variaciones matemáticas del modelo y el análisis de las simulaciones de estas variaciones, esperando que los resultados obtenidos logren mantener la homeostasis del paciente y, para el caso de la anemia, ver si un aumento o disminución de la dosis afecta realmente los resultados.
 
 \section{Caso con Hemorragia}\label{Sec:variaciones:hemorragia}
 
-Para los sangrados, se tendrán en cuenta diferentes casos. Inicialmente se tendrá en cuenta una hemorragia leve (pérdida del 2$\%$ de sangre) y se observará lo que sucede si, después de la pérdida de sangre, las variables del modelo se mantienen iguales y que sucede si estas se modifican. Posteriormente se considerará el caso de una hemorragia grave (el 14$\%$ de la sangre del cuerpo) y se observarán los efectos de una transfusión sanguínea para recuperar la homeostasis. En el caso de las hemorragias, se tendrá en cuenta el caso en el que $\gamma =1$, pues así el paciente es totalmente sano, el parámetro $f$ se mantiene igual que antes ($=0.00832$) y los valores iniciales también se mantienen.
+Para los sangrados, se tendrán en cuenta diferentes casos. Inicialmente se tendrá en cuenta una hemorragia leve (pérdida del 2$\%$ de sangre) y se observará lo que sucede si, después de la pérdida de sangre, las variables del modelo se mantienen iguales y que sucede si estas se modifican. Posteriormente se considerará el caso de una hemorragia grave (el 14$\%$ de la sangre del cuerpo, que Holland lo considera grave pero no fatal en \cite{PerdidaSangre}) y se observarán los efectos de una transfusión sanguínea para recuperar la homeostasis. En el caso de las hemorragias, se tendrá en cuenta el caso en el que $\gamma =1$, pues así el paciente es totalmente sano, el parámetro $f$ se mantiene igual que antes ($=0.00832$) y los valores iniciales también se mantienen.
 
 \subsection{Hemorragia Leve}\label{subsec:variaciones:hemorragia:leve}
 
-Para esta variación del modelo, considere que en el tercer día de medición el paciente, ya sea por un corte o un accidente, pierde el $2\%$ de su cantidad de sangre en el cuerpo que, considerando el caso de que tenga 5 litros de sangre, esto equivale a 100 mililitros de fluido o a $5\times 10^{11}$ glóbulos rojos. Así, el modelo se puede ver de la siguiente manera:
+Para esta variación del modelo, tome como ejemplo que en el tercer día de medición el paciente, ya sea por un corte o un accidente, pierde el $2\%$ de su cantidad de sangre en el cuerpo que, considerando el caso de que tenga 5 litros de sangre, esto equivale a 100 mililitros de fluido o a $5\times 10^{11}$ glóbulos rojos. Así, el modelo se puede ver de la siguiente manera:
 
-$$R(n+1)= \left\{ \begin{array}{lcc} (1-f)\cdot R(n)+M(n) & \textrm{si} & n \neq 3 \\ \\ (1-f)\cdot R(n)+M(n)-0.02\cdot R(n) & \textrm{si} & n = 3\end{array} \right.$$
-
-$$M(n+1)=\gamma \cdot f \cdot R(n)$$
+\begin{align}\label{eq:HemoLeveMal}
+    R(n+1) &= \left\{ \begin{array}{lcc} (1-f)\cdot R(n)+M(n) & \textrm{si} & n \neq 3 \\ \\ (1-f)\cdot R(n)+M(n)-0.02\cdot R(n) & \textrm{si} & n = 3\end{array} \right., \\
+    M(n+1) &=\gamma \cdot f \cdot R(n). \nonumber
+\end{align}
 
 En donde:
 \begin{itemize}
-    \item $\gamma=1$;
-    \item $f=0.00832$;
-    \item $R(0) = 25\times 10^{12};$
-    \item $M(0) = 208 \times 10^{9}.$
+    \item $\gamma=1$; (glóbulos rojos producidos por cada uno perdido)
+    \item $f=0.00832$; (fracción de glóbulos rojos eliminados diariamente)
+    \item $R(0) = 25\times 10^{12}$; (cantidad inicial de glóbulos rojos)
+    \item $M(0) = 208 \times 10^{9}$. (RBC's eliminados por la médula ósea en el día 0)
 \end{itemize}
 
-Así, la simulación se ve así: en la primera gráfica de la figura \ref{sec:variaciones:fig:HemoLeveG1} se observa la pérdida de RBC's en el tercer día, un aumento del tercero al cuarto y estabilidad del cuarto en adelante. En la segunda gráfica se observa lo mismo pero con un día de atraso. El aumento que se puede observar está dado por el hecho de que el adendo $M(n)$ conserva lo que ha ocurrido en $R(n-1)$ así, para el cuarto día se producen la cantidad de eritrocitos que se vienen produciendo regularmente antes del accidente, y desde el cuarto día en adelante este adendo ya se acomoda a la nueva cantidad de sangre. La estabilidad que se observa del cuarto día en adelante está dada por el hecho de que $\gamma = 1$, el modelo, de esta manera, funciona como lo hace normalmente (véase \ref{subsec:modelo:simulaciones:G1}) tomando una cantidad inicial de sangre menor que la original, es decir que mantiene una estabilidad con la cantidad de RBC's del cuarto día, que es de $24.504\times 10^{12}$ glóbulos rojos. 
+La simulación se ve así: en la primera gráfica de la figura \ref{sec:variaciones:fig:HemoLeveG1} se observa la pérdida de RBC's en el tercer día, un aumento en la cantidad de eritrocitos del tercero al cuarto y estabilidad del cuarto en adelante. En la segunda gráfica se observa lo mismo pero con un día de atraso. El aumento de RBC's que se puede observar está dado por el hecho de que el adendo $M(n)$ conserva lo que ha ocurrido en $R(n-1)$ así, para el cuarto día se producen la cantidad de eritrocitos que se vienen produciendo regularmente antes del accidente, y desde el cuarto día en adelante este adendo ya se acomoda a la nueva cantidad de sangre. La estabilidad en los glóbulos rojos que se observa del cuarto día en adelante está dada por el hecho de que $\gamma = 1$. El modelo, de esta manera, funciona como lo hace normalmente (véase la sección \ref{subsec:modelo:simulaciones:G1}) tomando una cantidad inicial de sangre menor que la original, es decir que mantiene una estabilidad con la cantidad de RBC's del cuarto día, que es de $24.504\times 10^{12}$ glóbulos rojos. 
 
 \begin{figure}[H]
     \centering
@@ -34,22 +35,23 @@ Así, la simulación se ve así: en la primera gráfica de la figura \ref{sec:va
 
 Está claro que esta simulación está totalmente alejada de lo que ocurre en el caso real, pues lo esperado es que el cuerpo recupere con el paso del tiempo la cantidad de glóbulos rojos perdidos, esto quiere decir que para $n>3$ se debe aumentar el valor de $\gamma$ hasta que la cantidad de eritrocitos sea mayor o igual a la inicial, es decir:
 
-$$R(n+1)= \left\{ \begin{array}{lcc} (1-f)\cdot R(n)+M(n) & \textrm{si} & n \neq 3 \\ \\ (1-f)\cdot R(n)+M(n)-0.02\cdot R(n) & \textrm{si} & n = 3\end{array} \right.$$
+\begin{align}\label{eq:HemoLeveBien}
+    R(n+1) &= \left\{ \begin{array}{lcc} (1-f)\cdot R(n)+M(n) & \textrm{si} & n \neq 3 \\ \\ (1-f)\cdot R(n)+M(n)-0.02\cdot R(n) & \textrm{si} & n = 3\end{array} \right. \\
+    M(n+1) &=\left\{ \begin{array}{lcc} f\cdot \gamma_1 \cdot R(n) & \textrm{si} & R(n+1) \geq R(0) \\ \\ f\cdot \gamma_2\cdot R(n) & \textrm{si} & R(n+1)<R(0)\end{array} \right. \nonumber
+\end{align}
 
-$$M(n+1)=\left\{ \begin{array}{lcc} f\cdot \gamma_1 \cdot R(n) & \textrm{si} & R(n+1) \geq R(0) \\ \\ f\cdot \gamma_2\cdot R(n) & \textrm{si} & R(n+1)<R(0)\end{array} \right.$$
+La condición de $M(n+1)$ permite evitar el retraso del que se ha hablado anteriormente, pues si se considera que ya se alcanzó la cantidad ``normal'' de eritrocitos entonces el cuerpo no debe producir más de los necesarios.
 
-En donde:
+Para calibrar el valor de $\gamma_2$ se utilizó la información brindada por el hospital general de Massachusetts en \cite{Massachusetts}, dado que al cuerpo le toma recuperar los glóbulos rojos perdidos en 450 ml de sangre en unas 5 semanas (35 días), entonces 100 ml deben recuperarse en unos 8 días. Las simulaciones hechas muestran que $\gamma=1.305$ permite lograr esta recuperación en ese tiempo.
+
+Así, los valores constantes a tener en cuenta son:
 \begin{itemize}
-    \item $\gamma_1=1$;
-    \item $\gamma_2=1.305$
-    \item $f=0.00832$;
-    \item $R(0) = 25\times 10^{12};$
-    \item $M(0) = 208 \times 10^{9}.$
+    \item $\gamma_1=1$; (glóbulos rojos producidos por cada uno perdido normalmente)
+    \item $\gamma_2=1.305$; (glóbulos rojos producidos por cada uno perdido después de la hemorragia)
+    \item $f=0.00832$; (fracción de glóbulos rojos eliminados diariamente)
+    \item $R(0) = 25\times 10^{12}$; (cantidad inicial de glóbulos rojos)
+    \item $M(0) = 208 \times 10^{9}$. (RBC's eliminados por la médula ósea en el día 0)
 \end{itemize}
-
-La condición de $M(n+1)$ permite evitar el retraso del que se ha hablado anteriormente, pues si se considera que ya se alcanzó la cantidad "normal" de eritrocitos entonces el cuerpo no debe producir más de los necesarios.
-
-Para estimar el valor de $\gamma_2$ se utilizó la información brindada por el hospital general de Massachusetts en \cite{Massachusetts}, dado que al cuerpo le toma recuperar los glóbulos rojos perdidos en 450 ml de sangre en unas 5 semanas (35 días), entonces 100 ml deben recuperarse en unos 8 días. Las simulaciones hechas muestran que $\gamma=1.305$ permite lograr esta recuperación en ese tiempo.
 
 Para estas simulaciones, se utilizó un tiempo de 15 días para poder observar lo que sucede después de recuperar los eritrocitos perdidos:
 
@@ -67,28 +69,30 @@ Teniendo esto en cuenta, ahora se debe analizar el caso en el que el paciente su
 
 \subsection{Hemorragia Grave}
 
-Considérese el caso en el que el paciente analizado sufre una pérdida del 14$\%$ del volumen de sangre de su cuerpo (unos 700 mililitros o 3.25$\times 10^{12}$ eritrocitos) a causa de un accidente, ya sea una hemorragia interna causada por un golpe o una herida externa como un corte. Esta pérdida de sangre es cercana al 20$\%$ que se puede considerar fatal, por lo que la pérdida de sangre presentada se puede considerar como grave y debe ser tratada médicamente mediante una transfusión sanguínea.
+Considérese el caso en el que el paciente analizado sufre, por ejemplo, una pérdida del 14$\%$ del volumen de sangre de su cuerpo (unos 700 mililitros o 3.25$\times 10^{12}$ eritrocitos) a causa de un accidente, ya sea una hemorragia interna causada por un golpe o una herida externa como un corte. Esta pérdida de sangre, según Holland en \cite{PerdidaSangre}, se puede considerar como grave pero no crítica (no tiene efectos secundarios mayores), por lo que este ejemplo debe ser tratado médicamente mediante una transfusión sanguínea y no afectará las dinámicas normales del cuerpo.
 
-Dado que las bolsas de transfusión de glóbulos rojos tienen un volumen aproximado de 250 mililitros (el 5$\%$ de la concentración normal, unos 1.25$\times 10^{12}$ RBC's), entonces para subsanar la pérdida se le suministrarán dos bolsas de eritrocitos y el volumen restante podrá ser recuperado por el cuerpo.
+Dado que las bolsas de transfusión de glóbulos rojos tienen un volumen aproximado de 250 mililitros (\cite{Granada}), correspondiente al 5$\%$ de la concentración normal, unos 1.25$\times 10^{12}$ RBC's, entonces para subsanar la pérdida del 14$\%$ se tomará como ejemplo que le son suministradas al paciente dos bolsas de eritrocitos y el volumen restante podrá ser recuperado por el cuerpo.
 
-Para poder adecuar el problema al modelo, se considerará que el sangrado inicia y termina en el tercer día y el suministro de sangre ocurre y finaliza en el cuarto. Esta situación no es muy realista, pues en una complicación médica se debe tratar el problema lo más rápido posible, pero para esta investigación es util definir este caso de tal manera para poder ilustrar correctamente las ecuaciones. Es importante notar que el cuerpo tendrá cuatro estados durante este caso: la estabilidad antes y después de la recuperación, el día en el que se hace la transfusión y los días después de la transfusión. De esta manera, el cuerpo debe modificar su producción interna de RBC's en tres momentos, generando dos valores nuevos de $\gamma$.
+Para poder adecuar el modelo al problema, se considerará que el sangrado inicia y termina en el tercer día y el suministro de sangre ocurre y finaliza en el cuarto. Para la presente investigación es útil definir este caso de tal manera para poder ilustrar correctamente las ecuaciones. Es importante notar que el cuerpo tendrá tres estados diferentes durante este caso: la estabilidad antes y después de la recuperación, el estado del día en el que se hace la transfusión y el estado de los días después de la transfusión. De esta manera, el cuerpo debe modificar su producción interna de RBC's en tres momentos, generando dos valores nuevos de $\gamma$ para cada cantidad de glóbulos rojos.
 
 Así, una hemorragia grave se puede interpretar con la siguiente modificación del modelo base:
 
-$$R(n+1)= \left\{ \begin{array}{lcc} (1-f)\cdot R(n)+M(n) & \textrm{si} & n \neq 3,4 \\ \\ (1-f)\cdot R(n)+M(n)-0.02\cdot R(n) & \textrm{si} & n = 3 \\ \\ (1-f)\cdot R(n)+M(n)+0.1\cdot R(0) & \textrm{si} & n = 4 \\ \end{array} \right.$$
+\begin{align}\label{eq:HemoGrave}
+    R(n+1) &= \left\{ \begin{array}{lcc} (1-f)\cdot R(n)+M(n) & \textrm{si} & n \neq 3,4 \\ \\ (1-f)\cdot R(n)+M(n)-0.14\cdot R(n) & \textrm{si} & n = 3 \\ \\ (1-f)\cdot R(n)+M(n)+0.1\cdot R(0) & \textrm{si} & n = 4 \\ \end{array} \right. \\
+    M(n+1) &=\left\{ \begin{array}{lcc} f\cdot \gamma_1 \cdot R(n) & \textrm{si} & R(n+1) \geq R(0) \\ \\ f\cdot \gamma_2\cdot R(n) & \textrm{si} & n = 4\textrm{ y } R(n+1)<R(0) \\ \\ f\cdot \gamma_3\cdot R(n) & \textrm{si} & n \neq 4\textrm{ y } R(n+1)<R(0)\\ \end{array} \right. \nonumber
+\end{align}
 
-$$M(n+1)=\left\{ \begin{array}{lcc} f\cdot \gamma_1 \cdot R(n) & \textrm{si} & R(n+1) \geq R(0) \\ \\ f\cdot \gamma_2\cdot R(n) & \textrm{si} & n = 4 \\ \\ f\cdot \gamma_3\cdot R(n) & \textrm{si} & n \neq 4\textrm{ y } R(n+1)<R(0)\\ \end{array} \right.$$
+Los valores de $\gamma_2$ y $\gamma_3$ fueron estimados al igual que en el caso de hemorragias leves. La cantidad de glóbulos rojos perdida en 700 mililitros de sangre debería ser recuperada por el cuerpo en unos 55 días, obteniendo un valor de $\gamma_2$ de 1.331. Para calibrar $\gamma_3$ se debe tener en cuenta la cantidad de eritrocitos en el cuerpo en el quinto día, pues el cuerpo del paciente se ajusta a la nueva cantidad de glóbulos rojos obtenidos gracias a la transfusión. En el quinto día de simulación, el cuerpo tiene 24.0673$\times 10^{12}$ RBC's, siguiendo la cuenta del hospital general de Massachusetts (\cite{Massachusetts}), la cantidad restante (93.2713 $\times 10^{10}$ eritrocitos) se recuperaría en 15 días, se concluye que $\gamma_3 = 1.31$ según las simulaciones del modelo.
 
-En donde:
+Así, los valores constantes a tener en cuenta son:
 \begin{itemize}
-    \item $\gamma_1=1$;
-    \item $\gamma_2=1.331$;
-    \item $\gamma_3=1.31$;
-    \item $f=0.00832$;
-    \item $R(0) = 25\times 10^{12};$
-    \item $M(0) = 208 \times 10^{9}.$
+    \item $\gamma_1=1$; (glóbulos rojos producidos por cada uno perdido normalmente)
+    \item $\gamma_2=1.305$; (glóbulos rojos producidos por cada uno perdido después de la hemorragia)
+    \item $\gamma_3=1.31$; (glóbulos rojos producidos por cada uno perdido después de la transfusión)
+    \item $f=0.00832$; (fracción de glóbulos rojos eliminados diariamente)
+    \item $R(0) = 25\times 10^{12}$; (cantidad inicial de glóbulos rojos)
+    \item $M(0) = 208 \times 10^{9}$. (RBC's eliminados por la médula ósea en el día 0)
 \end{itemize}
-Los valores de $\gamma_2$, $\gamma_3$ fueron estimados al igual que en el caso de hemorragias leves. La cantidad de glóbulos rojos perdida en 700 mililitros de sangre debería ser recuperada por el cuerpo en unos 55 días, obteniendo un valor de $\gamma_2$ de 1.331. Para estimar $\gamma_3$ se debe tener en cuenta la cantidad de eritrocitos en el cuerpo en el quinto día, pues el cuerpo del paciente se ajusta a la nueva cantidad de glóbulos rojos obtenidos gracias a la transfusión. En el quinto día de simulación, el cuerpo tiene 24.0673$\times 10^{12}$ RBC's, siguiendo la cuenta del hospital general de Massachusetts, la cantidad restante (93.2713 $\times 10^{10}$ eritrocitos) se recuperaría en 15 días, es decir que $\gamma_3 = 1.31$ según las simulaciones del modelo.
 
 Para ilustrar los diferentes estados del cuerpo mencionados anteriormente, se amplió el tiempo de simulación a 22 días: 
 
@@ -104,52 +108,65 @@ Para los primeros dos días, el cuerpo se encuentra en el estado estable de $\ga
 
 \section{Caso con Anemia Renal}\label{Sec:variaciones:anemia}
 
-Para este caso se considerará un paciente con anemia renal producida por falta de eritropoyetina en el torrente sanguíneo, es decir que los riñones no segregan la suficiente cantidad de la hormona que le indica al cuerpo que debe acelerar la producción de RBC's. Este paciente debe ser tratado mediante la aplicación de eritropoyetina por vía intravenosa para poder elevar la producción de eritrocitos por parte de la médula ósea. 
+Para este caso se considerará un paciente con anemia renal permanente producida por falta de eritropoyetina en el torrente sanguíneo, es decir que los riñones no segregan la suficiente cantidad de la hormona que le indica al cuerpo que debe acelerar la producción de RBC's. Este paciente debe ser tratado por el resto de su vida mediante la aplicación de eritropoyetina por vía intravenosa para poder elevar la producción de eritrocitos por parte de la médula ósea. 
 
-Por el análisis hecho en la sección \ref{sec:modelo:presentacion}, el parámetro $\gamma$ determina la cantidad de glóbulos rojos producidos por la médula ósea por cada uno eliminado por el bazo. De esta manera, $\gamma$ y la concentración de EPO en el paciente están estrechamente relacionadas. A continuación se considerará que este parámetro depende de la concentración de eritropoyetina en sangre.
+Siguiendo el análisis hecho en la sección \ref{sec:modelo:presentacion}, el parámetro $\gamma$ determina la cantidad de glóbulos rojos producidos por la médula ósea por cada uno eliminado por el bazo. De esta manera, $\gamma$ y la concentración de EPO en el la sangre del paciente están estrechamente relacionados. A continuación se considerará que este parámetro depende de la concentración de eritropoyetina en sangre.
 
 Note que, al hacer esta consideración, entonces se puede adecuar la ecuación $M(n+1)$ de la siguiente manera:
-$$M(n+1)=g(n)\cdot f \cdot R(n),$$
 
-es decir que la cantidad de glóbulos rojos producidos por la médula ósea en el día $n+1$ ahora también dependerá de la concentración de EPO en el día $n$, $g(n)$. Esto implica que se debe definir una ecuación para $g(n)$. Esta se basa en el artículo de Frymoyer (\cite{FRYMOYER2019123}), en donde se puede modelar la concentración de una dosis de un fármaco aplicado por vía intravenosa mediante la ecuación diferencial
+\begin{equation*}
+    M(n+1)=\gamma(n)\cdot f \cdot R(n),
+\end{equation*}
 
-$$\dfrac{d\delta}{dt}=-k_e \delta(t),$$
+es decir que la cantidad de glóbulos rojos producidos por la médula ósea en el día $n+1$ ahora también dependerá de la cantidad de glóbulos rojos producidos por cada uno perdido dependiente de EPO en el día $n$, $\gamma(n)$. Esto implica que se debe definir una ecuación para $\gamma(n)$. Esta se basa en el artículo de Frymoyer (\cite{FRYMOYER2019123}), en donde se puede modelar la concentración de una dosis de un fármaco aplicado por vía intravenosa ($\delta(t)$) mediante la ecuación diferencial
 
-en donde $k_e$ es una constante que representa la velocidad a la que el cuerpo elimina el fármaco. Para el caso de la eritropoyetina, Garzone en \cite{GARZONE2012547}, define $k_e=0.077$. La fracción $\dfrac{d\delta}{dt}$ está medido en [(mU/ml)/h], miliunidades por mililitro por hora.
+\begin{equation}\label{eq:diferencial}
+    \dfrac{d\delta}{dt}=-k_e \delta(t),
+\end{equation}
 
-La solución de esta ecuación diferencial es:
+en donde $k_e$ es una constante que representa la velocidad a la que el cuerpo elimina el fármaco y es medida en 1/h. Para el caso de la eritropoyetina, Garzone en \cite{GARZONE2012547}, define $k_e=0.077$. La fracción $\dfrac{d\delta}{dt}$ está medida en [(mU/ml)/h], miliunidades por mililitro por hora.
 
-$$\delta(t)=\delta_0\cdot e^{-k_e\cdot t},$$
+La solución de la ecuación diferencial \ref{eq:diferencial} es:
 
-donde $\delta_0$ es la concentración de una dosis.
+\begin{equation}\label{eq:solucionDif}
+    \delta(t)=\delta_0\cdot e^{-k_e\cdot t},
+\end{equation}
 
-Para poder modelar múltiples dosis de un fármaco, entonces se debe modificar esta ecuación diferencial para que cuando se deba administrar la nueva dosis (aplicada cada $t_0$ horas), se considere la concentración de fármaco que queda en el cuerpo de la dosis anterior, esto se puede hacer de la siguiente manera:
+donde $\delta_0$ es la concentración de cada dosis.
+
+Para poder modelar múltiples dosis de un fármaco, entonces se debe modificar la solución de la ecuación diferencial para que cuando se deba administrar la nueva dosis (aplicada cada $t_0$ horas), se considere la concentración de fármaco que queda en el cuerpo de la dosis anterior, esto se puede hacer de la siguiente manera:
 
 considere $\delta_n$ como la concentración del fármaco en la sangre en la $n$-ésima dosis, entonce se tiene que 
 
-$$\delta_0 = \delta_0,$$
-$$\delta_1 = \delta_0 + \delta_0\cdot e^{-k_e\cdot t_0},$$
-$$\delta_2 = \delta_0 + \delta_1\cdot e^{-k_e\cdot t_0}= \delta_0\left(1+e^{-k_e\cdot t_0}+\left(e^{-k_e\cdot t_0}\right)^2\right),$$
-$$\cdots$$
-$$\delta_n = \delta_0(1+\alpha+\alpha^2+...+\alpha^{n}) $$
-$$\implies \delta_n = \delta_0\left(\frac{1-\alpha^{n+1}}{1-\alpha}\right),\quad \alpha=e^{-k_e\cdot t_0}.$$
+\begin{align*}
+    \delta_0 &= \delta_0,\\
+    \delta_1 &= \delta_0 + \delta_0\cdot e^{-k_e\cdot t_0}, \\
+    \delta_2 &= \delta_0 + \delta_1\cdot e^{-k_e\cdot t_0}= \delta_0\left(1+e^{-k_e\cdot t_0}+\left(e^{-k_e\cdot t_0}\right)^2\right), \\
+    &\cdots \\
+    \delta_n &= \delta_0(1+\alpha+\alpha^2+...+\alpha^{n}) \\
+    \implies \delta_n &= \delta_0\left(\frac{1-\alpha^{n+1}}{1-\alpha}\right),\quad \alpha=e^{-k_e\cdot t_0}.
+\end{align*}
 
-Adecuando este resultado a una ecuación continua se obtiene que, para cada intervalo entre dos dosis:
+Adecuando este resultado a la ecuación continua \ref{eq:solucionDif} se obtiene que, para cada intervalo entre dos dosis:
 
-$$ \delta(t) = \delta_{0} \left(\dfrac{1-\alpha^{n}}{1 - \alpha}\right) e^{-(t- (n-1) t_{0})\cdot k_e} $$
+\begin{equation*}
+    \delta(t) = \delta_{0} \left(\dfrac{1-\alpha^{n}}{1 - \alpha}\right) e^{-(t- (n-1) t_{0})\cdot k_e},
+\end{equation*}  
+
 en donde $\alpha = e^{-t_0\cdot k_e}$.
 
 De esta manera, el modelo para un paciente con anemia renal es:
-
-$$R(n+1)=(1-f)R(n)+M(n),$$
-$$M(n+1)=g(n) \cdot f\cdot R(n),$$
-$$g(n+1)=\dfrac{\gamma + \delta(24\cdot n)}{\gamma_s},$$
-$$ \delta(t) = \delta_{0} \left(\dfrac{1-\alpha^{n}}{1 - \alpha}\right) e^{-(t- (n-1) t_{0})\cdot k_e} ; \quad (n-1)t_{0} \leq t < n t_{0}, \quad n=1,2,\dots$$
+\begin{align}
+    R(n+1) &=(1-f)R(n)+M(n), \\
+    M(n+1) &=\gamma(n) \cdot f\cdot R(n), \nonumber \\
+    \gamma(n+1) &=\dfrac{\epsilon + \delta(24\cdot n)}{\epsilon_s}, \nonumber \\
+    \delta(t) = \delta_{0} \left(\dfrac{1-\alpha^{n}}{1 - \alpha}\right) e^{-(t- (n-1) t_{0})\cdot k_e} &; \quad (n-1)t_{0} \leq t < n t_{0}, \quad n=1,2,\dots\nonumber
+\end{align}
 
 En donde:
 \begin{itemize}
-    \item $\gamma$ es la concentración de EPO en el paciente sin fármaco [mU/ml];
-    \item $\gamma_s$ es la concentración normal de EPO [mU/ml];
+    \item $\epsilon$ es la concentración de EPO en el paciente sin fármaco [mU/ml];
+    \item $\epsilon_s$ es la concentración normal de EPO [mU/ml];
     \item $f=0.00832;$ (fracción de RBC's eliminada cada día)
     \item $R(0) = 25\times 10^{12};$ (valor inicial de RBC's)
     \item $M(0) = R(0)\cdot f \cdot 0.809 = 145.6\times 10^{9};$ (RBC's eliminados por la médula ósea en el día 0)
@@ -158,21 +175,21 @@ En donde:
     \item $t_0$ es el tiempo que debe pasar entra cada dosis [h].
 \end{itemize}
 
-El valor $24\cdot n$ en la función $\delta(t)$ para calcular $g(t)$ se utiliza para acoplar el modelo continuo de la concentración del fármaco al modelo base, que es discreto. El valor $24 \cdot n$ indica la concentración del fármaco al comienzo del día $n$, pues $t$ se mide en horas.
+El valor $24\cdot n$ en la función $\delta(t)$ para calcular $\gamma(n)$ se utiliza para acoplar el modelo continuo de la concentración del fármaco al modelo base, que es discreto. El valor $24 \cdot n$ indica la concentración del fármaco al comienzo del día $n$, pues $t$ se mide en horas.
 
-Para poder definir los parámetros de las ecuaciones, se seguirá el estudio de Panjeta (\cite{panjeta2017interpretation}) sobre la concentración de EPO en pacientes con anemia renal. Para el grupo de pacientes sin anemia, el promedio de EPO en sangre fue de 11.0 mU/ml, mientras que para el grupo con anemia renal de etapa 4 fue de 8.9 mU/ml. Dado que el valor de $g(n)$ está dado en una fracción, entonces se tomará que el valor normal $\gamma_s =$ 11.0 mU/ml de EPO. Para los pacientes con anemia renal de cuarta etapa, se tendría que $\gamma = 8.9$ mU/ml.
+Para poder definir los parámetros de las ecuaciones, se seguirá el estudio de Panjeta (\cite{panjeta2017interpretation}) sobre la concentración de EPO en pacientes con anemia renal. Para el grupo de pacientes sin anemia, el promedio de EPO en sangre fue de 11.0 mU/ml, mientras que para el grupo con anemia renal de etapa 4 fue de 8.9 mU/ml. Dado que el valor de $\gamma(n)$ está dado en una fracción, entonces se tomará que el valor normal $\epsilon =$ 11.0 mU/ml de EPO. Para los pacientes con anemia renal de cuarta etapa, se tendría que $\epsilon = 8.9$ mU/ml.
 
 El siguiente paso para las simulaciones es establecer la concentración de dosis que se le debe inyectar al paciente.
 
 \subsection{Concentración de Dosis  = 0.975 mU/ml}
 
-Como se expuso en la sección \ref{subsec:RBC:enfermedades:anemia}, el tratamiento de inyección de EPO depende del peso del paciente, se debe encontrar un peso en el que basar la dosis pra el modelo. Siguiendo el estudio realizado por el periódico el Tiempo en \cite{elTiempo}, la altura promedio de un hombre colombiano en 2021 es de aproximadamente 172 cm. Utilizando el índice de masa corporal (\cite{IMC}), una medida para hallar el rango de peso ideal según la estatura de una persona, el peso ideal de un hombre que mide 172 cm de altura es de aproximadamente unos 65 kg. De esta manera, la dosis de EPO que se tendrá en cuenta para la primera simulación de esta variación del modelo es de 4875 unidades cada tres días (0.975 mU/ml).
+Como se expuso en la sección \ref{subsec:RBC:enfermedades:anemia}, el tratamiento de inyección de EPO depende de la masa corporal del paciente, se debe encontrar una masa corporal en el que basar la dosis pra el modelo. Siguiendo el estudio realizado por el periódico el Tiempo en \cite{elTiempo}, la altura promedio de un hombre colombiano en 2021 es de aproximadamente 172 cm. Utilizando el índice de masa corporal (\cite{IMC}), una medida para hallar el rango de masa corporal ideal según la estatura de una persona, la masa corporal ideal de un hombre que mide 172 cm de altura es de aproximadamente unos 65 kg. De esta manera, la dosis de EPO que se tendrá en cuenta para la primera simulación de esta variación del modelo es de 4875 unidades cada tres días (0.975 mU/ml).
 
 Así, para la concentración de 0.975 mU/ml de EPO, se tienen los siguientes valores:
 
 \begin{itemize}
-    \item $\gamma = 8.9$ es la concentración de EPO en el paciente sin fármaco [mU/ml];
-    \item $\gamma_s = 11$ es la concentración normal de EPO [mU/ml];
+    \item $\epsilon = 8.9$ es la concentración de EPO en el paciente sin fármaco [mU/ml];
+    \item $\epsilon_s = 11$ es la concentración normal de EPO [mU/ml];
     \item $f=0.00832;$ (fracción de RBC's eliminada cada día)
     \item $R(0) = 25\times 10^{12};$ (valor inicial de RBC's)
     \item $M(0) = R(0)\cdot f \cdot 0.809 = 145.6\times 10^{9};$ (RBC's eliminados por la médula ósea en el día 0)
@@ -196,13 +213,13 @@ Se concluye que la dosis aplicada de 0.975 mU/ml no es suficiente para que se co
 
 \subsection{Concentración de Dosis = 5.307 mU/ml}
 
-Para hallar una concentración de dosis que permita lograr los resultados esperados, se realizaron varias simulaciones para hallar una concentración de la dosis que permita una estabilidad en la cantidad de glóbulos rojos del paciente. Se halló que para $\delta_0 = 5.307 [mU/ml]$ se logra llegar a la estabilidad esperada: 
+Para hallar una concentración de dosis que permita lograr los resultados esperados, se realizaron varias simulaciones para hallar una concentración de la dosis que permita una estabilidad en la cantidad de glóbulos rojos del paciente. Con una dosis de $\delta_0 = 5.307$ [mU/ml] se logra llegar a la estabilidad esperada.
 
-Así, para la concentración de 5.307 mU/ml de EPO, se tienen los siguientes valores:
+Para la concentración de 5.307 mU/ml de EPO, se tienen los siguientes valores:
 
 \begin{itemize}
-    \item $\gamma = 8.9$ es la concentración de EPO en el paciente sin fármaco [mU/ml];
-    \item $\gamma_s = 11$ es la concentración normal de EPO [mU/ml];
+    \item $\epsilon = 8.9$ es la concentración de EPO en el paciente sin fármaco [mU/ml];
+    \item $\epsilon_s = 11$ es la concentración normal de EPO [mU/ml];
     \item $f=0.00832;$ (fracción de RBC's eliminada cada día)
     \item $R(0) = 25\times 10^{12};$ (valor inicial de RBC's)
     \item $M(0) = R(0)\cdot f \cdot 0.809 = 145.6\times 10^{9};$ (RBC's eliminados por la médula ósea en el día 0)
@@ -211,6 +228,7 @@ Así, para la concentración de 5.307 mU/ml de EPO, se tienen los siguientes val
     \item $t_0=72$ es el tiempo que debe pasar entra cada dosis [h].
 \end{itemize}
 
+La figura \ref{sec:variaciones:fig:Anemia2} muestra como, gracias a la nueva dosis, el cuerpo es capaz de lograr una oscilación constante para un valor máximo de RBC's ligeramente menor al original. La función $R(n)$ se vuelve periódica con un máximo de $24.9817$ glóbulos rojos, menos del $1\%$ de pérdida respecto al valor original.
 
 \begin{figure}[H]
     \centering
@@ -220,5 +238,3 @@ Así, para la concentración de 5.307 mU/ml de EPO, se tienen los siguientes val
     \caption{Simulación del modelo para el caso de anemia renal con dosis de EPO de 5.309mU/ml. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$, abajo la de $\delta(t)$.}
     \label{sec:variaciones:fig:Anemia2}
 \end{figure}
-
-La figura \ref{sec:variaciones:fig:Anemia2} muestra como, gracias a la nueva dosis, el cuerpo es capaz de lograr una oscilación constante para un valor máximo de RBC's ligeramente menor al original. La función $R(n)$ se vuelve periódica con un máximo de $24.9817$ glóbulos rojos, menos del $1\%$ de pérdida respecto al valor original.

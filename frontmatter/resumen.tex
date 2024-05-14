@@ -1,16 +1,15 @@
 \chapter*{Resumen}
-Los glóbulos rojos (RBC's por sus siglas en inglés), o eritrocitos, son producidos por la médula ósea gracias a la segregación de eritropoyetina por parte de los riñones cuando se detecta un nivel bajo de oxigeno en la sangre. Al cumplir su vida útil (unos 120 días), los eritrocitos son filtrados por el bazo y transformados en sustancias de deshecho del cuerpo.
 
-Considere $R(n)$ como la cantidad de RBC's en el cuerpo en el día $n$ y $M(n)$ como la cantidad de eritrocitos producidos por la médula ósea en el día $n$. El modelo que intenta simular el proceso de vida de los glóbulos rojos propuesto por Eldestein en \cite{edelstein1988mathematical} es:
+El modelo discreto que intenta simular el proceso de vida de los glóbulos rojos propuesto por Eldestein en \cite{edelstein1988mathematical} es:
 
 $$R(n+1)=(1-f)R(n)+M(n),$$
 $$M(n+1)=\gamma \cdot f\cdot R(n),$$
 
-en donde $0\leq f \leq 1$ representa la fracción de glóbulos rojos filtrados por el bazo diariamente y $\gamma \geq 0$ representa la cantidad de RBC's producidos por la médula ósea por cada uno eliminado por el bazo. 
+en donde $R(n)$ representa la cantidad de glóbulos rojos en el día $n$ y $M(n)$ los glóbulos rojos producidos por la médula ósea. El parámetro $0\leq f \leq 1$ representa la fracción de glóbulos rojos filtrados por el bazo diariamente y $\gamma \geq 0$ representa la cantidad de RBC's producidos por la médula ósea por cada uno eliminado por el bazo. 
 
-En el proyecto se hace un análisis matemático de este modelo base y se hacen tres simulaciones computacionales cambiando el valor de $\gamma$ (tomándolo mayor, menor o igual a 1), pues el resto de constantes y valores iniciales del problema son fijos. Cada simulación es analizada según las observaciones hechas desde el punto de vista matemático. 
+En el proyecto se hace un análisis matemático de este modelo base y se hacen tres simulaciones computacionales cambiando el valor de $\gamma$ (tomándolo mayor, menor o igual a 1). Cada simulación es analizada según las observaciones hechas desde el punto de vista matemático. 
 
-Posteriormente se presentan tres variaciones del modelo siguiendo dos principales complicaciones médicas: las hemorragias (pérdida de sangre) y la anemia renal (deficiencia de eritropoyetina). La primera variación es para un paciente que ha sufrido una hemorragia leve (pérdida del 2$\%$) cuyo cuerpo se recupera de esta pérdida naturalmente; la segunda es para un paciente que ha sufrido una hemorragia grave (pérdida del 14$\%$) que debe ser tratado mediante una transfusión; la tercera es para un paciente que padece anemia renal y debe ser tratado mediante suplemento de eritropoyetina. Para cada uno de los casos se presentan las correspondientes simulaciones computacionales y el análisis de estas. 
+Posteriormente se presentan tres variaciones del modelo siguiendo tres principales complicaciones médicas: una hemorragia leve (pérdida de sangre del $2\%$), una hemorragia grave (pérdida de sangre del $14\%$) y anemia renal (deficiencia de eritropoyetina). Para cada uno de los casos se presenta su tratamiento médico, su correspondiente simulación computacional y el análisis de esta. 
 
 Para concluir se presentan nuevas variables a tener en cuenta a la hora de proponer el modelo y algunos cambios que se podrían hacer para modificar los resultados obtenidos. También se propone un trabajo a futuro para incluir al modelo la movilización de células madre para pacientes con cáncer.
 
