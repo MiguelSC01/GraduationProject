@@ -19,6 +19,41 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
+    \entry{edelstein1988mathematical}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=a17f18cc7ffe39522c4cd1b2660d6aa6}{%
+           family={Edelstein-Keshet},
+           familyi={E\bibinithyphendelim K\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Society for Industrial}%
+        {Applied Mathematics (SIAM, 3600 Market Street, Floor 6, Philadelphia, PA 19104)}%
+      }
+      \strng{namehash}{a17f18cc7ffe39522c4cd1b2660d6aa6}
+      \strng{fullhash}{a17f18cc7ffe39522c4cd1b2660d6aa6}
+      \strng{fullhashraw}{a17f18cc7ffe39522c4cd1b2660d6aa6}
+      \strng{bibnamehash}{a17f18cc7ffe39522c4cd1b2660d6aa6}
+      \strng{authorbibnamehash}{a17f18cc7ffe39522c4cd1b2660d6aa6}
+      \strng{authornamehash}{a17f18cc7ffe39522c4cd1b2660d6aa6}
+      \strng{authorfullhash}{a17f18cc7ffe39522c4cd1b2660d6aa6}
+      \strng{authorfullhashraw}{a17f18cc7ffe39522c4cd1b2660d6aa6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780898719147}
+      \field{series}{Classics in Applied Mathematics}
+      \field{title}{Mathematical Models in Biology}
+      \field{year}{1988}
+      \verb{urlraw}
+      \verb https://books.google.com.co/books?id=uABYP1hnsf0C
+      \endverb
+      \verb{url}
+      \verb https://books.google.com.co/books?id=uABYP1hnsf0C
+      \endverb
+    \endentry
     \entry{cosgrove2021hematopoiesis}{article}{}{}
       \name{author}{4}{}{%
         {{hash=720e8382c9105fbdfb99904b80371fe7}{%
@@ -55,8 +90,8 @@
       \strng{authornamehash}{a633148971cd79153631203d58d856c2}
       \strng{authorfullhash}{c67c2d61d5f7ad324c0025cd39f4478c}
       \strng{authorfullhashraw}{c67c2d61d5f7ad324c0025cd39f4478c}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Trends in Immunology}
@@ -96,8 +131,8 @@
       \strng{authornamehash}{c04336463421103c31740f95e8a353d5}
       \strng{authorfullhash}{c04336463421103c31740f95e8a353d5}
       \strng{authorfullhashraw}{c04336463421103c31740f95e8a353d5}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9788413820132}
@@ -134,8 +169,8 @@
       \strng{authornamehash}{1b8e4f694c5c977aa4809c9190951d68}
       \strng{authorfullhash}{1b8e4f694c5c977aa4809c9190951d68}
       \strng{authorfullhashraw}{1b8e4f694c5c977aa4809c9190951d68}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Experimental Hematology}
@@ -171,8 +206,8 @@
       \strng{authornamehash}{0e028c62257d9c051d0635cf65144dbc}
       \strng{authorfullhash}{0e028c62257d9c051d0635cf65144dbc}
       \strng{authorfullhashraw}{0e028c62257d9c051d0635cf65144dbc}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Laboratory medicine}
@@ -203,8 +238,8 @@
       \strng{authorfullhash}{d94ab1df48e2fe6caeb79156d600f7e3}
       \strng{authorfullhashraw}{d94ab1df48e2fe6caeb79156d600f7e3}
       \field{extraname}{1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Clinics in laboratory medicine}
@@ -214,41 +249,6 @@
       \field{year}{2015}
       \field{pages}{43\bibrangedash 57}
       \range{pages}{15}
-    \endentry
-    \entry{edelstein1988mathematical}{book}{}{}
-      \name{author}{1}{}{%
-        {{hash=a17f18cc7ffe39522c4cd1b2660d6aa6}{%
-           family={Edelstein-Keshet},
-           familyi={E\bibinithyphendelim K\bibinitperiod},
-           given={L.},
-           giveni={L\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {Society for Industrial}%
-        {Applied Mathematics (SIAM, 3600 Market Street, Floor 6, Philadelphia, PA 19104)}%
-      }
-      \strng{namehash}{a17f18cc7ffe39522c4cd1b2660d6aa6}
-      \strng{fullhash}{a17f18cc7ffe39522c4cd1b2660d6aa6}
-      \strng{fullhashraw}{a17f18cc7ffe39522c4cd1b2660d6aa6}
-      \strng{bibnamehash}{a17f18cc7ffe39522c4cd1b2660d6aa6}
-      \strng{authorbibnamehash}{a17f18cc7ffe39522c4cd1b2660d6aa6}
-      \strng{authornamehash}{a17f18cc7ffe39522c4cd1b2660d6aa6}
-      \strng{authorfullhash}{a17f18cc7ffe39522c4cd1b2660d6aa6}
-      \strng{authorfullhashraw}{a17f18cc7ffe39522c4cd1b2660d6aa6}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9780898719147}
-      \field{series}{Classics in Applied Mathematics}
-      \field{title}{Mathematical Models in Biology}
-      \field{year}{1988}
-      \verb{urlraw}
-      \verb https://books.google.com.co/books?id=uABYP1hnsf0C
-      \endverb
-      \verb{url}
-      \verb https://books.google.com.co/books?id=uABYP1hnsf0C
-      \endverb
     \endentry
     \entry{liu2023research}{article}{}{}
       \name{author}{3}{}{%
@@ -280,8 +280,8 @@
       \strng{authorfullhash}{7e076afceb626fb36a281f03db9bd6de}
       \strng{authorfullhashraw}{7e076afceb626fb36a281f03db9bd6de}
       \field{extraname}{1}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Mathematics}
@@ -312,8 +312,8 @@
       \strng{authorfullhash}{29820554483e0151cc9f851a9b33214b}
       \strng{authorfullhashraw}{29820554483e0151cc9f851a9b33214b}
       \field{extraname}{1}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9780387224374}
@@ -346,8 +346,8 @@
       \strng{authornamehash}{9fe66f71b33fedc772becf678330937e}
       \strng{authorfullhash}{9fe66f71b33fedc772becf678330937e}
       \strng{authorfullhashraw}{9fe66f71b33fedc772becf678330937e}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Cold Spring Harbor perspectives in medicine}
@@ -601,8 +601,31 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://en.wikipedia.org/w/index.php?title=Red_blood_cell&oldid=1217153817}}
-      \field{note}{[Online; accessed 25-April-2024]}
+      \field{note}{[Online; descargado 25-Abril-2024]}
       \field{title}{Red blood cell --- {Wikipedia}{,} The Free Encyclopedia}
+      \field{year}{2024}
+    \endentry
+    \entry{Cleveland}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=18a3b2aa5b80cdc35c37255cff78fbaa}{%
+           family={{Cleveland Clinic}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{18a3b2aa5b80cdc35c37255cff78fbaa}
+      \strng{fullhash}{18a3b2aa5b80cdc35c37255cff78fbaa}
+      \strng{fullhashraw}{18a3b2aa5b80cdc35c37255cff78fbaa}
+      \strng{bibnamehash}{18a3b2aa5b80cdc35c37255cff78fbaa}
+      \strng{authorbibnamehash}{18a3b2aa5b80cdc35c37255cff78fbaa}
+      \strng{authornamehash}{18a3b2aa5b80cdc35c37255cff78fbaa}
+      \strng{authorfullhash}{18a3b2aa5b80cdc35c37255cff78fbaa}
+      \strng{authorfullhashraw}{18a3b2aa5b80cdc35c37255cff78fbaa}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://my.clevelandclinic.org/health/articles/14573-erythropoietin}}
+      \field{note}{[Online; descargado 13-Mayo-2024]}
+      \field{title}{Erythropoietin}
       \field{year}{2024}
     \endentry
     \entry{eswiki:159489943}{misc}{}{}
@@ -619,8 +642,8 @@
       \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
       \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
       \strng{authorfullhashraw}{9c677286866aad38f8e9b660f5411814}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{[Internet; descargado 17-abril-2024]}
@@ -631,6 +654,36 @@
       \endverb
       \verb{url}
       \verb %5Curl%7Bhttps://es.wikipedia.org/w/index.php?title=Aparato_circulatorio&oldid=159489943%7D
+      \endverb
+    \endentry
+    \entry{MayoClinic}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=dc57de6010935465d2f186a7616c138d}{%
+           family={Clinic},
+           familyi={C\bibinitperiod},
+           given={Mayo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{dc57de6010935465d2f186a7616c138d}
+      \strng{fullhash}{dc57de6010935465d2f186a7616c138d}
+      \strng{fullhashraw}{dc57de6010935465d2f186a7616c138d}
+      \strng{bibnamehash}{dc57de6010935465d2f186a7616c138d}
+      \strng{authorbibnamehash}{dc57de6010935465d2f186a7616c138d}
+      \strng{authornamehash}{dc57de6010935465d2f186a7616c138d}
+      \strng{authorfullhash}{dc57de6010935465d2f186a7616c138d}
+      \strng{authorfullhashraw}{dc57de6010935465d2f186a7616c138d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Internet; descargado 11-mayo-2024]}
+      \field{title}{Epoetin Alfa (Injection Route)}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb \url{https://www.mayoclinic.org/drugs-supplements/epoetin-alfa-injection-route/proper-use/drg-20068065?p=1}
+      \endverb
+      \verb{url}
+      \verb %5Curl%7Bhttps://www.mayoclinic.org/drugs-supplements/epoetin-alfa-injection-route/proper-use/drg-20068065?p=1%7D
       \endverb
     \endentry
     \entry{Sanchez2000Hemorragias}{article}{}{}
@@ -674,6 +727,59 @@
       \field{pages}{203\bibrangedash 210}
       \range{pages}{8}
     \endentry
+    \entry{PerdidaSangre}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=09ef1f2f29d11ae7310dafc2187b6e73}{%
+           family={{Kiberly Holland}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{09ef1f2f29d11ae7310dafc2187b6e73}
+      \strng{fullhash}{09ef1f2f29d11ae7310dafc2187b6e73}
+      \strng{fullhashraw}{09ef1f2f29d11ae7310dafc2187b6e73}
+      \strng{bibnamehash}{09ef1f2f29d11ae7310dafc2187b6e73}
+      \strng{authorbibnamehash}{09ef1f2f29d11ae7310dafc2187b6e73}
+      \strng{authornamehash}{09ef1f2f29d11ae7310dafc2187b6e73}
+      \strng{authorfullhash}{09ef1f2f29d11ae7310dafc2187b6e73}
+      \strng{authorfullhashraw}{09ef1f2f29d11ae7310dafc2187b6e73}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.healthline.com/health/how-much-blood-can-you-lose}}
+      \field{note}{[Online; descargado 13-Mayo-2024]}
+      \field{title}{How Much Blood Can You Lose Without Severe Side Effects?}
+      \field{year}{2022}
+    \endentry
+    \entry{Granada}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=42e8bcaa7e514123eac389495a7bf4fc}{%
+           family={Centro\bibnamedelimb de\bibnamedelima Transfusión},
+           familyi={C\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={Tejidos\bibnamedelimb y\bibnamedelimb Células\bibnamedelimb de\bibnamedelima Granada},
+           giveni={T\bibinitperiod\bibinitdelim y\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{42e8bcaa7e514123eac389495a7bf4fc}
+      \strng{fullhash}{42e8bcaa7e514123eac389495a7bf4fc}
+      \strng{fullhashraw}{42e8bcaa7e514123eac389495a7bf4fc}
+      \strng{bibnamehash}{42e8bcaa7e514123eac389495a7bf4fc}
+      \strng{authorbibnamehash}{42e8bcaa7e514123eac389495a7bf4fc}
+      \strng{authornamehash}{42e8bcaa7e514123eac389495a7bf4fc}
+      \strng{authorfullhash}{42e8bcaa7e514123eac389495a7bf4fc}
+      \strng{authorfullhashraw}{42e8bcaa7e514123eac389495a7bf4fc}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Internet; descargado 8-mayo-2024]}
+      \field{title}{Productos Sanguíneos}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb \url{http://transfusion.granada-almeria.org/actividad/productos-sanguineos}
+      \endverb
+      \verb{url}
+      \verb %5Curl%7Bhttp://transfusion.granada-almeria.org/actividad/productos-sanguineos%7D
+      \endverb
+    \endentry
     \entry{edelstein2005}{book}{}{}
       \name{author}{1}{}{%
         {{hash=2c3c8aaa1373744e32269ac3492bb520}{%
@@ -693,8 +799,8 @@
       \strng{authornamehash}{2c3c8aaa1373744e32269ac3492bb520}
       \strng{authorfullhash}{2c3c8aaa1373744e32269ac3492bb520}
       \strng{authorfullhashraw}{2c3c8aaa1373744e32269ac3492bb520}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Problem 2, page 27 and Problem 16, page 33.}
@@ -717,8 +823,8 @@
       \strng{authornamehash}{d1a9e8b97ae5c78d0c6effa52671d282}
       \strng{authorfullhash}{d1a9e8b97ae5c78d0c6effa52671d282}
       \strng{authorfullhashraw}{d1a9e8b97ae5c78d0c6effa52671d282}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{[Internet; descargado 2-mayo-2024]}
@@ -729,6 +835,252 @@
       \endverb
       \verb{url}
       \verb %5Curl%7Bhttps://www.massgeneral.org/blood-donor/faq%7D
+      \endverb
+    \endentry
+    \entry{FRYMOYER2019123}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{hash=783160a2b9481206813619ec3a1ad749}{%
+           family={Frymoyer},
+           familyi={F\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=c576c7ebcf63596f9398fc5bbf7f4f26}{%
+           family={Benitz},
+           familyi={B\bibinitperiod},
+           given={William\bibnamedelima E.},
+           giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=8e12d3d282fc30dc25e2150127240bd3}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={P.\bibnamedelimi Brian},
+           giveni={P\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Philadelphia}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{783160a2b9481206813619ec3a1ad749}
+      \strng{fullhash}{783160a2b9481206813619ec3a1ad749}
+      \strng{fullhashraw}{783160a2b9481206813619ec3a1ad749}
+      \strng{bibnamehash}{783160a2b9481206813619ec3a1ad749}
+      \strng{authorbibnamehash}{783160a2b9481206813619ec3a1ad749}
+      \strng{authornamehash}{783160a2b9481206813619ec3a1ad749}
+      \strng{authorfullhash}{783160a2b9481206813619ec3a1ad749}
+      \strng{authorfullhashraw}{783160a2b9481206813619ec3a1ad749}
+      \strng{editorbibnamehash}{539f6dd0c49a35862f99031ad69a77cd}
+      \strng{editornamehash}{539f6dd0c49a35862f99031ad69a77cd}
+      \strng{editorfullhash}{539f6dd0c49a35862f99031ad69a77cd}
+      \strng{editorfullhashraw}{539f6dd0c49a35862f99031ad69a77cd}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Pharmacokinetics explains what the body does with a drug after it is administered and helps provide a description of the time course of the drug in the body. Major processes involved in the pharmacokinetics of a drug include absorption, distribution, metabolism, and excretion. Understanding the movement of a drug in the body helps guide the development of dosing strategies in patients by answering questions of how much, how often, and for how long. Knowledge about the pharmacokinetics of a drug is essential for its safe and effective use.}
+      \field{booktitle}{Infectious Disease and Pharmacology}
+      \field{isbn}{978-0-323-54391-0}
+      \field{title}{Chapter 11 - Pharmacokinetic Considerations in Neonates}
+      \field{year}{2019}
+      \field{pages}{123\bibrangedash 139}
+      \range{pages}{17}
+      \verb{doi}
+      \verb https://doi.org/10.1016/B978-0-323-54391-0.00011-4
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/B9780323543910000114
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/B9780323543910000114
+      \endverb
+      \keyw{Pharmacokinetics,Clinical pharmacology,Neonate,Metabolism,Elimination,Maturation,Drug dosing}
+    \endentry
+    \entry{GARZONE2012547}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{hash=2a8963b73425f8faa05dc4e7ce3aefc7}{%
+           family={Garzone},
+           familyi={G\bibinitperiod},
+           given={Pamela\bibnamedelima D.},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=e5ac924f2580a5ed69860a8f2d8a92d2}{%
+           family={Atkinson},
+           familyi={A\bibinitperiod},
+           given={Arthur\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=346631278e89ec57178404749310d259}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Shiew-Mei},
+           giveni={S\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=2ed5db78648c532931a716dd31a851e0}{%
+           family={Lertora},
+           familyi={L\bibinitperiod},
+           given={Juan\bibnamedelima J.L.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=4be3b169022d2e806ea7da01296cbf50}{%
+           family={Markey},
+           familyi={M\bibinitperiod},
+           given={Sanford\bibnamedelima P.},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{2a8963b73425f8faa05dc4e7ce3aefc7}
+      \strng{fullhash}{2a8963b73425f8faa05dc4e7ce3aefc7}
+      \strng{fullhashraw}{2a8963b73425f8faa05dc4e7ce3aefc7}
+      \strng{bibnamehash}{2a8963b73425f8faa05dc4e7ce3aefc7}
+      \strng{authorbibnamehash}{2a8963b73425f8faa05dc4e7ce3aefc7}
+      \strng{authornamehash}{2a8963b73425f8faa05dc4e7ce3aefc7}
+      \strng{authorfullhash}{2a8963b73425f8faa05dc4e7ce3aefc7}
+      \strng{authorfullhashraw}{2a8963b73425f8faa05dc4e7ce3aefc7}
+      \strng{editorbibnamehash}{e1255bf425fdebb176858bbb39771211}
+      \strng{editornamehash}{bff9e24ae9f091b51fe13c5c3eade8f1}
+      \strng{editorfullhash}{e1255bf425fdebb176858bbb39771211}
+      \strng{editorfullhashraw}{e1255bf425fdebb176858bbb39771211}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Principles of Clinical Pharmacology (Third Edition)}
+      \field{edition}{Third Edition}
+      \field{isbn}{978-0-12-385471-1}
+      \field{title}{Chapter 34 - Pharmacokinetic and Pharmacodynamic Considerations in the Development of Biotechnology Products and Large Molecules}
+      \field{year}{2012}
+      \field{pages}{547\bibrangedash 570}
+      \range{pages}{24}
+      \verb{doi}
+      \verb https://doi.org/10.1016/B978-0-12-385471-1.00034-9
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/B9780123854711000349
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/B9780123854711000349
+      \endverb
+    \endentry
+    \entry{panjeta2017interpretation}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=9dcba58d0da08b205af861177699791f}{%
+           family={Panjeta},
+           familyi={P\bibinitperiod},
+           given={Mirsad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b727e8ac5c5199cc0041a33ae6644047}{%
+           family={Tahirović},
+           familyi={T\bibinitperiod},
+           given={Ismet},
+           giveni={I\bibinitperiod}}}%
+        {{hash=33a9a246e7c49f9ca3d929a8aed6690b}{%
+           family={Sofić},
+           familyi={S\bibinitperiod},
+           given={Emin},
+           giveni={E\bibinitperiod}}}%
+        {{hash=f921fb87ad7f9fe6b08f3db5339a0e27}{%
+           family={Ćorić},
+           familyi={Ć\bibinitperiod},
+           given={Jozo},
+           giveni={J\bibinitperiod}}}%
+        {{hash=488192fb16e7487e4707e8efc271a52c}{%
+           family={Dervišević},
+           familyi={D\bibinitperiod},
+           given={Amela},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Society of Medical Biochemists of Serbia}%
+      }
+      \strng{namehash}{a1f4e708b3c42cecc3a29ccbaaa3a5e6}
+      \strng{fullhash}{8d34e2552b3779bbcba892b040b7de55}
+      \strng{fullhashraw}{8d34e2552b3779bbcba892b040b7de55}
+      \strng{bibnamehash}{8d34e2552b3779bbcba892b040b7de55}
+      \strng{authorbibnamehash}{8d34e2552b3779bbcba892b040b7de55}
+      \strng{authornamehash}{a1f4e708b3c42cecc3a29ccbaaa3a5e6}
+      \strng{authorfullhash}{8d34e2552b3779bbcba892b040b7de55}
+      \strng{authorfullhashraw}{8d34e2552b3779bbcba892b040b7de55}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of medical biochemistry}
+      \field{number}{2}
+      \field{title}{Interpretation of erythropoietin and haemoglobin levels in patients with various stages of chronic kidney disease}
+      \field{volume}{36}
+      \field{year}{2017}
+      \field{pages}{145}
+      \range{pages}{1}
+    \endentry
+    \entry{elTiempo}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=b1a4782918951114e6fbe0acd8b40449}{%
+           family={Chacón},
+           familyi={C\bibinitperiod},
+           given={Mateo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b1a4782918951114e6fbe0acd8b40449}
+      \strng{fullhash}{b1a4782918951114e6fbe0acd8b40449}
+      \strng{fullhashraw}{b1a4782918951114e6fbe0acd8b40449}
+      \strng{bibnamehash}{b1a4782918951114e6fbe0acd8b40449}
+      \strng{authorbibnamehash}{b1a4782918951114e6fbe0acd8b40449}
+      \strng{authornamehash}{b1a4782918951114e6fbe0acd8b40449}
+      \strng{authorfullhash}{b1a4782918951114e6fbe0acd8b40449}
+      \strng{authorfullhashraw}{b1a4782918951114e6fbe0acd8b40449}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{El Tiempo}
+      \field{title}{¿Cuánto ha aumentado la estatura de los colombianos en los últimos años?}
+      \field{urlday}{17}
+      \field{urlmonth}{12}
+      \field{urlyear}{2017}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.eltiempo.com/vida/ciencia/estatura-de-los-colombianos-cuanto-ha-aumentado-en-los-ultimos-ano-639612
+      \endverb
+      \verb{url}
+      \verb https://www.eltiempo.com/vida/ciencia/estatura-de-los-colombianos-cuanto-ha-aumentado-en-los-ultimos-ano-639612
+      \endverb
+    \endentry
+    \entry{IMC}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=d6ee9f9eadfb7378419af65bea7193f2}{%
+           family={National\bibnamedelima Heart},
+           familyi={N\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Lung},
+           giveni={L\bibinitperiod}}}%
+        {{hash=2b42d17ad18f08994dfebda3a3a80a4b}{%
+           family={Institute},
+           familyi={I\bibinitperiod},
+           given={Blood},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{1b0912105b35166b26ef8bd64fc79d63}
+      \strng{fullhash}{1b0912105b35166b26ef8bd64fc79d63}
+      \strng{fullhashraw}{1b0912105b35166b26ef8bd64fc79d63}
+      \strng{bibnamehash}{1b0912105b35166b26ef8bd64fc79d63}
+      \strng{authorbibnamehash}{1b0912105b35166b26ef8bd64fc79d63}
+      \strng{authornamehash}{1b0912105b35166b26ef8bd64fc79d63}
+      \strng{authorfullhash}{1b0912105b35166b26ef8bd64fc79d63}
+      \strng{authorfullhashraw}{1b0912105b35166b26ef8bd64fc79d63}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Internet; descargado 11-mayo-2024]}
+      \field{title}{Calculate Your Body Mass Index}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb \url{https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmi-m.htm}
+      \endverb
+      \verb{url}
+      \verb %5Curl%7Bhttps://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmi-m.htm%7D
       \endverb
     \endentry
     \entry{liu2023}{book}{}{}
@@ -758,8 +1110,8 @@
       \strng{authorfullhash}{7e076afceb626fb36a281f03db9bd6de}
       \strng{authorfullhashraw}{7e076afceb626fb36a281f03db9bd6de}
       \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Research on Medical Problems Based on Mathematical Models}
@@ -818,8 +1170,8 @@
       \strng{authorfullhash}{45cb329200b74f5fbca11cc455c0f536}
       \strng{authorfullhashraw}{45cb329200b74f5fbca11cc455c0f536}
       \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Models for the red blood cell lifespan}
@@ -857,8 +1209,8 @@
       \strng{authornamehash}{7797f9c4b5c684bd2bc8223faffd6058}
       \strng{authorfullhash}{615f2d7bcd28848e0aa74f949c550ef5}
       \strng{authorfullhashraw}{615f2d7bcd28848e0aa74f949c550ef5}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{A mathematical model of erythropoiesis in mice and rats Part 1: Structure of the model}
@@ -882,8 +1234,8 @@
       \strng{authorfullhash}{29820554483e0151cc9f851a9b33214b}
       \strng{authorfullhashraw}{29820554483e0151cc9f851a9b33214b}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Mathematical Biology: I. An Introduction, Third Edition}
@@ -907,8 +1259,8 @@
       \strng{authorfullhash}{d94ab1df48e2fe6caeb79156d600f7e3}
       \strng{authorfullhashraw}{d94ab1df48e2fe6caeb79156d600f7e3}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed: Date you accessed the website}
@@ -963,8 +1315,8 @@
       \strng{authornamehash}{edb29931aa600f449db9704ad720ac6e}
       \strng{authorfullhash}{afc003f423891024eb3286a105e93cca}
       \strng{authorfullhashraw}{afc003f423891024eb3286a105e93cca}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{processes MDPI}
@@ -991,8 +1343,8 @@
       \strng{authornamehash}{77db1df21fbb41454547bc00fd567880}
       \strng{authorfullhash}{77db1df21fbb41454547bc00fd567880}
       \strng{authorfullhashraw}{77db1df21fbb41454547bc00fd567880}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Blood}
@@ -1038,8 +1390,8 @@
       \strng{authornamehash}{425339897d266cb1ae0cc51a595cb7af}
       \strng{authorfullhash}{ea81758d59f204032b44eccf2db41cac}
       \strng{authorfullhashraw}{ea81758d59f204032b44eccf2db41cac}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Cell Proliferation}

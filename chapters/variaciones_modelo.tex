@@ -67,7 +67,7 @@ Lo que se puede ver en estas gráficas es como, a partir del cuarto día (dado e
 
 Teniendo esto en cuenta, ahora se debe analizar el caso en el que el paciente sufre de una hemorragia más grave y debe ser sometido a una transfusión sanguínea para que pueda recuperarse.
 
-\subsection{Hemorragia Grave}
+\subsection{Hemorragia Grave}\label{subsec:variaciones:hemorragia:grave}
 
 Considérese el caso en el que el paciente analizado sufre, por ejemplo, una pérdida del 14$\%$ del volumen de sangre de su cuerpo (unos 700 mililitros o 3.25$\times 10^{12}$ eritrocitos) a causa de un accidente, ya sea una hemorragia interna causada por un golpe o una herida externa como un corte. Esta pérdida de sangre, según Holland en \cite{PerdidaSangre}, se puede considerar como grave pero no crítica (no tiene efectos secundarios mayores), por lo que este ejemplo debe ser tratado médicamente mediante una transfusión sanguínea y no afectará las dinámicas normales del cuerpo.
 
@@ -156,7 +156,7 @@ Adecuando este resultado a la ecuación continua \ref{eq:solucionDif} se obtiene
 en donde $\alpha = e^{-t_0\cdot k_e}$.
 
 De esta manera, el modelo para un paciente con anemia renal es:
-\begin{align}
+\begin{align}\label{eq:ModeloAnemia}
     R(n+1) &=(1-f)R(n)+M(n), \\
     M(n+1) &=\gamma(n) \cdot f\cdot R(n), \nonumber \\
     \gamma(n+1) &=\dfrac{\epsilon + \delta(24\cdot n)}{\epsilon_s}, \nonumber \\
@@ -181,11 +181,11 @@ Para poder definir los parámetros de las ecuaciones, se seguirá el estudio de 
 
 El siguiente paso para las simulaciones es establecer la concentración de dosis que se le debe inyectar al paciente.
 
-\subsection{Concentración de Dosis  = 0.975 mU/ml}
+\subsection{Concentración de Dosis  = 0.975 mU/ml} \label{subsec:variaciones:anemia:mal}
 
 Como se expuso en la sección \ref{subsec:RBC:enfermedades:anemia}, el tratamiento de inyección de EPO depende de la masa corporal del paciente, se debe encontrar una masa corporal en el que basar la dosis pra el modelo. Siguiendo el estudio realizado por el periódico el Tiempo en \cite{elTiempo}, la altura promedio de un hombre colombiano en 2021 es de aproximadamente 172 cm. Utilizando el índice de masa corporal (\cite{IMC}), una medida para hallar el rango de masa corporal ideal según la estatura de una persona, la masa corporal ideal de un hombre que mide 172 cm de altura es de aproximadamente unos 65 kg. De esta manera, la dosis de EPO que se tendrá en cuenta para la primera simulación de esta variación del modelo es de 4875 unidades cada tres días (0.975 mU/ml).
 
-Así, para la concentración de 0.975 mU/ml de EPO, se tienen los siguientes valores:
+Así, para la concentración de 0.975 mU/ml de EPO, se tienen los siguientes valores iniciales y de los parámetros:
 
 \begin{itemize}
     \item $\epsilon = 8.9$ es la concentración de EPO en el paciente sin fármaco [mU/ml];
@@ -198,7 +198,7 @@ Así, para la concentración de 0.975 mU/ml de EPO, se tienen los siguientes val
     \item $t_0=72$ es el tiempo que debe pasar entra cada dosis [h].
 \end{itemize}
 
-Como bien se puede ver en la figura \ref{sec:variaciones:fig:Anemia1}, la dosis de EPO administrada no es suficiente para sanar la constante pérdida de glóbulos rojos en el paciente, pues $R(n)$ presenta una disminución en el tiempo, que al infinito se vuelve 0. Esto ocurre dado que $\gamma + \delta_0=9.875 < \gamma_s$, y ya que la concentración del fármaco se estabiliza rápido, nunca se llega a la concentración esperada de 11 mU/ml para lograr la estabilización. Sin embargo, la simulación muestra como cada dosis aplicada hace que el cuerpo aumente de una manera significativa su producción de eritrocitos, como se ve en la gráfica para $M(n)$.
+Como bien se puede ver en la figura \ref{sec:variaciones:fig:Anemia1}, la dosis de EPO administrada no es suficiente para sanar la constante pérdida de glóbulos rojos en el paciente, pues $R(n)$ presenta una disminución en el tiempo, que al infinito se vuelve 0. Esto ocurre dado que $\gamma + \delta_0=9.875 < \gamma_s$, y ya que la concentración del fármaco se estabiliza rápido, nunca se llega a la concentración esperada de 11 mU/ml para lograr la estabilización. Sin embargo, la simulación muestra como cada dosis aplicada hace que el cuerpo aumente de una manera significativa su producción de eritrocitos, como se ve en la gráfica para $M(n)$. Es interesante ver como, según la gráfica inferior, el cuerpo consume la dosis administrada a gran velocidad: al final del primer día queda muy poca concentración de la dosis en el cuerpo (el 15$\%$).
 
 \begin{figure}[H]
     \centering
@@ -211,11 +211,11 @@ Como bien se puede ver en la figura \ref{sec:variaciones:fig:Anemia1}, la dosis 
 
 Se concluye que la dosis aplicada de 0.975 mU/ml no es suficiente para que se contrarresten los efectos de la anemia renal del paciente. De esta manera, se debe encontrar un valor de la dosis para que el paciente logre estabilizar su cantidad de eritrocitos.
 
-\subsection{Concentración de Dosis = 5.307 mU/ml}
+\subsection{Concentración de Dosis = 5.307 mU/ml}\label{subsec:variaciones:anemia:bien}
 
-Para hallar una concentración de dosis que permita lograr los resultados esperados, se realizaron varias simulaciones para hallar una concentración de la dosis que permita una estabilidad en la cantidad de glóbulos rojos del paciente. Con una dosis de $\delta_0 = 5.307$ [mU/ml] se logra llegar a la estabilidad esperada.
+Para hallar una concentración de dosis que permita lograr que el paciente logre evitar una pérdida constante de sus eritrocitos, se realizaron varias simulaciones. Con una dosis de $\delta_0 = 5.307$ [mU/ml] se logra llegar al resultado esperado.
 
-Para la concentración de 5.307 mU/ml de EPO, se tienen los siguientes valores:
+Para la concentración de 5.307 mU/ml de EPO, se tienen los siguientes valores iniciales y de los parámetros para el modelo \ref{eq:ModeloAnemia}:
 
 \begin{itemize}
     \item $\epsilon = 8.9$ es la concentración de EPO en el paciente sin fármaco [mU/ml];
@@ -228,8 +228,9 @@ Para la concentración de 5.307 mU/ml de EPO, se tienen los siguientes valores:
     \item $t_0=72$ es el tiempo que debe pasar entra cada dosis [h].
 \end{itemize}
 
-La figura \ref{sec:variaciones:fig:Anemia2} muestra como, gracias a la nueva dosis, el cuerpo es capaz de lograr una oscilación constante para un valor máximo de RBC's ligeramente menor al original. La función $R(n)$ se vuelve periódica con un máximo de $24.9817$ glóbulos rojos, menos del $1\%$ de pérdida respecto al valor original.
+La figura \ref{sec:variaciones:fig:Anemia2} muestra como, gracias a la nueva dosis, el cuerpo es capaz de lograr una oscilación constante y estable, teniendo un valor máximo de RBC's ligeramente menor al original. La función $R(n)$ se vuelve periódica con un máximo de $24.9817$ glóbulos rojos, menos del $1\%$ de pérdida respecto al valor original. La gráfica derecha, que ilustra los valores de $M(n)$, también muestra la oscilación esperada, con un máximo de 268.223$\times 10^{9}$ que representa un aumento del 29$\%$ respecto al valor de glóbulos rojos producidos por una persona sana. Para estos picos de $M(n)$, el paciente tiene una concentración de EPO en sangre de 14.23 mU/ml, nuevamente esto corresponde a un aumento del 29$\%$ respecto a la concentración para pacientes sanos, y una del 60$\%$ para el paciente anémico. La gráfica inferior muestra nuevamente cómo el cuerpo consume a gran velocidad la droga administrada. 
 
+Note ahora que el tamaño de la dosis aplicada depende significativamente del grado de anemia que presenta el paciente. Según el estudio de Panjeta, para los pacientes con anemia renal de tercer grado la concentración media de EPO es de 10.2 mU/ml, por lo que la dosis será mucho menor (según las simulaciones es aproximadamente de 2.02 mU/ml).
 \begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
@@ -238,3 +239,5 @@ La figura \ref{sec:variaciones:fig:Anemia2} muestra como, gracias a la nueva dos
     \caption{Simulación del modelo para el caso de anemia renal con dosis de EPO de 5.309mU/ml. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$, abajo la de $\delta(t)$.}
     \label{sec:variaciones:fig:Anemia2}
 \end{figure}
+
+Las variaciones del modelo presentadas a lo largo del capítulo actual logran evidenciar los resultados esperado según las enfermedades propuestas y sus respectivos tratamientos médicos. En el siguiente capítulo se presentarán las conclusiones de la investigación realizada.

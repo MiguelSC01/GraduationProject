@@ -1,1 +1,28 @@
-\chapter{Conclusiones y trabajo a futuro}\label{chap:results}
+\chapter{Conclusiones y trabajo a futuro}\label{chap:Conclusiones}
+
+Habiendo hecho ya los análisis, simulaciones y variaciones del modelo base, es hora de evidenciar los hallazgos principales de la investigación, las limitaciones que presenta el modelo y la importancia de la investigación para trabajos futuros.
+
+\section{Resumen de los hallazgos principales}
+
+Las variaciones del modelo, presentadas en las ecuaciones \ref{eq:HemoLeveMal}, \ref{eq:HemoLeveBien}, \ref{eq:HemoGrave} y \ref{eq:ModeloAnemia} fueron producto de un análisis meticuloso de las simulaciones y de el estudio fisiológico de las dinámicas de los glóbulos rojos presentado en el capítulo \ref{chap:RBC}. 
+
+Para el caso de la hemorragia leve (sección \ref{subsec:variaciones:hemorragia:leve}), el cambio entre las ecuaciones \ref{eq:HemoLeveMal} y \ref{eq:HemoLeveBien} es fundamental ya que logra que los resultados obtenidos fueran los esperados, pues la producción de RBC's debe aumentar si hay alguna pérdida ya que el cuerpo es el encargado de mantener su homeostasis. Es verdad que la pérdida presentada no es muy grave respecto a la concentración normal y que el paciente podría vivir sin esta cantidad de sangre, pero no es correcto asumir que el cuerpo no recupera sus eritrocitos de manera natural.
+
+El análisis para las hemorragias leves fue clave para poder plantear el modelo de hemorragias graves \ref{eq:HemoGrave} en la sección \ref{subsec:variaciones:hemorragia:grave}, pues al evidenciar que el cuerpo debe de aumentar su producción de RBC's después de la pérdida es que se pueden plantear los diferentes casos para $M(n)$. El análisis fisiológico hecho para este caso también permitió que después de la transfusión se cambiara de $\gamma_2$ a $\gamma_3$ para evitar una recuperación muy lenta del paciente.
+
+Es muy interesante notar como un ligero cambio en los parámetros del modelo \ref{eq:ModeloAnemia} presenta resultados tan diferentes para la gráfica de $R(n)$, pues en la sección \ref{subsec:variaciones:anemia:mal} hay una disminución casi lineal de eritrocitos en la figura \ref{sec:variaciones:fig:Anemia1} mientras que en la sección \ref{subsec:variaciones:anemia:bien} se logra una oscilación de los valores de RBC's cada tres días según la figura \ref{sec:variaciones:fig:Anemia2}. Este cambio en la dosis lo es todo, y es fundamental para que un paciente pueda llevar una vida plena a pesar de su enfermedad. Se debe recalcar que la concentración de la dosis depende de su grado de anemia; al aumentar la dosis aumenta la producción de glóbulos rojos y en ningún caso se quiere llegar a una sobrepoblación de células en el torrente sanguíneo. Es de vital importancia determinar el nivel medio de EPO en la sangre del paciente antes de tratar la anemia renal.
+
+\section{Limitaciones del modelo}
+
+Como se enunció en la sección \ref{sec:modelo:intro}, lograr plantear un modelo matemático que refleje a la perfección las dinámicas de los glóbulos rojos es imposible, pues el cuerpo humano es un sistema en el que cada uno de sus miembros interfiere en la acción de otro. Todos los modelos planteados a lo largo de la investigación no son la excepción de esta regla y se podrían mejorar al tener en cuenta otras variables.
+
+Uno de los componentes principales de los eritrocitos es la hemoglobina, compuesta principalmente por hierro. Así, los niveles de hierro en el cuerpo son un factor que se podría tener en cuenta a la hora de plantear un nuevo modelo. Sin suficiente cantidad de hierro en el cuerpo, no hay hemoglobina, y sin hemoglobina los glóbulos rojos pierden su función.
+
+Teniendo esto en cuenta, también sería interesante incluir al modelo cierta información paciente: su masa corporal, su edad, sus hábitos alimenticios o su ubicación geográfica. Esta información es muy importante, pues el cuerpo humano funciona diferente para cada persona. De esta manera, otra limitación importante del modelo se encuentra en sus parámetros y valores iniciales. Al desestimar cierta información del paciente se pierden datos importantes para calibrar estos valores: la cantidad inicial de RBC's se tomó para el caso de hombres adultos en perfecta condición física, los valores de $\gamma$ utilizados en la sección \ref{sec:modelo:simulaciones} fueron escogidos arbitrariamente y no reflejan ninguna condición específica del paciente. 
+
+Sería interesante considerar que los valores de EPO en sangre no son constantes para una persona, pues dependen de los niveles de oxígeno. Así, los niveles de eritropoyetina en sangre van cambiando según lo necesite el cuerpo. De esta manera, se podría agregar al modelo base, así como se hace para el caso de la anemia renal, una función para determinar los valores de $\gamma$ en el tiempo.
+
+Finalmente, y en especial para el caso de la anemia renal, los resultados podrían mejorar si se considera un modelo continuo en vez de uno discreto. El cuerpo consume a gran velocidad la EPO administrada (véanse las figuras \ref{sec:variaciones:fig:Anemia1} y \ref{sec:variaciones:fig:Anemia2} para la gráfica de la concentración de EPO), y al tomar un modelo que mide día a día la concentración de EPO se pierde una buena cantidad de droga administrada. Para el caso de las hemorragias, un cambio a un modelo continuo sería beneficioso, pues el sangrado debe de ser tratado con la mayor velocidad posible, no de un día para otro; además, la transfusión sanguínea es un proceso que toma cierto tiempo y no es inmediato. 
+
+\section{Posibles direcciones para investigaciones futuras}
+
