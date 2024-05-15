@@ -386,6 +386,7 @@ INPUT .\frontmatter\resumen.tex
 INPUT .\frontmatter\resumen.tex
 INPUT .\frontmatter\resumen.tex
 INPUT frontmatter\resumen.tex
+INPUT C:\Users\Cometware Wolf\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\Cometware Wolf\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\Cometware Wolf\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\Cometware Wolf\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
@@ -433,7 +434,6 @@ INPUT frontmatter\agradecimientos.tex
 INPUT .\thesis.toc
 INPUT .\thesis.toc
 INPUT thesis.toc
-INPUT C:\Users\Cometware Wolf\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 OUTPUT thesis.toc
 INPUT .\chapters\introduccion.tex
 INPUT .\chapters\introduccion.tex
