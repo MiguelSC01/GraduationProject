@@ -213,9 +213,9 @@ Se concluye que la dosis aplicada de 0.975 mU/ml no es suficiente para que se co
 
 \subsection{Concentración de Dosis = 5.307 mU/ml}\label{subsec:variaciones:anemia:bien}
 
-Para hallar una concentración de dosis que permita lograr que el paciente logre evitar una pérdida constante de sus eritrocitos, se realizaron varias simulaciones. Con una dosis de $\delta_0 = 5.307$ [mU/ml] se logra llegar al resultado esperado.
+Para hallar una concentración de dosis que permita lograr que el paciente logre evitar una pérdida constante de sus eritrocitos, se realizaron varias simulaciones. Con una dosis de $\delta_0 = 5.307$ [mU/ml] se logra llegar al resultado esperado, esta es una aproximación a cuatro cifras significativas de las ocho que se obtuvieron. El aumento respecto a la dosis teórica presentada de $0.975$ mU/ml es del 544$\%$. 
 
-Para la concentración de 5.307 mU/ml de EPO, se tienen los siguientes valores iniciales y de los parámetros para el modelo \ref{eq:ModeloAnemia}:
+Para la concentración de 5.307 mU/ml de dosis de EPO, se tienen los siguientes valores iniciales y de los parámetros para el modelo \ref{eq:ModeloAnemia}:
 
 \begin{itemize}
     \item $\epsilon = 8.9$ es la concentración de EPO en el paciente sin fármaco [mU/ml];
@@ -228,16 +228,17 @@ Para la concentración de 5.307 mU/ml de EPO, se tienen los siguientes valores i
     \item $t_0=72$ es el tiempo que debe pasar entra cada dosis [h].
 \end{itemize}
 
-La figura \ref{sec:variaciones:fig:Anemia2} muestra como, gracias a la nueva dosis, el cuerpo es capaz de lograr una oscilación constante y estable, teniendo un valor máximo de RBC's ligeramente menor al original. La función $R(n)$ se vuelve periódica con un máximo de $24.9817$ glóbulos rojos, menos del $1\%$ de pérdida respecto al valor original. La gráfica derecha, que ilustra los valores de $M(n)$, también muestra la oscilación esperada, con un máximo de 268.223$\times 10^{9}$ que representa un aumento del 29$\%$ respecto al valor de glóbulos rojos producidos por una persona sana. Para estos picos de $M(n)$, el paciente tiene una concentración de EPO en sangre de 14.23 mU/ml, nuevamente esto corresponde a un aumento del 29$\%$ respecto a la concentración para pacientes sanos, y una del 60$\%$ para el paciente anémico. La gráfica inferior muestra nuevamente cómo el cuerpo consume a gran velocidad la droga administrada. 
+La figura \ref{sec:variaciones:fig:Anemia2} muestra como, gracias a la nueva dosis, el cuerpo es capaz de lograr una oscilación constante y estable, teniendo un valor máximo de RBC's ligeramente menor al original. La función $R(n)$ se vuelve periódica con un máximo de $24.9817\times 10^{12}$ glóbulos rojos, menos del $0.1\%$ de pérdida respecto al valor original, los valles de la gráfica ocurren para valores de $24.9204\times 10^{12}$ eritrocitos, una cantidad $0.3\%$ menor respecto al valor normal. La gráfica derecha, que ilustra los valores de $M(n)$, también muestra la oscilación esperada, con un máximo de 268.223$\times 10^{9}$ que representa un aumento del 29$\%$ respecto al valor de glóbulos rojos producidos por una persona sana. Para estos picos de $M(n)$, el paciente tiene una concentración de EPO en sangre de 14.23 mU/ml, nuevamente esto corresponde a un aumento del 29$\%$ respecto a la concentración para pacientes sanos, y una del 60$\%$ para el paciente anémico. La gráfica inferior muestra nuevamente cómo el cuerpo consume a gran velocidad la droga administrada. 
 
-Note ahora que el tamaño de la dosis aplicada depende significativamente del grado de anemia que presenta el paciente. Según el estudio de Panjeta, para los pacientes con anemia renal de tercer grado la concentración media de EPO es de 10.2 mU/ml, por lo que la dosis será mucho menor (según las simulaciones es aproximadamente de 2.02 mU/ml).
 \begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
     \includegraphics[scale=0.526]{figures/AR21.png}
     \includegraphics[scale=0.8]{figures/AR22.png}
-    \caption{Simulación del modelo para el caso de anemia renal con dosis de EPO de 5.309mU/ml. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$, abajo la de $\delta(t)$.}
+    \caption{Simulación del modelo para el caso de anemia renal con dosis de EPO de 5.307mU/ml. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$, abajo la de $\delta(t)$.}
     \label{sec:variaciones:fig:Anemia2}
 \end{figure}
+
+Note ahora que el tamaño de la dosis aplicada depende significativamente del grado de anemia que presenta el paciente. Según el estudio de Panjeta, para los pacientes con anemia renal de tercer grado la concentración media de EPO es de 10.2 mU/ml, por lo que la dosis será mucho menor (según las simulaciones es aproximadamente de 2.02 mU/ml).
 
 Las variaciones del modelo presentadas a lo largo del capítulo actual logran evidenciar los resultados esperado según las enfermedades propuestas y sus respectivos tratamientos médicos. En el siguiente capítulo se presentarán las conclusiones de la investigación realizada.

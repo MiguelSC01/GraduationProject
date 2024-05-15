@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber thesis"] 1715730755.44994 "thesis.bcf" "thesis.bbl" "thesis" 1715734333.80465 0
-  "library.bib" 1715728324 11816 f03a6848bd17d87d10f8142c8c4d6b55 ""
-  "thesis.bcf" 1715734333 110884 4d2f5f9f8702340d2d7fbac903183fac "pdflatex"
+["biber thesis"] 1715787575.66176 "thesis.bcf" "thesis.bbl" "thesis" 1715788742.25689 0
+  "library.bib" 1715787557 12232 424b14ea34b42b444768e9aa1da2e435 ""
+  "thesis.bcf" 1715788741 110950 15d63964531903fa0c87d6e7f1b69f10 "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1715734330.02147 "c:/Users/Cometware Wolf/Desktop/UNIANDES/GraduationProject/thesis.tex" "thesis.pdf" "thesis" 1715734333.8055 0
+["pdflatex"] 1715788738.6807 "c:/Users/Cometware Wolf/Desktop/UNIANDES/GraduationProject/thesis.tex" "thesis.pdf" "thesis" 1715788742.25772 0
   "C:/Users/Cometware Wolf/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1714839745 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Cometware Wolf/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1707664536 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/Cometware Wolf/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1707664537 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -242,12 +242,12 @@
   "C:/Users/Cometware Wolf/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1700599895 12667 e4b5eb11e4b7239e6c8a52bbe074a6c6 ""
   "C:/Users/Cometware Wolf/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Cometware Wolf/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Users/Cometware Wolf/Desktop/UNIANDES/GraduationProject/thesis.tex" 1715728430 3509 c3625751b46d41114796e2e02b0201ad ""
-  "chapters/conclusiones.tex" 1715734329 5634 d0716cd3fb980c2113a44ab52817155d ""
+  "c:/Users/Cometware Wolf/Desktop/UNIANDES/GraduationProject/thesis.tex" 1715786789 3499 3db9e89e999351c7cc7a6152bb30356a ""
+  "chapters/conclusiones.tex" 1715788736 7078 d95e9ed51c1bd4705780b09d194ebc05 ""
   "chapters/globulos_rojos.tex" 1715728324 11223 bb73de19ee866daee7dae25d5e41f3a2 ""
   "chapters/introduccion.tex" 1710347435 4533 21ddad1f6fed138c14ed89f43ba50fc8 ""
   "chapters/modelo_base.tex" 1715728324 20311 74d91750d5cad560cbd9e2e52db8bfe4 ""
-  "chapters/variaciones_modelo.tex" 1715734125 25476 81711a7a3fa616f5cf13575d8bda7c26 ""
+  "chapters/variaciones_modelo.tex" 1715788640 25816 4097c7773db284b87a9573df41c59188 ""
   "figures/AR11.png" 1715447774 93959 19400b8c3ca6f75324b8dac0acbae9b1 ""
   "figures/AR12.png" 1715447783 31142 6035edf337acc81809f55b862e7515eb ""
   "figures/AR21.png" 1715448690 118282 f4d2343e66204fd3136ea24060cd694e ""
@@ -265,12 +265,12 @@
   "frontmatter/resumen.tex" 1715728324 1590 9b44d37d3e6ca32c01a820d53be10b60 ""
   "frontmatter/titlepage.tex" 1715439634 493 919d92a0611f59c3fb0f0f8b643caea3 ""
   "quiver.sty" 1709577744 1644 786c4fbcefc5d2898f3d784c12d72ae1 ""
-  "thesis.aux" 1715734333 17926 cee8b99d909cae5381d04f7b1ef703cd "pdflatex"
-  "thesis.bbl" 1715730758 61564 be4275e97fba8c3ae3c681ab650677a0 "biber thesis"
-  "thesis.out" 1715734333 5425 988020f942012ad090408f91377e177e "pdflatex"
-  "thesis.run.xml" 1715734333 2413 86904c7288adb44cc7e0726c2475a3ad "pdflatex"
-  "thesis.tex" 1715728430 3509 c3625751b46d41114796e2e02b0201ad ""
-  "thesis.toc" 1715734333 2733 6c2a8fc02028cc034a0827d32291ba12 "pdflatex"
+  "thesis.aux" 1715788741 18064 aed6497776a1333e9df4da23d7864fa6 "pdflatex"
+  "thesis.bbl" 1715787578 63195 683d0a842e0c4d8522694349a09e9bf0 "biber thesis"
+  "thesis.out" 1715788741 5425 988020f942012ad090408f91377e177e "pdflatex"
+  "thesis.run.xml" 1715788741 2413 86904c7288adb44cc7e0726c2475a3ad "pdflatex"
+  "thesis.tex" 1715786789 3499 3db9e89e999351c7cc7a6152bb30356a ""
+  "thesis.toc" 1715788741 2733 6c2a8fc02028cc034a0827d32291ba12 "pdflatex"
   (generated)
   "thesis.aux"
   "thesis.bcf"
