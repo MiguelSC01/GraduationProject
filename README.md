@@ -1,14 +1,12 @@
-# Random numerical semigroups and sums of subsets of cyclic groups
+# Las Dinámicas de los Glóbulos Rojos: Un acercamiento con Modelos Matemáticos.
 
-Undergraduate Thesis. Santiago Morales @ Uniandes
+Proyecto de grado de pregrado. Miguel Sandoval @ Uniandes
 
-## Abstract 
+## Resumen 
 
-We investigate properties of random numerical semigroups using a probabilistic model based on
-the Erdös-Rényi model for random graphs and propose a new probabilistic model. We provide
-a new and more elementary proof of a lower bound of the expected embedding dimension,
-genus, and Frobenius number of a random semigroup, and provide a tighter probabilistic upper
-bound. Our results derive from the application of the Probabilistic Method to the generation
-of random numerical semigroups and observations about sums of uniformly random subsets
-of cyclic groups. We include experiments that motivated our results and offer conjectures for
-subsequent research.
+En el proyecto se hace un análisis matemático del modelo para determinar la cantidad de glóbulos rojos en el cuerpo humano propuesto por Edelstein-Keshet y se hacen tres simulaciones computacionales cambiando el valor de $\gamma$ (tomándolo mayor, menor o igual a 1). Cada simulación es analizada según las observaciones hechas desde el punto de vista matemático. 
+
+Posteriormente se presentan tres variaciones del modelo siguiendo tres principales complicaciones médicas: una hemorragia leve (pérdida de sangre del $2\%$), una hemorragia grave (pérdida de sangre del $14\%$) y anemia renal (deficiencia de eritropoyetina). Para cada uno de los casos se presenta su tratamiento médico, su correspondiente simulación computacional y el análisis de esta. Para el caso de la anemia renal, se halla una dosis que permite evitar una pérdida constante de glóbulos rojos. 
+
+Para concluir se presentan nuevas variables a tener en cuenta a la hora de proponer el modelo y algunos cambios que se podrían hacer para modificar los resultados obtenidos. También se propone un trabajo a futuro para incluir al modelo la movilización de células madre para pacientes con cáncer.
+
