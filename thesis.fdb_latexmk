@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber thesis"] 1715826634 "thesis.bcf" "thesis.bbl" "thesis" 1715828948 0
+["biber thesis"] 1715826634 "thesis.bcf" "thesis.bbl" "thesis" 1715829045 0
   "./library.bib" 1715825964 11676 54248e00cca651a8284d5b5b8620cb13 ""
-  "thesis.bcf" 1715828945 109163 a95b590b3db3f350db3bfc250b69899f "pdflatex"
+  "thesis.bcf" 1715829042 109163 a95b590b3db3f350db3bfc250b69899f "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1715828933 "/Users/miguelsandoval/Desktop/Andes/GraduationProject/thesis.tex" "thesis.pdf" "thesis" 1715828948 0
+["pdflatex"] 1715829026 "/Users/miguelsandoval/Desktop/Andes/GraduationProject/thesis.tex" "thesis.pdf" "thesis" 1715829045 0
   "/Users/miguelsandoval/Desktop/Andes/GraduationProject/thesis.tex" 1715825134 3362 3db9e89e999351c7cc7a6152bb30356a ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -262,17 +262,17 @@
   "figures/HemoLeveG1.png" 1715825134 53071 8d777da1a2235a2f41d33e23aad339fb ""
   "figures/HemoLeveG13.png" 1715825134 55218 3b742ea0065f157c3ec1f0a9d459515b ""
   "figures/VidaRBC.jpeg" 1715825134 83902 703840cb1b6aebd5fdd444e6d1e232b7 ""
-  "frontmatter/agradecimientos.tex" 1715828925 878 5640965b4177dbcf6bc664b6c783e6b3 ""
+  "frontmatter/agradecimientos.tex" 1715829013 903 92ee78eee1aaca42ee49bf51c9d41580 ""
   "frontmatter/dedicatoria.tex" 1715825134 60 78c74538b39e303cdb45c5dec8e68cbb ""
   "frontmatter/resumen.tex" 1715826764 1204 9a0f0d0c87565f2f8ace296e61f96d39 ""
   "frontmatter/titlepage.tex" 1715825134 493 37ac9e6c12a4731bf0134cd07d041643 ""
   "quiver.sty" 1715825134 1605 786c4fbcefc5d2898f3d784c12d72ae1 ""
-  "thesis.aux" 1715828945 17576 de19e9503cab45bec4812d45cea2a12f "pdflatex"
+  "thesis.aux" 1715829042 17576 de19e9503cab45bec4812d45cea2a12f "pdflatex"
   "thesis.bbl" 1715826647 55452 cd7af033e5d3c47739e83a498eda041b "biber thesis"
-  "thesis.out" 1715828945 6035 26c5e6f1099fe2e9da4f7ce05b074508 "pdflatex"
-  "thesis.run.xml" 1715828945 2413 86904c7288adb44cc7e0726c2475a3ad "pdflatex"
+  "thesis.out" 1715829042 6035 26c5e6f1099fe2e9da4f7ce05b074508 "pdflatex"
+  "thesis.run.xml" 1715829042 2413 86904c7288adb44cc7e0726c2475a3ad "pdflatex"
   "thesis.tex" 1715825134 3362 3db9e89e999351c7cc7a6152bb30356a ""
-  "thesis.toc" 1715828945 2997 5894546c267555710ed65c2a76eeb441 "pdflatex"
+  "thesis.toc" 1715829042 2997 5894546c267555710ed65c2a76eeb441 "pdflatex"
   (generated)
   "thesis.aux"
   "thesis.bcf"
