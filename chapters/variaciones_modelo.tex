@@ -114,13 +114,13 @@ Para este caso se considerará un paciente con anemia renal permanente producida
 
 La eritropoyetina, según el estudio del capítulo \ref{chap:RBC}, es la hormona encargada de fomentar la producción de glóbulos rojos por parte de la médula ósea. De esta manera, la cantidad de EPO en sangre debe afectar el resultado de $M(n)$ de alguna manera.
 
-Para la investigación, se consideró que cada unidad por mililitro aplicada de EPO produce $10^{5}$ glóbulos rojos respecto a la producción de una persona sana. Esto quiere decir (en resumidas cuentas) que cada mU/ml de EPO aplicada aumenta un $0.01\%$ la producción de glóbulos rojos respecto a una persona sana. De esta manera, la ecuación de $M(n)$ se verá modificada de la siguiente manera: 
+Para la investigación, se consideró que cada unidad por mililitro aplicada de EPO aumenta en $0.01\%$ la producción de glóbulos rojos respecto a la producción de una persona sana. De esta manera, la ecuación de $M(n)$ se verá modificada de la siguiente manera: 
 
 \begin{equation*}
     M(n+1)=\gamma\cdot f \cdot R(n)+\frac{\delta(n)*y_s}{10000},
 \end{equation*}
 
-es decir que la cantidad de glóbulos rojos producidos por la médula ósea en el día $n+1$ ahora también dependerá también de la cantidad que produzca la concentración de EPO en la sangre del paciente, $\delta(n)$, siguiendo la hipótesis mencionada anteriormente de la producción de $0.01\%$ por mU/ml aplicada respecto a la producción normal de un paciente sano, $y_s$. 
+es decir que la cantidad de glóbulos rojos producidos por la médula ósea en el día $n+1$ ahora también dependerá también de la cantidad que produzca la concentración de EPO en la sangre del paciente, $\delta(n)$, siguiendo la hipótesis mencionada anteriormente de la producción de $0.01\%$ por mU/ml aplicado respecto a la producción normal de un paciente sano, $y_s$. 
 
 Esto implica que se debe definir una ecuación para $\delta(n)$. Esta se basa en el artículo de Frymoyer (\cite{FRYMOYER2019123}), en donde se puede modelar la concentración de una dosis de un fármaco aplicado por vía intravenosa ($\delta(t)$) mediante la ecuación diferencial
 
