@@ -17,10 +17,11 @@ Para esta variación del modelo, tome como ejemplo que en el tercer día de medi
 
 En donde:
 \begin{itemize}
-    \item $\gamma=1$; (glóbulos rojos producidos por cada uno perdido)
+    \item $R(0) = 25\times 10^{12}$; (cantidad inicial de glóbulos rojos) [Glóbulos rojos]
     \item $f=0.00832$; (fracción de glóbulos rojos eliminados diariamente)
-    \item $R(0) = 25\times 10^{12}$; (cantidad inicial de glóbulos rojos)
-    \item $M(0) = 208 \times 10^{9}$. (RBC's eliminados por la médula ósea en el día 0)
+    \item $M(0) = 208 \times 10^{9}$; (RBC's producidos por la médula ósea en el día 0) [Glóbulos rojos]
+    \item $\gamma=1$; (glóbulos rojos producidos por cada uno perdido)
+    \item $t = 10$. (tiempo de simulación) [días]
 \end{itemize}
 
 La simulación se ve así: en la primera gráfica de la figura \ref{sec:variaciones:fig:HemoLeveG1} se observa la pérdida de RBC's en el tercer día, un aumento en la cantidad de eritrocitos del tercero al cuarto y estabilidad del cuarto en adelante. En la segunda gráfica se observa lo mismo pero con un día de atraso. El aumento de RBC's que se puede observar está dado por el hecho de que el adendo $M(n)$ conserva lo que ha ocurrido en $R(n-1)$ así, para el cuarto día se producen la cantidad de eritrocitos que se vienen produciendo regularmente antes del accidente, y desde el cuarto día en adelante este adendo ya se acomoda a la nueva cantidad de sangre. La estabilidad en los glóbulos rojos que se observa del cuarto día en adelante está dada por el hecho de que $\gamma = 1$. El modelo, de esta manera, funciona como lo hace normalmente (véase la sección \ref{subsec:modelo:simulaciones:G1}) tomando una cantidad inicial de sangre menor que la original, es decir que mantiene una estabilidad con la cantidad de RBC's del cuarto día, que es de $24.504\times 10^{12}$ glóbulos rojos. 
@@ -29,7 +30,7 @@ La simulación se ve así: en la primera gráfica de la figura \ref{sec:variacio
     \centering
     \captionsetup{justification=centering}
     \includegraphics[scale=0.534]{figures/HemoLeveG1.png}
-    \caption{Simulación del modelo para el caso de una hemorragia sin recuperación de la homeostasis. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$.}
+    \caption{Simulación del modelo para el caso de una hemorragia sin recuperación de la homeostasis para los valores $\gamma = 1$, $f = 0.00832$, $R(0)=25\times 10^{12}$ RBC's, $M(0) = 208\times 10^{9}$ RBC's para 10 días. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$. La franja gris en la gráfica de $M(n)$ representa los límites normales.}
     \label{sec:variaciones:fig:HemoLeveG1}
 \end{figure}
 
@@ -46,11 +47,12 @@ Para calibrar el valor de $\gamma_2$ se utilizó la información brindada por el
 
 Así, los valores constantes a tener en cuenta son:
 \begin{itemize}
+    \item $R(0) = 25\times 10^{12}$; (cantidad inicial de glóbulos rojos) [Glóbulos rojos]
+    \item $f=0.00832$; (fracción de glóbulos rojos eliminados diariamente)
+    \item $M(0) = 208 \times 10^{9}$. (RBC's producidos por la médula ósea en el día 0) [Glóbulos rojos]
     \item $\gamma_1=1$; (glóbulos rojos producidos por cada uno perdido normalmente)
     \item $\gamma_2=1.305$; (glóbulos rojos producidos por cada uno perdido después de la hemorragia)
-    \item $f=0.00832$; (fracción de glóbulos rojos eliminados diariamente)
-    \item $R(0) = 25\times 10^{12}$; (cantidad inicial de glóbulos rojos)
-    \item $M(0) = 208 \times 10^{9}$. (RBC's eliminados por la médula ósea en el día 0)
+    \item $t = 15$. (tiempo de simulación) [días]
 \end{itemize}
 
 Para estas simulaciones, se utilizó un tiempo de 15 días para poder observar lo que sucede después de recuperar los eritrocitos perdidos:
@@ -59,7 +61,7 @@ Para estas simulaciones, se utilizó un tiempo de 15 días para poder observar l
     \centering
     \captionsetup{justification=centering}
     \includegraphics[scale=0.534]{figures/HemoLeveG13.png}
-    \caption{Simulación del modelo para el caso de una hemorragia con recuperación de la homeostasis. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$.}
+    \caption{Simulación del modelo para el caso de una hemorragia con recuperación de la homeostasis para los valores $\gamma_1 = 1$, $\gamma_2=1.305$, $f = 0.00832$, $R(0)=25\times 10^{12}$ RBC's, $M(0) = 208\times 10^{9}$ RBC's para 15 días. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$. La franja gris en la gráfica de $M(n)$ representa los límites normales.}
     \label{sec:variaciones:fig:HemoLeveG13}
 \end{figure}
 
@@ -86,25 +88,26 @@ Los valores de $\gamma_2$ y $\gamma_3$ fueron estimados al igual que en el caso 
 
 Así, los valores constantes a tener en cuenta son:
 \begin{itemize}
+    \item $R(0) = 25\times 10^{12}$; (cantidad inicial de glóbulos rojos)
+    \item $f=0.00832$; (fracción de glóbulos rojos eliminados diariamente)
+    \item $M(0) = 208 \times 10^{9}$. (RBC's producidos por la médula ósea en el día 0)
     \item $\gamma_1=1$; (glóbulos rojos producidos por cada uno perdido normalmente)
     \item $\gamma_2=1.305$; (glóbulos rojos producidos por cada uno perdido después de la hemorragia)
     \item $\gamma_3=1.31$; (glóbulos rojos producidos por cada uno perdido después de la transfusión)
-    \item $f=0.00832$; (fracción de glóbulos rojos eliminados diariamente)
-    \item $R(0) = 25\times 10^{12}$; (cantidad inicial de glóbulos rojos)
-    \item $M(0) = 208 \times 10^{9}$. (RBC's eliminados por la médula ósea en el día 0)
+    \item $t = 23$. (tiempo de simulación) [días]
 \end{itemize}
 
-Para ilustrar los diferentes estados del cuerpo mencionados anteriormente, se amplió el tiempo de simulación a 22 días: 
+Para ilustrar los diferentes estados del cuerpo mencionados anteriormente, se amplió el tiempo de simulación a 23 días: 
 
 \begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
     \includegraphics[scale=0.534]{figures/HemoGrave.png}
-    \caption{Simulación del modelo para el caso de una hemorragia grave con transfusión. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$.}
+    \caption{Simulación del modelo para el caso de una hemorragia grave con transfusión para los valores $\gamma_1 = 1$, $\gamma_2=1.305$, $\gamma_3=1.31$, $f = 0.00832$, $R(0)=25\times 10^{12}$ RBC's, $M(0) = 208\times 10^{9}$ RBC's para 23 días. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$. La franja gris en la gráfica de $M(n)$ representa los límites normales.}
     \label{sec:variaciones:fig:HemoGrave}
 \end{figure}
 
-Para los primeros dos días, el cuerpo se encuentra en el estado estable de $\gamma = 1$. En el tercer día ocurre la hemorragia grave y se puede ver una amplia caída en la cantidad de glóbulos en la gráfica izquierda de la figura \ref{sec:variaciones:fig:HemoGrave}. Esta pérdida, sin embargo, se ve mitigada un poco debido a la producción normal de eritrocitos por parte de la médula ósea. A partir de este día inicia el fuerte crecimiento en la producción de RBC's, pues el cuerpo debe intentar recuperar lo perdido (gráfica derecha a partir del cuarto día). En el día cuatro se puede ver el efecto de la transfusión efectuada a través de un gran aumento en la cantidad de eritrocitos respecto al día anterior. En el quinto día hay en la gráfica izquierda una disminución en la pendiente respecto al día anterior que se debe a la transición de $\gamma_2$ a $\gamma_3$, y esto se ve reflejado en la primera gráfica por el cambio de pendiente en los días 4-5 y 5-6. A partir del quinto día el cuerpo produce glóbulos rojos según $\gamma_3$ hasta volver al valor inicial y así volver a la estabilidad brindada por $\gamma_1$.
+Para los primeros dos días, el cuerpo se encuentra en el estado estable de $\gamma = 1$. En el tercer día ocurre la hemorragia grave y se puede ver una amplia caída en la cantidad de glóbulos en la gráfica izquierda de la figura \ref{sec:variaciones:fig:HemoGrave}, llegando a estar debajo de los límites normales. Esta pérdida, sin embargo, se ve mitigada un poco debido a la producción normal de eritrocitos por parte de la médula ósea. A partir de este día inicia el fuerte crecimiento en la producción de RBC's, pues el cuerpo debe intentar recuperar lo perdido (gráfica derecha a partir del cuarto día). En el día cuatro se puede ver el efecto de la transfusión efectuada a través de un gran aumento en la cantidad de eritrocitos respecto al día anterior. En el quinto día hay en la gráfica izquierda una disminución en la pendiente respecto al día anterior que se debe a la transición de $\gamma_2$ a $\gamma_3$, y esto se ve reflejado en la primera gráfica por el cambio de pendiente en los días 4-5 y 5-6. A partir del quinto día el cuerpo produce glóbulos rojos según $\gamma_3$ hasta volver al valor inicial y así volver a la estabilidad brindada por $\gamma_1$.
 
 Las gráficas permiten ilustrar la gran ventaja de la transfusión sanguínea, pues sin esta se recuperaría la sangre perdida en 55 días en vez de en 17.
 
@@ -114,7 +117,7 @@ Para este caso se considerará un paciente con anemia renal permanente producida
 
 La eritropoyetina, según el estudio del capítulo \ref{chap:RBC}, es la hormona encargada de fomentar la producción de glóbulos rojos por parte de la médula ósea. De esta manera, la cantidad de EPO en sangre debe afectar el resultado de $M(n)$ de alguna manera.
 
-Para la investigación, se consideró que cada unidad por mililitro aplicada de EPO aumenta en $0.01\%$ la producción de glóbulos rojos respecto a la producción de una persona sana. De esta manera, la ecuación de $M(n)$ se verá modificada de la siguiente manera: 
+Para la investigación, se asumió arbitrariamente que cada unidad por mililitro aplicada de EPO aumenta en $0.01\%$ la producción de glóbulos rojos respecto a la producción de una persona sana. De esta manera, la ecuación de $M(n)$ se verá modificada de la siguiente manera: 
 
 \begin{equation*}
     M(n+1)=\gamma\cdot f \cdot R(n)+\frac{\delta(n)*y_s}{10000},
@@ -171,14 +174,15 @@ Para poder definir el parámetro $\gamma$, se seguirá el estudio de Panjeta (\c
 Se concluye que los valores de los parámetros y los valores iniciales del modelo \ref{eq:ModeloAnemia} son:
 
 \begin{itemize}
-    \item $R(0) = 25\times 10^{12};$ (valor inicial de RBC's)
+    \item $R(0) = 25\times 10^{12};$ (valor inicial de RBC's) [Glóbulos rojos]
     \item $f=0.00832;$ (fracción de RBC's eliminada cada día)
-    \item $M(0) = R(0)\cdot f \cdot \gamma = 145.6\times 10^{9};$ (RBC's producidos por la médula ósea en el día 0)
+    \item $M(0) = R(0)\cdot f \cdot \gamma = 145.6\times 10^{9};$ (RBC's producidos por la médula ósea en el día 0) [Glóbulos rojos]
     \item $\gamma = 0.809;$ (RBC's producidos por cada uno pérdido en un paciente anémico) 
-    \item $y_s = 208\times 10^{12};$ (RBC's producidos por la médula ósea por un paciente sano)
+    \item $y_s = 208\times 10^{12};$ (RBC's producidos por la médula ósea por un paciente sano) [Glóbulos rojos]
     \item $\delta_0$ es la concentración de cada dosis [mU/ml];
     \item $k_e=0.077$ (constante de eliminación) [$\textrm{h}^{-1}$];
     \item $t_0$ es el tiempo que debe pasar entra cada dosis [h].
+    \item $t_f$. (tiempo de simulación) [días]
 \end{itemize}
 
 El valor $24\cdot n$ en la función $\delta(t)$ para calcular $M(n)$ se utiliza para acoplar el modelo continuo de la concentración del fármaco al modelo base, que es discreto. El valor $24 \cdot n$ indica la concentración del fármaco al comienzo del día $n$, pues $t$ se mide en horas.
@@ -193,26 +197,27 @@ Como se expuso en la sección \ref{subsec:RBC:enfermedades:anemia}, el tratamien
 Así, para la concentración de 975 mU/ml de EPO, se tienen los siguientes valores iniciales y de los parámetros:
 
 \begin{itemize}
-    \item $R(0) = 25\times 10^{12};$ (valor inicial de RBC's)
+    \item $R(0) = 25\times 10^{12};$ (valor inicial de RBC's) [Glóbulos rojos]
     \item $f=0.00832;$ (fracción de RBC's eliminada cada día)
-    \item $M(0) = R(0)\cdot f \cdot \gamma = 145.6\times 10^{9};$ (RBC's producidos por la médula ósea en el día 0)
+    \item $M(0) = R(0)\cdot f \cdot \gamma = 145.6\times 10^{9};$ (RBC's producidos por la médula ósea en el día 0) [Glóbulos rojos]
     \item $\gamma = 0.809;$ (RBC's producidos por cada uno pérdido en un paciente anémico) 
-    \item $y_s = 208\times 10^{12};$ (RBC's producidos por la médula ósea por un paciente sano)
+    \item $y_s = 208\times 10^{12};$ (RBC's producidos por la médula ósea por un paciente sano) [Glóbulos rojos]
     \item $\delta_0=975$ es la concentración de cada dosis [mU/ml];
     \item $k_e=0.077$ (constante de eliminación) [$\textrm{h}^{-1}$];
     \item $t_0=72$ es el tiempo que debe pasar entra cada dosis [h].
+    \item $t_f = 29$. (tiempo de simulación) [días]
 \end{itemize}
 
 \begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
     \includegraphics[scale=0.526]{figures/AR11.png}
-    \includegraphics[scale=0.8]{figures/AR12.png}
-    \caption{Simulación del modelo para el caso de anemia renal con dosis de EPO de 975 mU/ml. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$, abajo la de $\delta(t)$.}
+    \includegraphics[scale=0.526]{figures/AR12.png}
+    \caption{Simulación del modelo para el caso de anemia renal con dosis de EPO para los valores $R(0)=25\times 10^{12}$ RBC's, $f=0.00832$, $M(0)=145.6\times 10^{9}$ RBC's, $\gamma = 0.809$, $y_s = 208\times10^{9}$ RBC's, $\delta_0 = 975$ mU/ml, $t_0 =72$ h para 29 días. Arriba a la izquierda está la gráfica de $R(n)$, arriba a la derecha la de $M(n)$, abajo a la izquierda se encuentra la gráfica ampliada de $M(n)$, abajo a la derecha la de $\delta(t)$. La franja gris en la primera gráfica de $M(n)$ representa los límites normales.}
     \label{sec:variaciones:fig:Anemia1}
 \end{figure}
 
-Como bien se puede ver en la figura \ref{sec:variaciones:fig:Anemia1}, la dosis de EPO administrada no es suficiente para sanar la constante pérdida de glóbulos rojos en el paciente, pues $R(n)$ presenta una disminución en el tiempo, que al infinito se vuelve 0. Sin embargo, la simulación muestra como cada dosis aplicada hace que el cuerpo aumente de una manera significativa su producción de eritrocitos, como se ve en la gráfica para $M(n)$. Es interesante ver como, según la gráfica inferior, el cuerpo consume la dosis administrada a gran velocidad: al final del primer día queda muy poca concentración de la dosis en el cuerpo (el 15$\%$).
+Como bien se puede ver en la figura \ref{sec:variaciones:fig:Anemia1}, la dosis de EPO administrada no es suficiente para sanar la constante pérdida de glóbulos rojos en el paciente, pues $R(n)$ presenta una disminución en el tiempo, que al infinito se vuelve 0. Sin embargo, la simulación muestra como cada dosis aplicada hace que el cuerpo aumente de una manera significativa su producción de eritrocitos, como se ve en la gráfica para $M(n)$. Es interesante ver como, según la gráfica inferior derecha, el cuerpo consume la dosis administrada a gran velocidad: al final del primer día queda muy poca concentración de la dosis en el cuerpo (el 15$\%$).
 
 Se concluye que la dosis aplicada de 975 mU/ml no es suficiente para que se contrarresten los efectos de la anemia renal del paciente. De esta manera, se debe encontrar un valor de la dosis para que el paciente logre estabilizar su cantidad de eritrocitos.
 
@@ -223,24 +228,24 @@ Para hallar una concentración de dosis que permita lograr que el paciente logre
 Para la concentración de 4824 mU/ml de dosis de EPO, se tienen los siguientes valores iniciales y de los parámetros para el modelo \ref{eq:ModeloAnemia}:
 
 \begin{itemize}
-    \item $R(0) = 25\times 10^{12};$ (valor inicial de RBC's)
+    \item $R(0) = 25\times 10^{12};$ (valor inicial de RBC's) [Glóbulos rojos]
     \item $f=0.00832;$ (fracción de RBC's eliminada cada día)
-    \item $M(0) = R(0)\cdot f \cdot \gamma = 145.6\times 10^{9};$ (RBC's producidos por la médula ósea en el día 0)
+    \item $M(0) = R(0)\cdot f \cdot \gamma = 145.6\times 10^{9};$ (RBC's producidos por la médula ósea en el día 0) [Glóbulos rojos]
     \item $\gamma = 0.809;$ (RBC's producidos por cada uno perdido en un paciente anémico) 
-    \item $y_s = 208\times 10^{12};$ (RBC's producidos por la médula ósea por un paciente sano)
+    \item $y_s = 208\times 10^{12};$ (RBC's producidos por la médula ósea por un paciente sano) [Glóbulos rojos]
     \item $\delta_0=4824$ es la concentración de cada dosis [mU/ml];
     \item $k_e=0.077$ (constante de eliminación) [$\textrm{h}^{-1}$];
     \item $t_0=72$ es el tiempo que debe pasar entra cada dosis [h].
 \end{itemize}
 
-La figura \ref{sec:variaciones:fig:Anemia2} muestra como, gracias a la nueva dosis, el cuerpo es capaz de lograr una oscilación constante y casi estable (aumenta muy ligeramente cada día), teniendo un valor máximo de RBC's ligeramente superior al original. La función $R(n)$ se vuelve periódica con un máximo de $25.0213\times 10^{12}$ glóbulos rojos, un aumento del $0.085\%$ respecto al valor original, los valles de la gráfica ocurren para valores de $24.96\times 10^{12}$ eritrocitos, una cantidad $0.16\%$ menor respecto al valor normal. La gráfica derecha, que ilustra los valores de $M(n)$, también muestra la oscilación esperada, con un máximo de 269.004$\times 10^{9}$ que representa un aumento del 29.3$\%$ respecto al valor de glóbulos rojos producidos por una persona sana. Para estos picos de $M(n)$, el paciente tiene una concentración de EPO en sangre de 4832.9 mU/ml, que corresponde a un aumento del 439.35$\%$ respecto a la concentración para pacientes sanos, y una del 543.02$\%$ para el paciente anémico. La gráfica inferior muestra nuevamente cómo el cuerpo consume a gran velocidad la droga administrada. 
+La figura \ref{sec:variaciones:fig:Anemia2} muestra como, gracias a la nueva dosis, el cuerpo es capaz de lograr una oscilación constante y casi estable (aumenta muy ligeramente cada día), teniendo un valor máximo de RBC's ligeramente superior al original. La función $R(n)$ se vuelve periódica con un máximo de $25.0213\times 10^{12}$ glóbulos rojos, un aumento del $0.085\%$ respecto al valor original y un mínimo de $24.96\times 10^{12}$ eritrocitos, una cantidad $0.16\%$ menor respecto al valor normal; como bien se ve en la gráfica superior izquierda, esto quiere decir que hay una gran estabilidad respecto a los límites de concentración. La gráfica superior derecha, que ilustra los valores de $M(n)$, también muestra la oscilación esperada, con un máximo de 269.004$\times 10^{9}$ que representa un aumento del 29.3$\%$ respecto al valor de glóbulos rojos producidos por una persona sana. Para estos picos de $M(n)$, el paciente tiene una concentración de EPO en sangre de 4832.9 mU/ml, que corresponde a un aumento del 439.35$\%$ respecto a la concentración para pacientes sanos, y una del 543.02$\%$ para el paciente anémico. La gráfica inferior derecha muestra nuevamente cómo el cuerpo consume a gran velocidad la droga administrada. 
 
 \begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
     \includegraphics[scale=0.526]{figures/AR21.png}
-    \includegraphics[scale=0.8]{figures/AR22.png}
-    \caption{Simulación del modelo para el caso de anemia renal con dosis de EPO de 4824 mU/ml. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$, abajo la de $\delta(t)$.}
+    \includegraphics[scale=0.526]{figures/AR22.png}
+    \caption{Simulación del modelo para el caso de anemia renal con dosis de EPO para los valores $R(0)=25\times 10^{12}$ RBC's, $f=0.00832$, $M(0)=145.6\times 10^{9}$ RBC's, $\gamma = 0.809$, $y_s = 208\times10^{9}$ RBC's, $\delta_0 = 4824$ mU/ml, $t_0 =72$ h para 29 días. Arriba a la izquierda está la gráfica de $R(n)$, arriba a la derecha la de $M(n)$, abajo a la izquierda se encuentra la gráfica ampliada de $M(n)$, abajo a la derecha la de $\delta(t)$. La franja gris en la primera gráfica de $M(n)$ representa los límites normales.}
     \label{sec:variaciones:fig:Anemia2}
 \end{figure}
 

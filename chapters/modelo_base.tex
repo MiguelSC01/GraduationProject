@@ -43,7 +43,7 @@ $$\implies M(n)=c_3 \lambda_1^{n-1}+ c_4 \lambda_2^{n-1},$$
 $$c3 = c_1\cdot \gamma \cdot f,$$
 $$c4 = c_2\cdot \gamma \cdot f,$$
 
-en donde $c_{i}$ ($i=1,2,3,4$) dependerán de las condiciones iniciales que se utilicen y los valores de cada parámetro.
+en donde $c_{i}$ ($i=1,2,3,4$) son constantes que dependerán de las condiciones iniciales que se utilicen y los valores de cada parámetro.
 
 \subsection{Método mediante Matrices}
 
@@ -90,8 +90,9 @@ y de esta manera la solución general del problema estará dada por
 $$\begin{pmatrix}
     R(n) \\
     M(n) 
-    \end{pmatrix}= (\lambda_1)^n \mathbf{v_1}+(\lambda_2)^n \mathbf{v_2}.$$
+    \end{pmatrix}= c_1(\lambda_1)^n \mathbf{v_1}+c_2(\lambda_2)^n \mathbf{v_2},$$
 
+en donde $c_1$ y $c_2$ dependerán de las condiciones iniciales.
 
 Nótese que ambos métodos, al tener el mismo polinomio característico, obtienen la misma solución general del sistema, esto implica que el modelo propuesto está bien fundamentado matemáticamente.
 
@@ -202,43 +203,63 @@ A continuación se presentarán las simulaciones computacionales del modelo y su
 
 Para cada una de las simulaciones, estos valores son fijos:
 \begin{itemize}
+    \item $R(0) = 25\times 10^{12}$; (cantidad inicial de glóbulos rojos) [Glóbulos rojos]
     \item $f=0.00832$; (fracción de glóbulos rojos eliminados diariamente)
-    \item $R(0) = 25\times 10^{12}$; (cantidad inicial de glóbulos rojos)
-    \item $M(0) = 208 \times 10^{9}$. (RBC's eliminados por la médula ósea en el día 0)
+    \item $M(0) = 208 \times 10^{9}$, (RBC's producidos por la médula ósea en el día 0) [Glóbulos rojos]
+    \item $t=10$. (tiempo de simulación) [días]
 \end{itemize}
 
 \subsection{Caso $\gamma=1$}\label{subsec:modelo:simulaciones:G1}
+
+Recuerde que para este caso se tiene la solución constante
+
+$$R(n)=25\times 10^{12},$$
+$$M(n)=208\times 10^{9}.$$
+
+
 \begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
     \includegraphics[scale=0.534]{BaseG1.png}
-    \caption{Simulación del modelo para $\gamma = 1$. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$.}
+    \caption{Simulación del modelo para los valores $\gamma = 1$, $f = 0.00832$, $R(0) = 25\times 10^{12}$ RBC's, $M(0) = 208 \times 10^{9}$ RBC's en 10 días. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$. La franja gris en la gráfica de $M(n)$ representa los límites normales.}
     \label{sec:modelo:fig:G1}
 \end{figure}
 
 Como era esperado, según los análisis hechos en la sección \ref{sec:modelo:analisis}, para el caso $\gamma = 1$ se obtiene una simulación totalmente estable, manteniendo el nivel de glóbulos rojos diarios en $25\times 10^{12}$ y la cantidad de glóbulos rojos producidos diariamente en $208\times 10^{9}$ como bien se puede observar en las gráficas de la figura \ref{sec:modelo:fig:G1}. Esta simulación representa el caso ideal en el que un paciente no tenga ninguna enfermedad o complicación médica y sea completamente saludable. Para este caso, todo glóbulo rojo que es eliminado por el bazo es producido por la médula ósea, por lo que no hay variaciones en las cantidades.
 
 \subsection{Caso $\gamma=0.7$}
+
+La solución general para este caso está dada por
+
+$$R(n)=(25.0618\times 10^{12})(0.9975)^n+(-61.8302\times 10^{9})(-0.0058)^n,$$
+$$M(n)=(145.96\times 10^{9})(0.9975)^{n-1}+(-360.1\times 10^{6})(-0.0058)^{n-1}.$$
+
+
 \begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
     \includegraphics[scale=0.534]{BaseG07.png}
-    \caption{Simulación del modelo para $\gamma = 0.7$. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$.}
+    \caption{Simulación del modelo para los valores $\gamma = 0.7$, $f = 0.00832$, $R(0) = 25\times 10^{12}$ RBC's, $M(0) = 208 \times 10^{9}$ RBC's en 10 días. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$. La franja gris en la gráfica de $M(n)$ representa los límites normales.}
     \label{sec:modelo:fig:G07}
 \end{figure}
 
 En este caso, el paciente padece de una enfermedad que afecta la producción de glóbulos rojos producidos por la médula ósea, pues $\gamma=0.7$ implica que por cada glóbulo rojo eliminado por el bazo se producen únicamente $0.7$ glóbulos rojos. Como se puede observar en las gráficas de la figura \ref{sec:modelo:fig:G07}, los efectos de una baja producción de RBC's es una caída tanto en la cantidad de eritrocitos en el cuerpo como en su producción por parte de las células madre. Extendiendo los días simulados se encuentra que en el día 280 la cantidad de glóbulos rojos se ha reducido a la mitad respecto a la inicial. Un aspecto interesante es la caída que se puede observar en la segunda gráfica y la estabilidad en la primera del día 0 al día 1. Esta ocurre dado que las condiciones iniciales asumen que en el día 0 la producción es normal y a partir del día 1 es que ocurre el cambio en la producción de RBC's, por lo que ahí ocurre la primera caída en producción y en cantidad. 
 
-
 \subsection{Caso $\gamma=1.3$}\label{subsec:modelo:simulaciones:G13}
 
-En este caso, el paciente produce más glóbulos rojos de los que elimina. Esto puede tener diferentes causas, como bajos valores de hierro y, por lo tanto, de hemoglobina o dificultades pulmonares del paciente que produzcan bajos niveles de oxígeno en la sangre. Como bien se puede observar en las gráficas de la figura \ref{sec:modelo:fig:G13}, para valores de $\gamma$ mayores a 1 se obtiene un crecimiento en la cantidad de glóbulos rojos en el cuerpo y en la cantidad diaria producida por la médula ósea, esto se debe a que el cuerpo está produciendo una media de 1.3 RBC's por cada uno perdido, por lo que es normal que la cantidad de estos aumente. Así como en la simulación para $\gamma = 0.7$, la anomalía presentada del día 0 al día 1 se debe a las condiciones iniciales del problema. Al extender los días de la simulación, se encuentra que en el día 183 la cantidad de eritrocitos en el cuerpo se ha duplicado respecto al valor inicial. Como se analizó en la sección \ref{sec:modelo:analisis}, si se quisiera extender la simulación al infinito los glóbulos rojos también tenderían hacia el infinito. 
+La solución general para este caso está dada por
+
+$$R(n)=(24.9391\times 10^{12})(1.0025)^n+(60.9261\times 10^{9})(-0.0108)^n,$$
+$$M(n)=(269.741\times 10^{9})(1.0025)^{n-1}+(658.977\times 10^{6})(-0.0108)^{n-1}.$$
 
 \begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
     \includegraphics[scale=0.534]{BaseG13.png}
-    \caption{Simulación del modelo para $\gamma = 1.3$. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$.}
+    \caption{Simulación del modelo para los valores $\gamma = 1.3$, $f = 0.00832$, $R(0) = 25\times 10^{12}$ RBC's, $M(0) = 208 \times 10^{9}$ RBC's en 10 días. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$. La franja gris en la gráfica de $M(n)$ representa los límites normales.}
     \label{sec:modelo:fig:G13}
 \end{figure}
+
+En este caso, el paciente produce más glóbulos rojos de los que elimina. Esto puede tener diferentes causas, como bajos valores de hierro y, por lo tanto, de hemoglobina o dificultades pulmonares del paciente que produzcan bajos niveles de oxígeno en la sangre. Como bien se puede observar en las gráficas de la figura \ref{sec:modelo:fig:G13}, para valores de $\gamma$ mayores a 1 se obtiene un crecimiento en la cantidad de glóbulos rojos en el cuerpo y en la cantidad diaria producida por la médula ósea, esto se debe a que el cuerpo está produciendo una media de 1.3 RBC's por cada uno perdido, por lo que es normal que la cantidad de estos aumente. Así como en la simulación para $\gamma = 0.7$, la anomalía presentada del día 0 al día 1 se debe a las condiciones iniciales del problema. Al extender los días de la simulación, se encuentra que en el día 183 la cantidad de eritrocitos en el cuerpo se ha duplicado respecto al valor inicial. Como se analizó en la sección \ref{sec:modelo:analisis}, si se quisiera extender la simulación al infinito los glóbulos rojos también tenderían hacia el infinito. 
+
 Habiendo ya analizado y entendido el modelo base para los diferentes casos, el siguiente capítulo buscará acoplar a este modelo dos variaciones posibles: cuando el paciente padece anemia renal o cuando el paciente ha sufrido una hemorragia.
