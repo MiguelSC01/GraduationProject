@@ -144,11 +144,30 @@ Como ya se ha visto en la sección \ref{sec:modelo:analisis}, las soluciones del
         mientras que los vectores propios asociados a cada valor propio son (aproximando a 4 cifras significativas):
         $$\mathbf{v_1}=\begin{pmatrix}
             0.9999  \\
-            -0.7071
+            0.0083
             \end{pmatrix},\;\;\;  \mathbf{v_2}=\begin{pmatrix}
-            0.0083 \\
+            -0.7071 \\
             0.7071
             \end{pmatrix}.$$
+        Las constantes de solución $c_1$ y $c_2$ tienen los siguientes valores:
+        
+        $$c_1 = 25.0009 \times 10^{12},$$
+        $$c_2 = 4.2802 \times 10^{-5}.$$
+
+        La solución para este caso está dada por:
+        $$\begin{pmatrix}
+            R(n) \\
+            M(n) 
+            \end{pmatrix}= $$
+            $$(25.0009 \times 10^{12}) \begin{pmatrix}
+                0.9999 \\
+                0.0083 
+                \end{pmatrix}+(4.2802 \times 10^{-5})(-0.00832)^n \begin{pmatrix}
+                    -0.7071 \\
+                    0.7071 
+                    \end{pmatrix}.$$
+
+
 
 \end{itemize}
 
@@ -167,11 +186,28 @@ Considerando el caso $\gamma = 0.7$, las soluciones son las siguientes:
         mientras que los vectores propios asociados a cada valor propio son (aproximando a 4 cifras significativas):
         $$\mathbf{v_1}=\begin{pmatrix}
             0.9999  \\ 
-            -0.7079
+            0.0058
             \end{pmatrix},\;\;\;  \mathbf{v_2}=\begin{pmatrix}
-            0.0058  \\
+            -0.7080  \\
             0.7062
             \end{pmatrix}.$$
+        Las constantes de solución $c_1$ y $c_2$ tienen los siguientes valores:
+        
+        $$c_1 = 25.0623 \times 10^{12},$$
+        $$c_2 = 87.3327 \times 10^{9}.$$
+    
+        La solución para este caso está dada por:
+        $$\begin{pmatrix}
+            R(n) \\
+            M(n) 
+            \end{pmatrix}=$$
+            $$ (25.0623 \times 10^{12})(0.9975)^{n} \begin{pmatrix}
+                0.9999  \\ 
+                0.0058 
+                \end{pmatrix}+(87.3327 \times 10^{9})(-0.0058)^n \begin{pmatrix}
+                    -0.7080 \\
+                    0.7062 
+                    \end{pmatrix}.$$
 
 \end{itemize}
 
@@ -190,11 +226,28 @@ Considerando el caso $\gamma = 1.3$, las soluciones son las siguientes:
         mientras que los vectores propios asociados a cada valor propio son (aproximando a 4 cifras significativas):
         $$\mathbf{v_1}=\begin{pmatrix}
             0.9999  \\ 
-            -0.7062
+            0.0108
             \end{pmatrix},\;\;\;  \mathbf{v_2}=\begin{pmatrix}
-            0.0108  \\
-            0.7079
+            -0.7062  \\
+            0.7080
             \end{pmatrix}.$$
+        Las constantes de solución $c_1$ y $c_2$ tienen los siguientes valores:
+        
+        $$c_1 = 25.0623 \times 10^{12},$$
+        $$c_2 = 87.3327 \times 10^{9}.$$
+        
+        La solución para este caso está dada por:
+        $$\begin{pmatrix}
+            R(n) \\
+            M(n) 
+            \end{pmatrix}= $$
+            $$(25.0623 \times 10^{12})(1.0025)^{n} \begin{pmatrix}
+                0.9999  \\ 
+                0.0108 
+                \end{pmatrix}+(87.3327 \times 10^{9})(-0.0108)^n \begin{pmatrix}
+                    -0.7062 \\
+                    0.7080 
+                    \end{pmatrix}.$$
 
 \end{itemize}
 
