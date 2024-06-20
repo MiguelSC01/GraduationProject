@@ -1404,6 +1404,13 @@ INPUT ./chapters/conclusiones.tex
 INPUT ./chapters/conclusiones.tex
 INPUT chapters/conclusiones.tex
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
+INPUT ./chapters/apendice.tex
+INPUT ./chapters/apendice.tex
+INPUT ./chapters/apendice.tex
+INPUT chapters/apendice.tex
+INPUT ./chapters/apendice.tex
+INPUT ./chapters/apendice.tex
+INPUT chapters/apendice.tex
 INPUT thesis.aux
 INPUT ./thesis.out
 INPUT ./thesis.out
@@ -1427,3 +1434,4 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb

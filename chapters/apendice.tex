@@ -1,0 +1,86 @@
+\chapter{Solución de Sistemas de Ecuaciones en Diferencias Lineales Homogéneas de Segundo Grado}\label{chap:Apendice}
+\begin{definition}
+Una \emph{ecuación en diferencias lineal homogénea de segundo grado} es:
+\begin{equation}\label{eq:eqlineal}
+    c_0X(n)+c_1X(n-1)+c_2X(n-2)=0,
+\end{equation}
+en donde los $c_i$ son constantes para todo $i$.
+\end{definition}
+
+Para solucionar la ecuación \ref{eq:eqlineal}, se asume inicialmente (siguiendo el supuesto de Euler) que la solución tiene la forma $c\cdot (\lambda)^n$ en donde $c \neq 0$. Reemplazando esta solución en la ecuación inicial, se obtiene
+$$c_0[c\cdot (\lambda)^n]+c_1[c\cdot (\lambda)^{n-1}]+c_2[c\cdot (\lambda)^{n-2}]=0,$$
+dividiendo por $c\cdot(\lambda)^{n-2}$ da cada adendo, se obtiene el \emph{polinomio característico} de la ecuación
+$$c_0\cdot\lambda^2 + c_1\cdot \lambda +c_2=0.$$
+
+Al ser un polinomio de segundo grado, sean $\lambda_1$, $\lambda_2$ sus soluciones (note que pueden ser iguales), entonces se llega al siguiente teorema:
+
+\begin{theorem}
+    Las soluciones a la ecuación en diferencias \ref{eq:eqlineal} están dadas por todas las combinaciones lineales de las $n$-ésimas potencias de las raíces $\lambda_1$, $\lambda_2$ del polinomio característico
+    $$p(\lambda)=c_0\cdot\lambda^2 + c_1\cdot \lambda +c_2,$$
+    es decir que el conjunto de soluciones de la ecuación en diferencias es
+    $$S=\{k_1\cdot \lambda_1^n+k_2\cdot \lambda_2^n\;|\;k_i\in\mathbb{R}\}.$$
+
+    En caso de que $\lambda_1=\lambda_2$, entonces las soluciones son combinaciones lineales de $\lambda_1$ y $n\cdot \lambda_1$.
+
+    Si las raíces son complejas, entonces se toma como solución general
+    $$S=\{r^n(k_1\cdot \cos(n\theta)+k_2\cdot \sin(n\theta))\;|\;l_i\in\mathbb{R}\},$$
+    en donde $r,\theta$ son el radio y ángulo de la representación polar de las raíces (note que son conjugadas).
+\end{theorem}
+
+\textbf{Demostración:}
+
+Para la demostración, solo se tomará el caso real de raíces distintas.
+
+Sea $X(n)=k_1\cdot \lambda_1^n+k_2\cdot \lambda_2^n$, al reemplazarlo en la ecuación original, se tiene
+
+$$c_0[k_1\cdot (\lambda_1)^n+k_2\cdot (\lambda_2)^n]+c_1[k_1\cdot (\lambda_1)^{n-1}+k_2\cdot (\lambda_2)^{n-1}]+c_2[k_1\cdot (\lambda_1)^{n-2}+k_2\cdot (\lambda_2)^{n-2}]=0$$
+$$\implies (c_0[c_1\cdot \lambda_1^n]+c_1[c_1\cdot \lambda_1^{n-1}]+c_2[c_1\cdot \lambda_1^{n-2}])+(c_0[c_2\cdot \lambda_2^n]+c_1[c_2\cdot \lambda_2^{n-1}]+c_2[c_2\cdot \lambda_2^{n-2}])=0$$
+$$\implies c_1\cdot\lambda_1^{n-2}p(\lambda_1)+c_2\cdot\lambda_2^{n-2}p(\lambda_2)=0$$
+$$\implies c_1\cdot\lambda_1^{n-2}(0)+c_2\cdot\lambda_2^{n-2}(0)=0$$
+$$\implies 0=0$$ \qed
+
+Ahora, considere el sistema homogéneo de ecuaciones en diferencias
+
+\begin{align}\label{eq:sisqeqdif}
+    X(n+1) &= \alpha X(n) + \beta Y(n), \\
+    Y(n+1) &=\gamma X(n) + \delta Y(n). \nonumber
+\end{align}
+
+Note que este se puede representar mediante la matriz 
+$$Z_{n+1}=\begin{pmatrix}
+    X(n+1) \\
+    Y(n+1) 
+    \end{pmatrix}=
+    \begin{pmatrix}
+    \alpha & \beta\\
+    \gamma  & \delta 
+    \end{pmatrix} \cdot 
+    \begin{pmatrix}
+    X(n) \\
+    Y(n) \\
+    \end{pmatrix}=
+    \begin{pmatrix}
+        \alpha & \beta\\
+        \gamma  & \delta 
+        \end{pmatrix} Z_n,$$
+
+$$ A = \begin{pmatrix}
+    \alpha & \beta\\
+    \gamma  & \delta 
+    \end{pmatrix} $$
+
+Para solucionar este sistema, se van a utilizar los valores y vectores propios de la matriz $A$:
+
+\begin{theorem}
+    Asuma que los valores propios de la matriz $A$ son reales y distintos. Las soluciones del sistema homogéneo de ecuaciones en diferencias \ref{eq:sisqeqdif} están dadas por la fórmula
+    $$Z_n = k_1 (\lambda_1)^n \mathbf{v_1}+k_2 (\lambda_2)^n \mathbf{v_2},$$
+    en donde los $\lambda_i$ son los valores propios de la matriz $A$, $\mathbf{v_i}$ su respectivo vector propio asociado y $k_i$ una constante real.  
+\end{theorem}
+
+\textbf{Demostración:}
+
+$$A\cdot Z_n = k_1(\lambda_1)^n(A\cdot \mathbf{v_1})+ k_2(\lambda_2)^n(A\cdot \mathbf{v_2})$$
+$$=k_1(\lambda_1)^n(\lambda_1\mathbf{v_1})+ k_2(\lambda_2)^n(\lambda_2 \mathbf{v_2})$$
+$$=k_1 (\lambda_1)^{n+1} \mathbf{v_1}+k_2 (\lambda_2)^{n+1} \mathbf{v_2}=Z_{n+1} \qed$$
+
+Finalmente, tanto para el sistema como para la ecuación en una variable, hallar la solución específica dependerá de las condiciones iniciales $X(0)$, $X(1)$ para la ecuación y $X(0)$, $Y(0)$ para el sistema. Basta hacer los reemplazos apropiados y hallar los valores de $k_i$.
