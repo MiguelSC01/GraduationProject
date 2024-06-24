@@ -1,13 +1,25 @@
 \chapter{Solución de Sistemas de Ecuaciones en Diferencias Lineales Homogéneas de Segundo Grado}\label{chap:Apendice}
+
+En el presente apéndice, se estudiarán las ecuaciones en diferencias lineales homogéneas de segundo grado con coeficientes constantes, los sistemas de estos y el mecanismo para obtener sus respectivas soluciones siguiendo lo expuesto por Banerjee en \cite{banerjee2021mathematical}.
+
 \begin{definition}
-Una \emph{ecuación en diferencias lineal homogénea de segundo grado} es:
+Una \emph{ecuación en diferencias lineal homogénea de segundo grado con coeficientes constantes} es:
 \begin{equation}\label{eq:eqlineal}
     c_0X(n)+c_1X(n-1)+c_2X(n-2)=0,
 \end{equation}
 en donde los $c_i$ son constantes para todo $i$.
 \end{definition}
 
-Para solucionar la ecuación \ref{eq:eqlineal}, se asume inicialmente (siguiendo el supuesto de Euler) que la solución tiene la forma $c\cdot (\lambda)^n$ en donde $c \neq 0$. Reemplazando esta solución en la ecuación inicial, se obtiene
+Para solucionar la ecuación \ref{eq:eqlineal}, considere inicialmente la ecuación en diferencias homogénea de primer grado
+$$X(n+1)=\lambda\cdot X(n),$$
+a esta se le construye la solución de la siguiente manera (conociendo el valor de $X(0)$):
+$$X(1)=\lambda\cdot X(0),$$
+$$X(2)=\lambda\cdot X(1)= \lambda\cdot (c\cdot X(0))=\lambda^2\cdot X(0)$$
+$$\vdots$$
+$$X(n)=\lambda^n X(0).$$ 
+De esta manera, la solución general de la ecuación de primer orden es $X(n)=\lambda^n\cdot c$, en donde $c = X(0)$.
+
+Ahora, para la de segundo grado se sigue este mismo razonamiento (conocido como supuesto de Euler) y se asume que la solución tiene la forma $c\cdot (\lambda)^n$ en donde $c \neq 0$. Reemplazando esta solución en la ecuación inicial, se obtiene
 $$c_0[c\cdot (\lambda)^n]+c_1[c\cdot (\lambda)^{n-1}]+c_2[c\cdot (\lambda)^{n-2}]=0,$$
 dividiendo por $c\cdot(\lambda)^{n-2}$ da cada adendo, se obtiene el \emph{polinomio característico} de la ecuación
 $$c_0\cdot\lambda^2 + c_1\cdot \lambda +c_2=0.$$

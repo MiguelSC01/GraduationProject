@@ -8,7 +8,7 @@ Para los sangrados, se tendrán en cuenta diferentes casos. Inicialmente se tend
 
 \subsection{Hemorragia Leve}\label{subsec:variaciones:hemorragia:leve}
 
-Para esta variación del modelo, tome como ejemplo que en el tercer día de medición el paciente, ya sea por un corte o un accidente, pierde el $2\%$ de su cantidad de sangre en el cuerpo que, considerando el caso de que tenga 5 litros de sangre, esto equivale a 100 mililitros de fluido o a $5\times 10^{11}$ glóbulos rojos. Así, el modelo se puede ver de la siguiente manera:
+Para esta variación del modelo, se tomará como ejemplo que en el tercer día de medición el paciente, ya sea por un corte o un accidente, pierde el $2\%$ de su cantidad de sangre en el cuerpo que, considerando el caso de que tenga 5 litros de sangre, esto equivale a 100 mililitros de fluido o a $5\times 10^{11}$ glóbulos rojos. Así, el modelo se puede ver de la siguiente manera:
 
 \begin{align}\label{eq:HemoLeveMal}
     R(n+1) &= \left\{ \begin{array}{lcc} (1-f)\cdot R(n)+M(n) & \textrm{si} & n \neq 3 \\ \\ (1-f)\cdot R(n)+M(n)-0.02\cdot R(n) & \textrm{si} & n = 3\end{array} \right., \\
@@ -24,13 +24,13 @@ En donde:
     \item $t = 10$. (tiempo de simulación) [días]
 \end{itemize}
 
-La simulación se ve así: en la primera gráfica de la figura \ref{sec:variaciones:fig:HemoLeveG1} se observa la pérdida de RBC's en el tercer día, para $M(n)$ hay un aumento en la cantidad de eritrocitos del tercer al cuarto día y estabilidad del cuarto día en adelante. En la segunda gráfica se observa lo mismo pero con un día de atraso. El aumento de RBC's que se puede observar está dado por el hecho de que el adendo $M(n)$ conserva lo que ha ocurrido en $R(n-1)$ así, para el cuarto día se producen la cantidad de eritrocitos que se vienen produciendo regularmente antes del accidente, y desde el cuarto día en adelante este adendo ya se acomoda a la nueva cantidad de RBC's. La estabilidad en los glóbulos rojos que se observa del cuarto día en adelante está dada por el hecho de que $\gamma = 1$. El modelo, de esta manera, funciona como lo hace normalmente (véase la sección \ref{subsec:modelo:simulaciones:G1}) tomando una cantidad inicial de glóbulos rojos menor que la original, es decir que mantiene una estabilidad con la cantidad de RBC's del cuarto día, que es de $24.504\times 10^{12}$ glóbulos rojos. 
+La simulación se ve así: en la primera gráfica de la figura \ref{sec:variaciones:fig:HemoLeveG1} se observa la pérdida de RBC's en el tercer día, para $M(n)$ hay una disminución en la cantidad de eritrocitos producidos del cuarto al quinto día y estabilidad del cuarto día en adelante. En la segunda gráfica se observa lo mismo pero con un día de atraso. Hay un muy pequeño aumento de RBC's sangre del tercer al cuarto día, este está dado por el hecho de que el adendo $M(n)$ conserva lo que ha ocurrido en $R(n-1)$ así, para el cuarto día se producen la cantidad de eritrocitos que se vienen produciendo regularmente antes del accidente, y desde el cuarto día en adelante este adendo ya se acomoda a la nueva cantidad de RBC's. La estabilidad en los glóbulos rojos que se observa del cuarto día en adelante está dada por el hecho de que $\gamma = 1$. El modelo, de esta manera, funciona como lo hace normalmente (véase la sección \ref{subsec:modelo:simulaciones:G1}) tomando una cantidad inicial de glóbulos rojos menor que la original, es decir que mantiene una estabilidad con la cantidad de RBC's del cuarto día, que es de $24.504\times 10^{12}$ glóbulos rojos. 
 
 \begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
     \includegraphics[scale=0.534]{figures/HemoLeveG1.png}
-    \caption{Simulación del modelo para el caso de una hemorragia sin recuperación de la homeostasis para los valores $\gamma = 1$, $f = 0.00832$, $R(0)=25\times 10^{12}$ RBC's, $M(0) = 208\times 10^{9}$ RBC's para 10 días. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$. La franja gris en la gráfica de $M(n)$ representa los límites normales.}
+    \caption{Simulación del modelo para el caso de una hemorragia sin recuperación de la homeostasis para los valores $\gamma = 1$, $f = 0.00832$, $R(0)=25\times 10^{12}$ RBC's, $M(0) = 208\times 10^{9}$ RBC's para 10 días. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$. La franja gris en la gráfica de $R(n)$ representa los límites normales.}
     \label{sec:variaciones:fig:HemoLeveG1}
 \end{figure}
 
@@ -61,7 +61,7 @@ Para estas simulaciones, se utilizó un tiempo de 15 días para poder observar l
     \centering
     \captionsetup{justification=centering}
     \includegraphics[scale=0.534]{figures/HemoLeveG13.png}
-    \caption{Simulación del modelo para el caso de una hemorragia con recuperación de la homeostasis para los valores $\gamma_1 = 1$, $\gamma_2=1.305$, $f = 0.00832$, $R(0)=25\times 10^{12}$ RBC's, $M(0) = 208\times 10^{9}$ RBC's para 15 días. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$. La franja gris en la gráfica de $M(n)$ representa los límites normales.}
+    \caption{Simulación del modelo para el caso de una hemorragia con recuperación de la homeostasis para los valores $\gamma_1 = 1$, $\gamma_2=1.305$, $f = 0.00832$, $R(0)=25\times 10^{12}$ RBC's, $M(0) = 208\times 10^{9}$ RBC's para 15 días. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$. La franja gris en la gráfica de $R(n)$ representa los límites normales.}
     \label{sec:variaciones:fig:HemoLeveG13}
 \end{figure}
 
@@ -103,7 +103,7 @@ Para ilustrar los diferentes estados del cuerpo mencionados anteriormente, se am
     \centering
     \captionsetup{justification=centering}
     \includegraphics[scale=0.534]{figures/HemoGrave.png}
-    \caption{Simulación del modelo para el caso de una hemorragia grave con transfusión para los valores $\gamma_1 = 1$, $\gamma_2=1.305$, $\gamma_3=1.31$, $f = 0.00832$, $R(0)=25\times 10^{12}$ RBC's, $M(0) = 208\times 10^{9}$ RBC's para 23 días. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$. La franja gris en la gráfica de $M(n)$ representa los límites normales.}
+    \caption{Simulación del modelo para el caso de una hemorragia grave con transfusión para los valores $\gamma_1 = 1$, $\gamma_2=1.305$, $\gamma_3=1.31$, $f = 0.00832$, $R(0)=25\times 10^{12}$ RBC's, $M(0) = 208\times 10^{9}$ RBC's para 23 días. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$. La franja gris en la gráfica de $R(n)$ representa los límites normales.}
     \label{sec:variaciones:fig:HemoGrave}
 \end{figure}
 
@@ -120,7 +120,7 @@ La eritropoyetina, según el estudio del capítulo \ref{chap:RBC}, es la hormona
 Para la investigación, se asumió arbitrariamente que cada unidad por mililitro aplicada de EPO aumenta en $0.01\%$ la producción de glóbulos rojos respecto a la producción de una persona sana. De esta manera, la ecuación de $M(n)$ se verá modificada de la siguiente manera: 
 
 \begin{equation*}
-    M(n+1)=\gamma\cdot f \cdot R(n)+\frac{\delta(n)*y_s}{10000},
+    M(n+1)=\gamma\cdot f \cdot R(n)+\frac{\delta(n)\cdot y_s}{10000},
 \end{equation*}
 
 es decir que la cantidad de glóbulos rojos producidos por la médula ósea en el día $n+1$ ahora también dependerá también de la cantidad que produzca la concentración de EPO en la sangre del paciente, $\delta(n)$, siguiendo la hipótesis mencionada anteriormente de la producción de $0.01\%$ por mU/ml aplicado respecto a la producción normal de un paciente sano, $y_s$. 
@@ -192,7 +192,7 @@ El siguiente paso para las simulaciones es establecer la concentración de dosis
 
 \subsection{Concentración de Dosis  = 975 mU/ml} \label{subsec:variaciones:anemia:mal}
 
-Como se expuso en la sección \ref{subsec:RBC:enfermedades:anemia}, el tratamiento de inyección de EPO depende de la masa corporal del paciente, se debe encontrar una masa corporal en el que basar la dosis pra el modelo. Siguiendo el estudio realizado por el periódico el Tiempo en \cite{elTiempo}, la altura promedio de un hombre colombiano en 2021 es de aproximadamente 172 cm. Utilizando el índice de masa corporal (\cite{IMC}), una medida para hallar el rango de masa corporal ideal según la estatura de una persona, la masa corporal ideal de un hombre que mide 172 cm de altura es de aproximadamente unos 65 kg. De esta manera, la dosis de EPO que se tendrá en cuenta para la primera simulación de esta variación del modelo es de 4875 unidades cada tres días (975 mU/ml).
+Como se expuso en la sección \ref{subsec:RBC:enfermedades:anemia}, el tratamiento de inyección de EPO depende de la masa corporal del paciente, se debe encontrar una masa corporal en la cual basar la dosis para el modelo. Siguiendo el estudio realizado por el periódico el Tiempo en \cite{elTiempo}, la altura promedio de un hombre colombiano en 2021 es de aproximadamente 172 cm. Utilizando el índice de masa corporal (\cite{IMC}), una medida para hallar el rango de masa corporal ideal según la estatura de una persona, la masa corporal ideal de un hombre que mide 172 cm de altura es de aproximadamente unos 65 kg. De esta manera, la dosis de EPO que se tendrá en cuenta para la primera simulación de esta variación del modelo es de 4875 unidades cada tres días (975 mU/ml).
 
 Así, para la concentración de 975 mU/ml de EPO, se tienen los siguientes valores iniciales y de los parámetros:
 
@@ -213,7 +213,7 @@ Así, para la concentración de 975 mU/ml de EPO, se tienen los siguientes valor
     \captionsetup{justification=centering}
     \includegraphics[scale=0.526]{figures/AR11.png}
     \includegraphics[scale=0.526]{figures/AR12.png}
-    \caption{Simulación del modelo para el caso de anemia renal con dosis de EPO para los valores $R(0)=25\times 10^{12}$ RBC's, $f=0.00832$, $M(0)=145.6\times 10^{9}$ RBC's, $\gamma = 0.809$, $y_s = 208\times10^{9}$ RBC's, $\delta_0 = 975$ mU/ml, $t_0 =72$ h para 29 días. Arriba a la izquierda está la gráfica de $R(n)$, arriba a la derecha la de $M(n)$, abajo a la izquierda se encuentra la gráfica ampliada de $M(n)$, abajo a la derecha la de $\delta(t)$. La franja gris en la primera gráfica de $M(n)$ representa los límites normales.}
+    \caption{Simulación del modelo para el caso de anemia renal con dosis de EPO para los valores $R(0)=25\times 10^{12}$ RBC's, $f=0.00832$, $M(0)=145.6\times 10^{9}$ RBC's, $\gamma = 0.809$, $y_s = 208\times10^{9}$ RBC's, $\delta_0 = 975$ mU/ml, $t_0 =72$ h para 29 días. Arriba a la izquierda está la gráfica de $R(n)$, arriba a la derecha la de $M(n)$, abajo a la izquierda se encuentra la gráfica ampliada de $R(n)$, abajo a la derecha la de $\delta(t)$. La franja gris en la primera gráfica de $R(n)$ representa los límites normales.}
     \label{sec:variaciones:fig:Anemia1}
 \end{figure}
 
@@ -245,7 +245,7 @@ La figura \ref{sec:variaciones:fig:Anemia2} muestra como, gracias a la nueva dos
     \captionsetup{justification=centering}
     \includegraphics[scale=0.526]{figures/AR21.png}
     \includegraphics[scale=0.526]{figures/AR22.png}
-    \caption{Simulación del modelo para el caso de anemia renal con dosis de EPO para los valores $R(0)=25\times 10^{12}$ RBC's, $f=0.00832$, $M(0)=145.6\times 10^{9}$ RBC's, $\gamma = 0.809$, $y_s = 208\times10^{9}$ RBC's, $\delta_0 = 4824$ mU/ml, $t_0 =72$ h para 29 días. Arriba a la izquierda está la gráfica de $R(n)$, arriba a la derecha la de $M(n)$, abajo a la izquierda se encuentra la gráfica ampliada de $M(n)$, abajo a la derecha la de $\delta(t)$. La franja gris en la primera gráfica de $M(n)$ representa los límites normales.}
+    \caption{Simulación del modelo para el caso de anemia renal con dosis de EPO para los valores $R(0)=25\times 10^{12}$ RBC's, $f=0.00832$, $M(0)=145.6\times 10^{9}$ RBC's, $\gamma = 0.809$, $y_s = 208\times10^{9}$ RBC's, $\delta_0 = 4824$ mU/ml, $t_0 =72$ h para 29 días. Arriba a la izquierda está la gráfica de $R(n)$, arriba a la derecha la de $M(n)$, abajo a la izquierda se encuentra la gráfica ampliada de $R(n)$, abajo a la derecha la de $\delta(t)$. La franja gris en la primera gráfica de $R(n)$ representa los límites normales.}
     \label{sec:variaciones:fig:Anemia2}
 \end{figure}
 

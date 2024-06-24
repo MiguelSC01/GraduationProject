@@ -16,7 +16,7 @@ Considerando la eliminación de glóbulos rojos por parte del bazo y su producci
 $$R(n+1)=(1-f)R(n)+M(n),$$
 $$M(n+1)=\gamma \cdot f\cdot R(n),$$
 
-en donde $R=R(n)$ representa la cantidad de glóbulos rojos en el torrente sanguíneo en el $n$-ésimo día y $M=M(n)$ la cantidad de glóbulos rojos producidos por la médula ósea en el $n$-ésimo día. El parámetro $\gamma>0$ representa la cantidad de glóbulos rojos producida por cada uno eliminado y $0\leq f \leq 1$ es la fracción de glóbulos rojos que elimina el bazo cada día. Ni $\gamma$ ni $f$ tienen unidades dadas estas definiciones.
+en donde $R=R(n)$ representa la cantidad de glóbulos rojos en el torrente sanguíneo en el $n$-ésimo día y $M=M(n)$ la cantidad de glóbulos rojos producidos por la médula ósea en el $n$-ésimo día. El parámetro $\gamma>0$ representa la cantidad de glóbulos rojos producida por cada uno eliminado y $0\leq f \leq 1$ es la fracción de glóbulos rojos que elimina el bazo cada día. Dadas estas definiciones, ni $\gamma$ ni $f$ tienen unidades.
 
 De esta manera, el modelo se puede interpretar de la siguiente manera: la cantidad de RBC's en el día $n+1$-ésimo, $R(n+1)$, es la fracción restante del día $n$-ésimo más lo que haya producido la médula ósea en el día $n$-ésimo; mientras que la cantidad de eritrocitos producidos por la médula ósea en el día $n+1$-ésimo, $M(n+1)$, es un múltiplo de la cantidad de glóbulos rojos eliminada en el día $n$-ésimo. Este modelo es una simplificación bastante acertada de lo visto en la figura \ref{sec:RBC:fig:VidaRBC} en cuanto a la relación entre producción y eliminación de RBC's. Es claro que, para ser aún más acertados, se podrían agregar muchas otras variables como el funcionamiento de los riñones para la producción de eritropoyetina, el proceso de absorción del hierro o la edad y estado de salud del sujeto analizado, pero estos complican innecesariamente el modelo y su análisis.
 
@@ -94,7 +94,7 @@ $$\begin{pmatrix}
 
 en donde $c_1$ y $c_2$ dependerán de las condiciones iniciales.
 
-Nótese que ambos métodos, al tener el mismo polinomio característico, obtienen la misma solución general del sistema, esto implica que el modelo propuesto está bien fundamentado matemáticamente.
+Nótese que ambos métodos, al tener el mismo polinomio característico, obtienen la misma solución general del sistema, esto implica que ambas aproximaciones al estudio del modelo son equivalentes.
 
 
 \section{Derivación de Parámetros y Análisis}\label{sec:modelo:parametros}
@@ -106,7 +106,7 @@ $$x^*-(1-f)x^*-\gamma f x^*=0$$
 $$\implies x^*(1-(1-f)-\gamma\cdot f)=0,$$
 $$\implies x^*(f-\gamma\cdot f)=0.$$
 
-De esta manera, $x^*=0$ es un equilibrio del sistema, pero, adicionalmente, dado que $f$ es un valor fijo (como se verá más adelante) entonces también hay equilibrios en el sistema cuando $\gamma = 1$. Es decir que, para este valor del parámetro, cualquier valor de $R,M$ presenta un equilibrio. 
+De esta manera, $x^*=0$ es un equilibrio del sistema, pero, adicionalmente, dado que $f$ es un valor fijo (como se verá más adelante) entonces también hay equilibrios en el sistema cuando $\gamma = 1$. Es decir que, para este valor del parámetro, cualquier valor de $R(0)$ presenta un equilibrio, esto esta relacionado con la homeostasis, pues al tener $\gamma = 1$ esto implica que el paciente produce la misma cantidad de glóbulos rojos que pierde, por lo que no hay cambios en el sistema, que se mantiene en equilibrio. Adicionalmente, si no se tiene en consideración que $f$ es fijo, también hay un equilibrio en el sistema para cualquier valor de $R(0)$ en los casos que $f=0$, pero esto es incorrecto desde el punto de vista médico ya que quiere decir que no se están eliminando ni produciendo nuevos eritrocitos.
 
 Para poder pasar a valores específicos de las soluciones encontradas, es necesario dar valores numéricos a los parámetros $\lambda$ y $f$, pues el modelo depende de estos y, junto a las condiciones iniciales, determinan las soluciones del problema. Para hallar estos parámetros, se utilizará la información brindada en la sección \ref{sec:RBC:vida} sobre la producción de glóbulos rojos a través de la médula ósea y de su eliminación por medio del bazo.
 
@@ -114,7 +114,7 @@ Inicialmente, es necesario declarar las condiciones iniciales del problema. Dado
 
 Ahora, determinar $f$ es relativamente sencillo, pues es el porcentaje diario de RBC's que elimina el cuerpo. Contando con que la cantidad promedio es de eritrocitos es de $25\times 10^{12}$ y que diariamente mueren $208\times 10^{9}$, entonces el porcentaje de glóbulos rojos eliminados diariamente por el bazo es del $0.832\%$, es decir que se puede tomar $f=0.00832$. 
 
-Determinar el valor biológico de $\gamma$ es mucho más complicado, pues no ha sido posible determinar la cantidad de glóbulos rojos que produce una célula madre durante la eritropoyesis. Para hallar un valor adecuado de $\gamma$, se hará el análisis matemático y de las simulaciones con los valores ya establecidos. En todo caso, se puede hace el análisis para los diferentes casos:
+Determinar el valor biológico de $\gamma$ es mucho más complicado, pues no ha sido posible determinar la cantidad de glóbulos rojos que produce una célula madre durante la eritropoyesis. Para hallar un valor adecuado de $\gamma$, se hará el análisis matemático y de las simulaciones con los valores ya establecidos. En todo caso, se puede hacer el análisis para los diferentes casos:
 \begin{enumerate}
     \item  $\gamma<1$: Este caso implica que el cuerpo produce una menor cantidad de eritrocitos respecto a la que elimina, por lo que los resultados deberían mostrar una caída en la cantidad de glóbulos rojos.
     \item $\gamma=1$: Este caso implica que el cuerpo produce la misma cantidad de eritrocitos respecto a la que elimina, por lo que los resultados deberían mostrar una estabilidad en la cantidad de glóbulos rojos.
@@ -167,7 +167,7 @@ Como ya se ha visto en la sección \ref{sec:modelo:analisis}, las soluciones del
                     0.7071 
                     \end{pmatrix}.$$
 
-
+Es importante resaltar que hay una ligera discrepancia entre esta solución y la encontrada en el método de ecuaciones en diferencias, la constante $c_2$ debería anularse en este caso para obtener la misma solución. Esto no sucede debido a que para el caso actual se utilizaron cálculos computacionales, que suelen tener un ligero error, por esta razón se obtiene un término muy pequeño (se magnitud $10^{-5}$) en vez de 0. Este error computacional despreciable también ocurrirá en las siguientes soluciones.
 
 \end{itemize}
 
@@ -274,7 +274,7 @@ $$M(n)=208\times 10^{9}.$$
     \centering
     \captionsetup{justification=centering}
     \includegraphics[scale=0.534]{BaseG1.png}
-    \caption{Simulación del modelo para los valores $\gamma = 1$, $f = 0.00832$, $R(0) = 25\times 10^{12}$ RBC's, $M(0) = 208 \times 10^{9}$ RBC's en 10 días. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$. La franja gris en la gráfica de $M(n)$ representa los límites normales.}
+    \caption{Simulación del modelo para los valores $\gamma = 1$, $f = 0.00832$, $R(0) = 25\times 10^{12}$ RBC's, $M(0) = 208 \times 10^{9}$ RBC's en 10 días. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$. La franja gris en la gráfica de $R(n)$ representa los límites normales.}
     \label{sec:modelo:fig:G1}
 \end{figure}
 
@@ -292,7 +292,7 @@ $$M(n)=(145.96\times 10^{9})(0.9975)^{n-1}+(-360.1\times 10^{6})(-0.0058)^{n-1}.
     \centering
     \captionsetup{justification=centering}
     \includegraphics[scale=0.534]{BaseG07.png}
-    \caption{Simulación del modelo para los valores $\gamma = 0.7$, $f = 0.00832$, $R(0) = 25\times 10^{12}$ RBC's, $M(0) = 208 \times 10^{9}$ RBC's en 10 días. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$. La franja gris en la gráfica de $M(n)$ representa los límites normales.}
+    \caption{Simulación del modelo para los valores $\gamma = 0.7$, $f = 0.00832$, $R(0) = 25\times 10^{12}$ RBC's, $M(0) = 208 \times 10^{9}$ RBC's en 10 días. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$. La franja gris en la gráfica de $R(n)$ representa los límites normales.}
     \label{sec:modelo:fig:G07}
 \end{figure}
 
@@ -309,7 +309,7 @@ $$M(n)=(269.741\times 10^{9})(1.0025)^{n-1}+(658.977\times 10^{6})(-0.0108)^{n-1
     \centering
     \captionsetup{justification=centering}
     \includegraphics[scale=0.534]{BaseG13.png}
-    \caption{Simulación del modelo para los valores $\gamma = 1.3$, $f = 0.00832$, $R(0) = 25\times 10^{12}$ RBC's, $M(0) = 208 \times 10^{9}$ RBC's en 10 días. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$. La franja gris en la gráfica de $M(n)$ representa los límites normales.}
+    \caption{Simulación del modelo para los valores $\gamma = 1.3$, $f = 0.00832$, $R(0) = 25\times 10^{12}$ RBC's, $M(0) = 208 \times 10^{9}$ RBC's en 10 días. A la izquierda está la gráfica de $R(n)$, a la derecha la de $M(n)$. La franja gris en la gráfica de $R(n)$ representa los límites normales.}
     \label{sec:modelo:fig:G13}
 \end{figure}
 

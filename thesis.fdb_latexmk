@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber thesis"] 1718908789 "thesis.bcf" "thesis.bbl" "thesis" 1718908828 0
-  "./library.bib" 1715825964 11676 54248e00cca651a8284d5b5b8620cb13 ""
-  "thesis.bcf" 1718908827 109163 a95b590b3db3f350db3bfc250b69899f "pdflatex"
+["biber thesis"] 1719246217 "thesis.bcf" "thesis.bbl" "thesis" 1719246244 0
+  "./library.bib" 1719246141 11858 9d88b12b62ec978d026f08830acc4924 ""
+  "thesis.bcf" 1719246243 109243 e35cf54e414deeafa1930387681c232f "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1718908808 "/Users/miguelsandoval/Desktop/Andes/GraduationProject/thesis.tex" "thesis.pdf" "thesis" 1718908828 0
+["pdflatex"] 1719246235 "/Users/miguelsandoval/Desktop/Andes/GraduationProject/thesis.tex" "thesis.pdf" "thesis" 1719246244 0
   "/Users/miguelsandoval/Desktop/Andes/GraduationProject/thesis.tex" 1718840947 3354 e07499ac80188dd5694245442b631261 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -246,12 +246,12 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1709266533 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1709266228 7883460 6e559ac8c21d3cfbe4a7324ed8014828 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "chapters/apendice.tex" 1718845209 4444 ce1dbada1b046ecc884de54e6b9c1353 ""
-  "chapters/conclusiones.tex" 1716125880 8057 b25b6d41b05db7755c5be0abf710c789 ""
-  "chapters/globulos_rojos.tex" 1716091184 11251 924657b29665400f38e484747bc56900 ""
-  "chapters/introduccion.tex" 1716126052 5096 c38b07c76f7642a3610e9192832ee8ed ""
-  "chapters/modelo_base.tex" 1718838933 23237 2e9bc1a4f8348b7c3f9909ec8c25956d ""
-  "chapters/variaciones_modelo.tex" 1718908786 28243 8b4420001a8faff4953de6b2c7e58e99 ""
+  "chapters/apendice.tex" 1719246171 5274 44e43e152cfe53c31fb0443a01220df0 ""
+  "chapters/conclusiones.tex" 1719245389 8072 dd6393a7f140139eb76764e39cbeb851 ""
+  "chapters/globulos_rojos.tex" 1719244019 11245 4e1fd4c264309dec986545acb30fca0a ""
+  "chapters/introduccion.tex" 1719243939 5099 12aad36484273e42b080d8e280523e0b ""
+  "chapters/modelo_base.tex" 1719245338 24283 0bb254d25fba2579a81596f32283661a ""
+  "chapters/variaciones_modelo.tex" 1719245314 28307 16f7d9cbc0a2556504796da262bc771d ""
   "figures//BaseG07.png" 1716092483 53099 13af917c5ee576b4d04e92ae454bd4e0 ""
   "figures//BaseG1.png" 1716092217 44648 5882c2e3c73050600e0b11dde00d833e ""
   "figures//BaseG13.png" 1716092516 52223 c7eeac2193b02038c442a72a229713cc ""
@@ -266,15 +266,15 @@
   "figures/VidaRBC.jpeg" 1715825134 83902 703840cb1b6aebd5fdd444e6d1e232b7 ""
   "frontmatter/agradecimientos.tex" 1718908786 1016 21d371f262502e47b018cb70dbb06cfe ""
   "frontmatter/dedicatoria.tex" 1715825134 60 78c74538b39e303cdb45c5dec8e68cbb ""
-  "frontmatter/resumen.tex" 1716125626 1572 69566c085c35e901196e88c672cb0b96 ""
-  "frontmatter/titlepage.tex" 1715825134 493 37ac9e6c12a4731bf0134cd07d041643 ""
+  "frontmatter/resumen.tex" 1719243669 1546 f228dd660a167cb7722af40baeabcc19 ""
+  "frontmatter/titlepage.tex" 1719243584 493 37ac9e6c12a4731bf0134cd07d041643 ""
   "quiver.sty" 1715825134 1605 786c4fbcefc5d2898f3d784c12d72ae1 ""
-  "thesis.aux" 1718908826 21994 c86ed7a4b476952b6585f5d5989f22d8 "pdflatex"
-  "thesis.bbl" 1718908807 55452 cd7af033e5d3c47739e83a498eda041b "biber thesis"
-  "thesis.out" 1718908827 6538 dd67406d120ae9600261fd5fc68d1ff3 "pdflatex"
-  "thesis.run.xml" 1718908827 2413 86904c7288adb44cc7e0726c2475a3ad "pdflatex"
+  "thesis.aux" 1719246243 22167 a3489326c4af43a696695566bd6aee8c "pdflatex"
+  "thesis.bbl" 1719246225 56438 3f21a933d5dd3d3795caa8f43a38dbd7 "biber thesis"
+  "thesis.out" 1719246243 6538 dd67406d120ae9600261fd5fc68d1ff3 "pdflatex"
+  "thesis.run.xml" 1719246243 2413 86904c7288adb44cc7e0726c2475a3ad "pdflatex"
   "thesis.tex" 1718840947 3354 e07499ac80188dd5694245442b631261 ""
-  "thesis.toc" 1718908827 3144 5741ebd4150327bfd176bf43ed563ac5 "pdflatex"
+  "thesis.toc" 1719246243 3144 91cb9905c7c01050600ba1e9429a4d4e "pdflatex"
   (generated)
   "thesis.aux"
   "thesis.bcf"

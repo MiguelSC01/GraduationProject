@@ -2,13 +2,13 @@
 
 \section{Presentación del tema y su importancia}
 
-El proyecto de investigación a continuación presentará la aproximación teórica para tratar de comprender un problema médico utilizando herramientas matemáticas. La principal herramienta utilizada son los modelos matemáticos, otra herramienta utilizada es la simulación computacional de cada modelo propuesto. 
+El proyecto de investigación a continuación presentará una aproximación teórica para tratar de comprender un problema médico utilizando herramientas matemáticas. La principal herramienta utilizada son los modelos matemáticos, otra herramienta utilizada es la simulación computacional de cada modelo propuesto. 
 
 \textbf{Presentación del problema:} Los glóbulos rojos pertenecen al aparato circulatorio del cuerpo humano, siendo las células que componen mayoritariamente la sangre. Entre sus diferentes funciones se encuentra el transporte de oxígeno desde los pulmones al resto de órganos del cuerpo para garantizar su funcionamiento. Es por este motivo que medir la cantidad de glóbulos rojos en la sangre de una persona permite prevenir complicaciones médicas.
 
 Los hemogramas son procedimientos médicos para hacer un análisis completo de la sangre de una persona. Siguiendo el artículo de Celkan en \cite{celkan2020does}, para hacer un hemograma se extrae una pequeña cantidad de sangre que se envía a un laboratorio y se analiza. Así, poder determinar la cantidad de glóbulos rojos en una persona en todo momento es una tarea imposible, pues se necesitaría una cantidad infinita de sangre y equipo que pudiera hacer las mediciones inmediatamente. Es por esto que el problema de la medición de glóbulos rojos es muy importante en el mundo médico, una de las aproximaciones al problema es mediante los modelos matemáticos.
 
-\textbf{Herramientas:} Un modelo matemático es un sistema de ecuaciones discretas (es decir que su medición es cada cierto intervalo de tiempo) o continuas que intenta reflejar ciertos comportamientos del mundo real en ámbitos como la economía o la medicina. Para acercarse al problema de las dinámicas de los glóbulos rojos, Leah Edelstein-Keshet en \cite{edelstein2005} propuso el siguiente modelo que intenta reflejar la vida de los glóbulos rojos dentro del cuerpo humano:
+\textbf{Herramientas:} Un modelo matemático es un sistema de ecuaciones discretas (es decir que su medición es cada cierto intervalo de tiempo) o continuas que intenta reflejar ciertos comportamientos del mundo real en ámbitos como la economía o la medicina. Para acercarse al problema de las dinámicas de los glóbulos rojos (RBC's), Leah Edelstein-Keshet en \cite{edelstein2005} propuso el siguiente modelo que intenta reflejar la vida de los glóbulos rojos dentro del cuerpo humano:
 
 $$R(n+1)=(1-f)R(n)+M(n),$$
 $$M(n+1)=\gamma \cdot f\cdot R(n),$$
@@ -21,7 +21,7 @@ Este modelo, como se expondrá en la sección \ref{sec:modelo:presentacion}, es 
 
 El objetivo principal del proyecto es determinar si el modelo de Edelstein-Keshet es correcto desde un punto de vista médico y matemático, determinando sus equilibrios y haciendo simulaciones computacionales al variar valores del parámetro $\gamma$, la cantidad de glóbulos rojos producidos por cada uno perdido.
 
-Al modelo base, al estar basado en un paciente totalmente sano, no tiene en consideración posibles complicaciones médicas que pueda sufrir un paciente, por lo que el siguiente objetivo del trabajo es incluir en el modelo ciertas enfermedades como hemorragias o anemia y sus respectivos tratamientos médicos, todo esto después de haber realizado una gran investigación médica. Para el caso de un paciente con anemia, esta debe ser tratada con inyecciones del fármaco llamado eritropoyetina, de esta manera, otro de los objetivos es encontrar una dosis de eritropoyetina que satisfaga los resultados esperados. Para el caso de las hemorragias, se buscarán evidenciar los beneficios de una transfusión sanguínea.
+El modelo base, al estar basado en un paciente totalmente sano, no tiene en consideración posibles complicaciones médicas que pueda sufrir un paciente, por lo que el siguiente objetivo del trabajo es incluir en el modelo ciertas enfermedades como hemorragias o anemia y sus respectivos tratamientos médicos, todo esto después de haber realizado una investigación médica. Para el caso de un paciente con anemia, esta debe ser tratada con inyecciones del fármaco llamado eritropoyetina, de esta manera, otro de los objetivos es encontrar una dosis de eritropoyetina que satisfaga los resultados esperados. Para el caso de las hemorragias, se buscarán evidenciar los beneficios de una transfusión sanguínea.
 
 \section{Estructura del documento}
 
@@ -30,6 +30,6 @@ El documento está dividido en cuatro capítulos (excluyendo el presente) que mu
 \begin{itemize}
     \item El capítulo \ref{chap:RBC} presenta la investigación médica realizada sobre los glóbulos rojos, sus dinámicas dentro del cuerpo y el estudio de las hemorragias y la anemia y sus respectivos tratamientos;
     \item dado este trasfondo médico, el capítulo \ref{chap:modelo} presenta el análisis matemático del modelo base, su justificación desde el punto de vista médico y tres simulaciones computacionales con su respectivo análisis;
-    \item habiendo ya analizado el modelo base, el capítulo \ref{chap:variaciones} presenta las variaciones del modelo para incluir en este las enfermedades presentadas junto son sus tratamientos. Para las hemorragias se toma el caso de una hemorragia leve (pérdida del 2$\%$ de sangre) y una grave (pérdida del 14$\%$ de sangre) que es tratada con una transfusión. Para la anemia, tratada mediante del control de un fármaco, se hacen las simulaciones para dos concentraciones diferentes de eritropoyetina;
+    \item habiendo ya analizado el modelo base, el capítulo \ref{chap:variaciones} presenta las variaciones del modelo para incluir en este las enfermedades presentadas junto son sus tratamientos. Para las hemorragias se toma el caso de una hemorragia leve (pérdida del 2$\%$ de sangre) y una grave (pérdida del 14$\%$ de sangre) que es tratada con una transfusión. Para la anemia, tratada mediante el control de un fármaco, se hacen las simulaciones para dos concentraciones diferentes de eritropoyetina;
     \item finalmente, el capítulo \ref{chap:Conclusiones} presenta las conclusiones del trabajo, las limitaciones del modelo y las posibles direcciones para futuros trabajos.
 \end{itemize}
